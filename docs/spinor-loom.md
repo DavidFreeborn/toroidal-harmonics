@@ -89,9 +89,11 @@ all variants and ribbon-breadth settings.
 ## Material and rendering behavior
 
 Cube face pigments, the dark and pale sides of every ribbon, and the anchor
-pigments are fixed in material coordinates. The fragment shader contains no
-time parameter. Its light source is fixed; the visible dark–light motion comes
-from turning the surfaces, revealing opposite sides, and geometric occlusion.
+pigments are fixed in material coordinates. The base material's light source
+is fixed; its dark–light motion comes from turning the surfaces, revealing
+opposite sides, and geometric occlusion. The shared light choreography can
+optionally modulate that shading and defaults to off; it does not change the
+quaternion deformation or the geometry.
 The optional palette control exchanges the two pigments explicitly.
 
 The two required meshes are cached (two ribbons and four ribbons). `prepare`

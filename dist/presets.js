@@ -1,7 +1,7 @@
 /* Per-study defaults. Regenerate with node scripts/build-presets.cjs. */
 const TorusPresets=(()=>{
  const base={"speed":2,"perspective":105,"ink":1,"wave":0.65,"density":88,"variation":0,"winding":2,"layers":3,"balance":0.5,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":1,"textureStrength":0.65,"textureScale":2,"inkCycle":0};
- const hidden=new Set([110,111,112,113,86,87,88,89,90,91,63,62,64,65,66,54,55,58,57,96,100,77,71,72,39]);
+ const hidden=new Set([110,111,112,113,86,87,88,89,90,91,63,62,64,65,66,54,55,58,57,96,100,77,71,72,39,147]);
  const settings={
   "0":{"speed":2,"perspective":105,"ink":1,"wave":1,"density":280,"variation":0,"winding":3,"layers":3,"balance":0.5,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":6,"textureStrength":0.27,"textureScale":2,"inkCycle":0},
   "4":{"speed":2,"perspective":105,"ink":1,"wave":0.36,"density":136,"variation":0,"winding":3,"layers":3,"balance":0.5,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":0,"textureStrength":0.27,"textureScale":5,"inkCycle":0},

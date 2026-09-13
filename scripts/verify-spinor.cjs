@@ -48,6 +48,7 @@ const gl=new Proxy({}, {get(_,key){
  return ()=>{};
 }});
 const context=vm.createContext({Float32Array,Uint16Array,Math,Map,TorusPrograms:{link:async(g,v)=>{vertexSource=v;return {}}}});
+vm.runInContext(fs.readFileSync(path.join(__dirname,'../dist/lightfield.js'),'utf8'),context);
 vm.runInContext(source,context);const moduleValue=vm.runInContext('TorusSpinor',context);
 async function main(){
  const render=await moduleValue.create(gl);let minGap=Infinity,recipes=0;

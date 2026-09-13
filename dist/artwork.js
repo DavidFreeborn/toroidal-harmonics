@@ -1,10 +1,13 @@
 (async () => {
   'use strict';
+  const embedded=globalThis.TORUS_EMBED===true;
+  let previewReady=false;
+  const previewMessage=(type,data={})=>{if(embedded&&globalThis.parent!==globalThis)globalThis.parent.postMessage({type,...data},globalThis.location.origin);};
   const root = document.getElementById('artwork');
   const canvas = document.getElementById('field');
   const error = document.getElementById('error');
-  const gl = canvas.getContext('webgl2', {antialias:true, alpha:false, powerPreference:'high-performance', preserveDrawingBuffer:false});
-  if (!gl) {error.hidden=false;error.textContent='This artwork needs WebGL 2. Please open it in a browser with hardware acceleration enabled.';return;}
+  const gl = canvas.getContext('webgl2', {antialias:true, alpha:false, powerPreference:embedded?'default':'high-performance', preserveDrawingBuffer:false});
+  if (!gl) {error.hidden=false;error.textContent='This artwork needs WebGL 2. Please open it in a browser with hardware acceleration enabled.';previewMessage('torus-preview-error');return;}
   const vertexSource = `#version 300 es
   precision highp float;
   layout(location=0) in vec2 aUV;
@@ -325,7 +328,7 @@ void main(){
 `;
   let program;
   try{program=await TorusPrograms.link(gl,vertexSource,TorusLight.fragment(fragmentSource));}
-  catch(e){error.hidden=false;error.textContent='The artwork could not start on this device.';console.error(e);return;}
+  catch(e){error.hidden=false;error.textContent='The artwork could not start on this device.';console.error(e);previewMessage('torus-preview-error');return;}
   gl.useProgram(program);
   const uniforms={};for(const key of ['uViewProjection','uTime','uWave','uDensity','uPattern','uInk','uPalette','uCamera','uEigen','uMoore'])uniforms[key]=gl.getUniformLocation(program,key);
   const eigenTexture=gl.createTexture();gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,eigenTexture);
@@ -338,9 +341,10 @@ void main(){
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.REPEAT);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.REPEAT);
   gl.uniform1i(uniforms.uMoore,1);
   const mooreImage=new Image();
-  mooreImage.onload=()=>{gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,mooreTexture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,mooreImage);requestDraw();};
-  mooreImage.onerror=()=>{console.error('The Moore distance field could not be loaded.');};
-  mooreImage.src='./moore-field.png';
+  let mooreResolve;const mooreReady=new Promise(resolve=>{mooreResolve=resolve;});
+  mooreImage.onload=()=>{gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,mooreTexture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,mooreImage);requestDraw();mooreResolve();};
+  mooreImage.onerror=()=>{console.error('The Moore distance field could not be loaded.');mooreResolve();};
+  if(!embedded)mooreImage.src='./moore-field.png';
   const U=192,V=96,uv=new Float32Array((U+1)*(V+1)*2),indices=new Uint32Array(U*V*6);
   let k=0;for(let i=0;i<=U;i++)for(let j=0;j<=V;j++){uv[k++]=i/U;uv[k++]=j/V;}
   k=0;for(let i=0;i<U;i++)for(let j=0;j<V;j++){const n=i*(V+1)+j;indices[k++]=n;indices[k++]=n+1;indices[k++]=n+V+1;indices[k++]=n+1;indices[k++]=n+V+2;indices[k++]=n+V+1;}
@@ -351,12 +355,24 @@ void main(){
   gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.clearColor(1,1,1,1);
   let kinetic=null,sculptures=null,symmetry=null,cycles=null,visionary=null,topology=null,chiaroscuro=null,mechanisms=null,quasicrystal=null,metamorphosis=null,tessellations=null,transformations=null,revivals=null,spinor=null,phason=null;
   const attempted=new Set(),initializing=new Map(),unavailableStudies=new Set();
+  const embeddedScripts=new Map();
+  function loadEmbeddedScript(name){
+    if(!embeddedScripts.has(name))embeddedScripts.set(name,new Promise((resolve,reject)=>{
+      const script=document.createElement('script');script.src='./'+name+'.js?v=24';
+      script.onload=resolve;script.onerror=()=>reject(new Error('Could not load '+name));document.head.appendChild(script);
+    }));
+    return embeddedScripts.get(name);
+  }
   function initialize(name){
     if(initializing.has(name))return initializing.get(name);
     if(attempted.has(name))return Promise.resolve();attempted.add(name);
     quality.suspend();
     const task=(async()=>{
       try{
+        if(embedded){
+          const dependencies={topology:['spectrum'],metamorphosis:['spectrum'],quasicrystal:['quasicrystal-data'],phason:['quasicrystal-data'],tessellations:['tessellation-data']};
+          await Promise.all((dependencies[name]||[]).map(loadEmbeddedScript));await loadEmbeddedScript(name);
+        }
         if(name==='revivals')revivals=await TorusRevivals.create(gl,vao,()=>surfaceCount);
         if(name==='spinor')spinor=await TorusSpinor.create(gl);
         if(name==='phason')phason=await TorusPhason.create(gl,vao,()=>surfaceCount);
@@ -381,6 +397,7 @@ void main(){
     catch(e){unavailableStudies.add(mode);console.warn('This study is unavailable; the other studies remain available.',e);}
   }
   async function prepareRenderer(mode){
+    if(embedded&&mode===20){if(!mooreImage.src)mooreImage.src='./moore-field.png';await mooreReady;}
     if(mode===148)return initialize('phason');
     if(mode===147)return initialize('spinor');
     if(mode===145||mode===146){await initialize('revivals');if(revivals){const task=revivals.prepare(mode-145);if(TorusPrograms.pending(gl))quality.suspend();await task;}return;}
@@ -555,7 +572,7 @@ void main(){
   ];
   const collectionEntries=TORUS_COLLECTION.flatMap(group=>group.studies.map((entry,index)=>({id:entry[0],variants:entry[1],family:entry[2],group:index===0?group.name:''})));
   const studies=collectionEntries.map(entry=>studyArchive.find(study=>study[2]===entry.id));
-  const state={...TorusPresets.get(studies[0][2]),time:0.4,pattern:0,paused:matchMedia('(prefers-reduced-motion: reduce)').matches};
+  const state={...TorusPresets.get(studies[0][2]),time:0.4,pattern:0,paused:embedded||matchMedia('(prefers-reduced-motion: reduce)').matches};
   let viewProjection=new Float32Array(16);
   function projection(aspect){
     const cam=[3.65,0,0],near=0.04,far=20,f=Math.min(1,aspect)/Math.tan(state.perspective*Math.PI/360);
@@ -583,7 +600,7 @@ void main(){
     if(lastPerspective!==state.perspective||lastAspect!==width/height){projection(width/height);lastPerspective=state.perspective;lastAspect=width/height;}
   }
   function requestDraw(){dirty=true;schedule();}
-  function schedule(){if(!frameRequest&&!document.hidden&&visible&&!contextLost)frameRequest=requestAnimationFrame(frame);}
+  function schedule(){if((!embedded||previewReady)&&!frameRequest&&!document.hidden&&visible&&!contextLost)frameRequest=requestAnimationFrame(frame);}
   function resetBudget(){quality.reset([studies[state.pattern][2],state.variation,state.recursion,state.layers,state.density,state.winding,state.textureMode].join(':'),String(studies[state.pattern][2]));resizeNeeded=true;}
   renderQuality.addEventListener('input',()=>{resizeNeeded=true;requestDraw();});
   function draw(){
@@ -753,6 +770,7 @@ void main(){
     onError:e=>console.warn('Background study preparation was deferred.',e)
   });
   function prefetch(index,priority=0){
+    if(embedded)return;
     index=(index+studies.length)%studies.length;
     const mode=studies[index][2];
     // The detailed animal fields have their own two-entry residency policy.
@@ -780,6 +798,9 @@ void main(){
       selected=(selected+direction+studies.length)%studies.length;
     }while(true);
     const candidate={...state,...(extra?TorusSelection.parameters(studies[selected][2],collectionEntries[selected].variants.length):TorusPresets.get(studies[selected][2])),pattern:selected};
+    // A square aperture needs a broad view of the chamber. Keep the study's
+    // geometry and motion intact; framing is independent of its construction.
+    if(embedded)candidate.perspective=Math.max(90,candidate.perspective);
     const startsCycle=studies[selected][2]>=145&&studies[selected][2]<=148;
     if(startsCycle)candidate.time=0;
     try{await warmStudy(candidate);}
@@ -823,6 +844,7 @@ void main(){
   document.getElementById('previous').addEventListener('click',()=>choose(requestedPattern-1));
   document.getElementById('next').addEventListener('click',()=>choose(requestedPattern+1));
   document.addEventListener('keydown',e=>{
+    if(embedded)return;
     if(/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName))return;
     if(e.code==='ArrowRight'||e.code==='ArrowLeft'){e.preventDefault();choose(requestedPattern+(e.code==='ArrowRight'?1:-1));}
     else if(e.code==='Space'&&document.activeElement.tagName!=='BUTTON'){e.preventDefault();state.paused=!state.paused;last=0;updatePause();requestDraw();wake();}
@@ -833,6 +855,7 @@ void main(){
   });
   let quietTimer;
   function wake(){
+    if(embedded)return;
     root.classList.remove('quiet');clearTimeout(quietTimer);
     quietTimer=setTimeout(()=>{if(controls.hidden&&collection.hidden)root.classList.add('quiet');},4500);
   }
@@ -854,10 +877,25 @@ void main(){
     if(dirty||!state.paused){gpuTimer.begin(quality.tag);draw();gpuTimer.end();dirty=false;}
     if(!state.paused)schedule();else last=0;
   }
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();contextLost=true;selectionTicket++;preparationQueue.dispose();gpuTimer.dispose();stopFrames();error.hidden=false;error.textContent='The graphics context was interrupted. Reload to resume the artwork.';});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();contextLost=true;selectionTicket++;preparationQueue.dispose();gpuTimer.dispose();stopFrames();error.hidden=false;error.textContent='The graphics context was interrupted. Reload to resume the artwork.';previewMessage('torus-preview-error');});
+  if(embedded)globalThis.addEventListener('message',event=>{
+    if(event.source!==globalThis.parent||event.origin!==globalThis.location.origin||event.data?.type!=='torus-preview-state'||typeof event.data.paused!=='boolean')return;
+    state.paused=event.data.paused;last=0;updatePause();requestDraw();
+  });
   const linkedStudy=(globalThis.location?.search||'').match(/(?:^\?|&)study=(\d+)(?:&|$)/);
   const linkedIndex=linkedStudy?studies.findIndex(study=>study[2]===Number(linkedStudy[1])):-1;
-  await choose(linkedIndex>=0?linkedIndex:0);
+  let initialIndex=linkedIndex>=0?linkedIndex:0;
+  if(embedded){
+    let previous=-1;try{const stored=sessionStorage.getItem('torus-preview-study');if(stored!==null)previous=studies.findIndex(study=>study[2]===Number(stored));}catch{}
+    initialIndex=TorusSelection.index(previous,studies.length,i=>available(studies[i][2]));
+  }
+  if(!await choose(initialIndex))return;
+  if(embedded){
+    try{sessionStorage.setItem('torus-preview-study',String(studies[state.pattern][2]));}catch{}
+    // A valid first frame is presented before the parent removes its poster.
+    previewReady=true;draw();dirty=false;
+    previewMessage('torus-preview-ready',{id:studies[state.pattern][2],title:studies[state.pattern][0]});
+  }
   for(const mode of [101,76,21,27,56,86,68,19,30,46]){
     const index=studies.findIndex(study=>study[2]===mode);if(index>=0)prefetch(index);
   }

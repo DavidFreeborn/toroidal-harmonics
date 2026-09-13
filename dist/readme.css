@@ -20,7 +20,6 @@ article{padding:16px 0 18px;margin-left:20px;scroll-margin-top:24px;border-top:1
 article:target{border-left:2px solid #333;padding-left:14px;margin-left:4px}
 article p{font-size:16px}
 article .references{font-size:13px;color:#484848;line-height:1.9;margin:7px 0 0}
-.references span{color:#666}
 dl{margin:4px 0 24px 20px}
 dl>div{margin:0 0 14px}dt{font-size:16px}dd{font-size:15px;color:#555;margin:3px 0 0}
 label{display:block;font-size:14px;margin-bottom:8px}
@@ -28,5 +27,5 @@ input{display:block;width:100%;padding:11px 12px;border:1px solid #aaa;border-ra
 .credit{font-size:14px;margin:0 0 20px 20px}
 #search-result{font:14px Arial,Helvetica,sans-serif;color:#555}
 footer{border-top:1px solid #ccc;margin-top:26px;padding-top:22px;font-size:13px;color:#555}
-footer p{margin-bottom:14px}[hidden]{display:none!important}
+[hidden]{display:none!important}
 @media(max-width:600px){main{padding:22px 18px 40px}h1{font-size:27px}article{margin-left:12px}dl{margin-left:12px}.intro{font-size:15px}}

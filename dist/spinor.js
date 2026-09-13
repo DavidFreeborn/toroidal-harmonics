@@ -121,7 +121,7 @@ void main(){
   return {count,pitch,radius,scale:radius/EXTENT,depth:radius+.035};
  }
  async function create(gl){
-  const program=await TorusPrograms.link(gl,vertexSource,fragmentSource);
+  const program=await TorusPrograms.link(gl,vertexSource,TorusLight.fragment(fragmentSource,true));
   const u={};for(const name of ['uViewProjection','uWave','uInk','uPalette'])u[name]=gl.getUniformLocation(program,name);
   const instanceData=new Float32Array(40*17),instanceBuffer=gl.createBuffer(),meshes=new Map(),recipes=new Map();
   gl.bindBuffer(gl.ARRAY_BUFFER,instanceBuffer);gl.bufferData(gl.ARRAY_BUFFER,instanceData.byteLength,gl.DYNAMIC_DRAW);
@@ -157,7 +157,7 @@ void main(){
     gl.bindBuffer(gl.ARRAY_BUFFER,instanceBuffer);gl.bufferSubData(gl.ARRAY_BUFFER,0,instanceData,0,r.count*17);
     lastTime=time;lastVariant=variant;lastRecipe=r;lastTurns=turns;
    }
-   gl.useProgram(program);gl.bindVertexArray(mesh.vao);gl.uniformMatrix4fv(u.uViewProjection,false,matrix);
+   gl.useProgram(program);TorusLight.bind(gl,program,options,time);gl.bindVertexArray(mesh.vao);gl.uniformMatrix4fv(u.uViewProjection,false,matrix);
    gl.uniform1f(u.uWave,Math.max(0,Math.min(1,wave??.65)));gl.uniform1f(u.uInk,Math.max(0,Math.min(1,options.ink??.95)));gl.uniform1i(u.uPalette,options.palette===1?1:0);
    gl.drawElementsInstanced(gl.TRIANGLES,mesh.count,gl.UNSIGNED_SHORT,0,r.count);
   },dispose(){for(const m of meshes.values()){gl.deleteVertexArray(m.vao);gl.deleteBuffer(m.vb);gl.deleteBuffer(m.ib);}gl.deleteBuffer(instanceBuffer);gl.deleteProgram(program);meshes.clear();recipes.clear();}};

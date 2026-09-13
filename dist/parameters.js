@@ -10,11 +10,16 @@ const TorusParameters=(()=>{
  const cells=stops('Columns',[44,88,132,176],['12','14','16','18']);
  const chart=stops('Columns',[40,88,180,280],['8','16','24','32']);
  const surface=stops('Tile repeats',[24,48,88,112,136],['8','10','12','16','18']);
+ function lighting(s){
+  const p={textureMode:{label:'Light choreography'}};
+  if(s.textureMode!==0){p.textureStrength=range('Light interplay');if(s.textureStrength!==0)p.textureScale=range('Texture frequency',1,5,1);}
+  return p;
+ }
  function profile(id,v,s={}){
-  // These studies get their light exchange from their own mathematical motion.
-  // Unrelated texture modulation would obscure that construction.
+  // Intrinsic mathematical evolution remains the default; the shared light
+  // choreography can be layered over it using the same controls as every study.
   if(id>=145&&id<=148){
-   const p={speed:range('Cycle speed',.2,2,.05),perspective:range('Perspective',55,105,1),ink:range('Dark–light contrast')};
+   const p={speed:range('Cycle speed',.2,2,.05),perspective:range('Perspective',55,105,1),ink:range('Dark–light contrast'),...lighting(s)};
    if(id<=146){
     p.density=stops('Root repeats',[40,88,136],['2','4','6']);
     if(id===145){p.layers=stops('Fourier order',[4,6,8]);p.wave=range('Rosette lobes');p.turns=stops('Revivals per cycle',[1,2]);}
@@ -25,8 +30,7 @@ const TorusParameters=(()=>{
    }else p.wave=range('Front breadth');
    return p;
   }
-  const p={speed:range('Flow speed',.2,2,.05),perspective:range('Perspective',55,105,1),ink:range('Dark–light contrast'),textureMode:{label:'Light choreography'},wave:range('Deformation'),density:range('Density',40,160,4)};
-  if(s.textureMode!==0){p.textureStrength=range('Light interplay');if(s.textureStrength!==0)p.textureScale=range('Texture frequency',1,5,1);}
+  const p={speed:range('Flow speed',.2,2,.05),perspective:range('Perspective',55,105,1),ink:range('Dark–light contrast'),...lighting(s),wave:range('Deformation'),density:range('Density',40,160,4)};
   if(id>=125&&id<=142){
    p.density=stops(id>=135?'Root repeats':'Tile columns',[40,88,136],id>=135?['2','4','6']:['8','16','24']);
    p.winding={label:'Transformation rhythm',values:[0,1,2,3],labels:['Whole chamber','Meridian wave','Braided wave','Hold a form']};

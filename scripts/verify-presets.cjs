@@ -3,7 +3,8 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 for(const f of ['presets','collection','parameters','selection'])vm.runInNewContext(fs.readFileSync('dist/'+f+'.js','utf8'),c);
 vm.runInNewContext('this.P=TorusPresets;this.C=TORUS_COLLECTION;this.A=TORUS_CATALOGUE;this.S=TorusSelection;this.params=TorusParameters',c);
 const entries=c.C.flatMap(g=>g.studies),requested=JSON.parse(fs.readFileSync('scripts/curation.json','utf8'));
-assert.equal(entries.length,103);assert.equal(c.A.flatMap(g=>g.studies).length,128);
+assert.equal(entries.length,102);assert.equal(c.A.flatMap(g=>g.studies).length,128);
+assert.equal(c.P.hidden.size,26);assert(c.P.hidden.has(147));assert(!entries.some(x=>x[0]===147));assert(c.A.flatMap(g=>g.studies).some(x=>x[0]===147),'Spinor source constructions remain archived');
 for(const row of requested){
  const entry=entries.find(x=>x[0]===row.id);
  if(row.hidden){assert(!entry);continue;}
@@ -25,5 +26,12 @@ for(const [id,variants] of entries)for(let j=0;j<15;j++){
 }
 const seen=new Set();for(let j=0;j<entries.length-1;j++)seen.add(c.S.index(0,entries.length,()=>true,()=>(j+.5)/(entries.length-1)));assert.equal(seen.size,entries.length-1);assert(!seen.has(0));
 assert.equal(c.S.index(0,entries.length,i=>i===12,rng),12);
-for(const id of [145,146,147,148]){const p=c.params.profile(id,0,c.P.get(id));assert(!p.textureMode&&!p.textureStrength&&!p.textureScale,'intrinsic evolution must retain its own material shading');}
-console.log('PASS '+entries.length+' requested defaults, 25 hidden studies, '+entries.length*15+' valid random recipes and selection coverage');
+for(const id of [145,146,147,148]){
+ const state=c.P.get(id),p=c.params.profile(id,0,state);assert.equal(state.textureMode,0,'Default mathematical shading remains unchanged');
+ assert(p.textureMode&&!p.textureStrength&&!p.textureScale,'Off mode exposes only the choreography selector');
+ for(const mode of [1,2,3,4,5,6]){
+  const active=c.params.profile(id,0,{...state,textureMode:mode,textureStrength:.65});assert(active.textureMode&&active.textureStrength&&active.textureScale);
+  const zero=c.params.profile(id,0,{...state,textureMode:mode,textureStrength:0});assert(zero.textureMode&&zero.textureStrength&&!zero.textureScale);
+ }
+}
+console.log('PASS '+entries.length+' requested defaults, 26 hidden studies, '+entries.length*15+' valid random recipes and selection coverage');

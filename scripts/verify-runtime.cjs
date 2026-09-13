@@ -36,7 +36,7 @@ async function check(fail=[]){
  function input(id,value){Object.defineProperty(el(id),'value',{value:String(value),writable:true,configurable:true});el(id).dispatchEvent(new window.Event('input'));}
  await flush();assert(draws>0);if(!fail.length)assert.equal(programId,2,'only the base and selected renderer compile at startup');
  const choices=[...doc.querySelectorAll('.study-choice')];
- assert.equal(choices.length,103);assert.equal(doc.querySelectorAll('.study-group').length,15);assert(el('controls').contains(el('variation')));assert(!el('error').textContent);
+ assert.equal(choices.length,102);assert(!choices.some(c=>c.querySelector('img').getAttribute('src').includes('/147.webp')));assert.equal(doc.querySelectorAll('.study-group').length,15);assert(el('controls').contains(el('variation')));assert(!el('error').textContent);
  // Selection waits for its renderer while the previous study keeps flowing.
  if(!fail.length){
   const initialTitle=el('study-title').textContent;
@@ -54,18 +54,23 @@ async function check(fail=[]){
  for(let i=0;i<choices.length;i++){
   if(choices[i].disabled)continue;
   choices[i].dispatchEvent(new window.Event('click'));await flush();
-  if(!fail.length)assert.equal(el('study-count').textContent,String(i+1).padStart(2,'0')+' / 103');
+  if(!fail.length)assert.equal(el('study-count').textContent,String(i+1).padStart(2,'0')+' / 102');
   assert(!/original/i.test(el('variation').textContent));
   for(let v=0;v<el('variation').options.length;v++){input('variation',v);await flush();assert.equal(el('variation').selectedIndex,v);constructions++;}
  }
  if(!fail.length){
-  assert.equal(constructions,314);
+  assert.equal(constructions,311);
   for(const mode of [1,2,3,4,5,6]){input('textureMode',mode);input('textureStrength',.82);input('textureScale',4);await flush();assert.equal(calls.at(-1).uniforms.uTextureMode,mode);assert.equal(calls.at(-1).uniforms.uTextureStrength,.82);assert.equal(calls.at(-1).uniforms.uTextureScale,4);}
   input('textureMode',0);await flush();assert(el('textureStrength-label').hidden);assert(el('textureScale-label').hidden);
   input('textureMode',1);input('textureStrength',0);await flush();assert(!el('textureStrength-label').hidden);assert(el('textureScale-label').hidden);
   input('textureStrength',.82);await flush();assert(!el('textureScale-label').hidden);
   for(const id of ['textureMode','textureStrength','textureScale'])assert(el('controls').contains(el(id)));
   const select=async id=>{choices.find(c=>c.querySelector('img').getAttribute('src').includes('/'+id+'.webp')).dispatchEvent(new window.Event('click'));await flush();};
+  for(const study of [145,146,148]){
+   await select(study);assert(!el('textureMode-label').hidden);assert.equal(calls.at(-1).uniforms.uTextureMode,0);assert(el('textureStrength-label').hidden);assert(el('textureScale-label').hidden);
+   for(const mode of [1,2,3,4,5,6]){input('textureMode',mode);input('textureStrength',.73);input('textureScale',5);await flush();assert.equal(calls.at(-1).uniforms.uTextureMode,mode);assert.equal(calls.at(-1).uniforms.uTextureStrength,.73);assert.equal(calls.at(-1).uniforms.uTextureScale,5);assert(!el('textureStrength-label').hidden);assert(!el('textureScale-label').hidden);}
+   input('textureStrength',0);await flush();assert(el('textureScale-label').hidden);input('textureMode',0);await flush();assert(el('textureStrength-label').hidden);
+  }
   await select(21);input('palette',2);input('turns',3);await flush();assert.equal(calls.at(-1).uniforms.uInk,1);assert.equal(calls.at(-1).uniforms.uPalette,2);assert.equal(calls.at(-1).uniforms.uTurns,3);
   await select(59);input('recursion',2);await flush();assert.equal(el('recursion-value').value,'2');assert.equal(calls.at(-1).uniforms.uKind,5);
   await select(41);assert(!el('density-label').hidden);input('variation',1);await flush();assert(el('density-label').hidden);assert(el('wave-label').hidden);
@@ -122,7 +127,7 @@ async function check(fail=[]){
  input('renderQuality','fine');await flush();assert.equal(el('field').width,4000);
  input('renderQuality','adaptive');await flush();assert(el('field').width>=1000);
  click('pause');await flush();assert.equal(raf.size,0);
- console.log('PASS',fail.length?'renderer fallback: '+fail.join(', '):'314 constructions; lazy startup; input coalescing; pause, visibility and adaptive resolution');
+ console.log('PASS',fail.length?'renderer fallback: '+fail.join(', '):'311 constructions; lazy startup; input coalescing; pause, visibility and adaptive resolution');
 }
 (async()=>{await check();await check(['TorusChiaroscuro']);await check(['TorusKinetic','TorusSculptures','TorusSymmetry','TorusCycles','TorusVisionary','TorusTopology','TorusChiaroscuro','TorusMechanisms','TorusQuasicrystal','TorusMetamorphosis','TorusTessellations','TorusTransformations','TorusRevivals','TorusSpinor','TorusPhason']);
 // The governor has bounded hysteresis, restores detail, and remembers studies.

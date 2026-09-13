@@ -1,10 +1,10 @@
 {
-  "revision": 23,
+  "revision": 24,
   "files": [
     {
       "path": "artwork.js",
-      "bytes": 68214,
-      "sha256": "8b56b3513890034afe67676aca03666c741be30b946ad552939b81940dfc1079"
+      "bytes": 70871,
+      "sha256": "2516c387c38d52d1cf66bf0050b339a9856161055b747dd186322bfd8bb012f3"
     },
     {
       "path": "chiaroscuro.js",
@@ -25,6 +25,11 @@
       "path": "eigenmodes.js",
       "bytes": 21589,
       "sha256": "26bffbd1cb29cf8395fcb0d3f96d55b40504287f2c94224d7d29fe61b90f8be6"
+    },
+    {
+      "path": "embed.html",
+      "bytes": 8261,
+      "sha256": "d571f4fa71b77d49907ffad257448e26ddac8f1f2daca7bf9bf5bc9b32c0d8ef"
     },
     {
       "path": "escher/130.png",
@@ -59,7 +64,7 @@
     {
       "path": "index.html",
       "bytes": 9012,
-      "sha256": "fab37fb41dd72e0c8ca7e4ebe5ae38740e069b352d9026d767e8aadcf5f0b56b"
+      "sha256": "9ed3336e30732e235c77581a143c3a6f98e98d07866f9a2ff4d1db68d3da6a81"
     },
     {
       "path": "kinetic.js",
@@ -88,8 +93,8 @@
     },
     {
       "path": "parameters.js",
-      "bytes": 11975,
-      "sha256": "925c60b8bbabda750a0ba12f9a494b0a45d5df05c0a8b22b57a16c78def6f2ea"
+      "bytes": 12066,
+      "sha256": "3a6bfc0ad1deb480d2efe98d3452d361d026eaa5f5e04108a90bdfa2729e1dea"
     },
     {
       "path": "performance.js",
@@ -103,8 +108,13 @@
     },
     {
       "path": "presets.js",
-      "bytes": 25228,
-      "sha256": "309c8ebebe754c972df53430faed1eed2ee7278164b6a665027dcb781b887f85"
+      "bytes": 25232,
+      "sha256": "6bff67375cbb89cbd35f02b651204c01977f23bdb0b66f19d92f96519d0f41ed"
+    },
+    {
+      "path": "preview-square.webp",
+      "bytes": 42208,
+      "sha256": "f747f59a61ac141aa1ea18e4133333b09f74f4c33c92a841c39517f0dfa59863"
     },
     {
       "path": "preview.webp",
@@ -128,13 +138,13 @@
     },
     {
       "path": "readme.css",
-      "bytes": 2102,
-      "sha256": "f68974e84689bd2294e0d026d5f6d23172e2d216419c1af3c36f49100b9e85a4"
+      "bytes": 2045,
+      "sha256": "9bd25a7d7ce5a889c827b988b856eeab9d579b101b8070e363860484f47f3f28"
     },
     {
       "path": "readme.html",
-      "bytes": 68202,
-      "sha256": "1b4cd5ea19e978b7d6dc9fff95668847d89c1b958c605d1e1c203c21caee9def"
+      "bytes": 53326,
+      "sha256": "8dceb016f3ef1604b8c804efb4672518495b192729000062a01eb5a3478542e9"
     },
     {
       "path": "readme.js",
@@ -143,8 +153,8 @@
     },
     {
       "path": "revivals.js",
-      "bytes": 7971,
-      "sha256": "f5f57bb89bcf006f11f94e99d1522cc27105638dc7132dfb9fb1d4513841bb19"
+      "bytes": 7892,
+      "sha256": "0996e7d5ab8733d1ca62c9ccc3de4060d75d36cce9f4926c497647de0ca362bd"
     },
     {
       "path": "sculptures.js",
@@ -163,8 +173,8 @@
     },
     {
       "path": "spinor.js",
-      "bytes": 9141,
-      "sha256": "55a32f0dad234d8ffecb4bd9341881f937b3110ef6ad6c984a8cfad2ec4d22f5"
+      "bytes": 9208,
+      "sha256": "5e31f229c2bb20d9b117e26aec7e2c818153c00d2f3f8464df470f95b911c03d"
     },
     {
       "path": "studies/0.webp",

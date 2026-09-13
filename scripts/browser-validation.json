@@ -9,8 +9,8 @@
     "parallel": true,
     "timer": true
   },
-  "constructions": 314,
-  "defaults": 103,
+  "constructions": 311,
+  "defaults": 102,
   "errors": [],
   "responsive": [
     {
@@ -149,5 +149,5 @@
     "spinor.js",
     "phason.js"
   ],
-  "extremes": 54
+  "extremes": 48
 }

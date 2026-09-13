@@ -7,5 +7,5 @@ function visit(folder){for(const entry of fs.readdirSync(folder,{withFileTypes:t
   const data=fs.readFileSync(file);files.push({path:name,bytes:data.length,sha256:crypto.createHash('sha256').update(data).digest('hex')});
  }
 }}
-visit(root);fs.writeFileSync(path.join(root,'release.json'),JSON.stringify({revision:23,files},null,2)+'\n');
-console.log('Release 23: '+files.length+' files, '+(files.reduce((sum,file)=>sum+file.bytes,0)/1048576).toFixed(2)+' MiB.');
+visit(root);fs.writeFileSync(path.join(root,'release.json'),JSON.stringify({revision:24,files},null,2)+'\n');
+console.log('Release 24: '+files.length+' files, '+(files.reduce((sum,file)=>sum+file.bytes,0)/1048576).toFixed(2)+' MiB.');

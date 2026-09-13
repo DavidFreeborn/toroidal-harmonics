@@ -84,7 +84,7 @@ H_{\rm total}=4H(z,t)+2H(cz,t+0.25)+H(c^2z,t+0.50).
 
 This is the logarithmic modulus of the meromorphic product `F(z,t)⁴F(cz,t+0.25)²F(c²z,t+0.50)`. Dividing its displayed potential by seven changes contrast scale, not the underlying product or zero/pole multiplicities. One- and two-level choices use the corresponding integer weights. A half-cycle negates the complete potential at every fixed point. The chart procession travels an integer number of periods per half-cycle, preserving this statement on the rendered torus.
 
-Black and white are selected by the sign of `H`. Even, periodic contours of `H` engrave the eyelids and iris levels, so negating `H` complements the displayed tone. The final contrast transfer is symmetric around one half. Extrinsic light and texture choreography are disabled for this family because its exchange is intrinsic to the evolving function.
+Black and white are selected by the sign of `H`. Even, periodic contours of `H` engrave the eyelids and iris levels, so negating `H` complements the base tone. The final contrast transfer is symmetric around one half. The shared light choreography is optional and defaults to off. When enabled, it modulates this base shading; the reciprocal-function identity remains unchanged, while the extra light need not preserve the image's half-cycle complement.
 
 Recommended presentation: density 40 (two root repeats), three covering generations, divisor excursion 0.55, phase zero, speed 0.6. Variants are **Nested eyelids**, **Turning inheritance**, and **Fivefold descent**. Larger density choices remain available; the lower default keeps the branching arches and successive scales readable.
 

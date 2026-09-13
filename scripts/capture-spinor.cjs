@@ -1,7 +1,7 @@
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require('playwright'),math=require('./verify-spinor.cjs');
 const root=path.join(__dirname,'../dist'),out=path.join(__dirname,'spinor-audit');fs.mkdirSync(out,{recursive:true});
-const fixture=`<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#fff}canvas{display:block;width:600px;height:600px}</style><canvas width="1200" height="1200"></canvas><script src="/programs.js"></script><script src="/spinor.js"></script><script>
+const fixture=`<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#fff}canvas{display:block;width:600px;height:600px}</style><canvas width="1200" height="1200"></canvas><script src="/programs.js"></script><script src="/lightfield.js"></script><script src="/spinor.js"></script><script>
 const canvas=document.querySelector('canvas'),gl=canvas.getContext('webgl2',{antialias:true,preserveDrawingBuffer:true});
 const originalLink=TorusPrograms.link;TorusPrograms.link=async(g,v,f)=>{window.vertexSource=v;return originalLink(g,v,f)};
 let render,matrix;window.ready=(async()=>{render=await TorusSpinor.create(gl);const f=1/Math.tan(Math.PI/8),A=-(20+.05)/(20-.05),B=-2*20*.05/(20-.05);matrix=new Float32Array([0,0,A,-1,0,f,0,0,-f,0,0,0,0,0,-3.65*A+B,3.65]);})();

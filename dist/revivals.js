@@ -111,7 +111,6 @@ void main(){
  // A symmetric transfer preserves Elliptic Eyes' exact half-cycle complement.
  tone=.5+(tone-.5)*(.30+.68*uInk);fragColor=vec4(vec3(clamp(tone,0.0,1.0)),1);
 }`;
- const intrinsicLight={textureMode:0,textureStrength:0,textureScale:1};
  async function create(gl,vao,count){
   const programs=new Map(),pending=new Map(),evolution=new Float32Array(18),diagonal=new Float32Array(18),divisors=new Float32Array(12);
   async function prepare(kind){
@@ -124,7 +123,7 @@ void main(){
   }
   return {prepare,draw(matrix,time,wave,density,kind,variant,options){
    const ready=programs.get(kind);if(!ready)throw Error('Prepare the revival study before drawing');const {program,u}=ready;
-   gl.useProgram(program);TorusLight.bind(gl,program,intrinsicLight,time);gl.bindVertexArray(vao);
+   gl.useProgram(program);TorusLight.bind(gl,program,options,time);gl.bindVertexArray(vao);
    gl.uniformMatrix4fv(u.uViewProjection,false,matrix);gl.uniform1f(u.uTime,time);gl.uniform1f(u.uWave,wave);gl.uniform1f(u.uDensity,density);gl.uniform1f(u.uLayers,options.layers);gl.uniform1f(u.uInk,options.ink);gl.uniform1i(u.uVariant,variant);
    if(kind===0){
     const phase=time*(options.turns??1);

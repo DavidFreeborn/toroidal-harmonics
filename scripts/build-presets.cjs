@@ -10,7 +10,9 @@ const presets={},hidden=[];let previous=base;
 assert.equal(rows.length,entries.length);assert.equal(new Set(rows.map(x=>x.id)).size,entries.length);
 for(const row of rows){
  const entry=entries.find(x=>x[0]===row.id);assert(entry,'Unknown study '+row.id);
- if(row.hidden){hidden.push(row.id);continue;}
+ // Keep an explicitly curated archived recipe, without letting it change
+ // inheritance for the next visible study. Older archives have no settings.
+ if(row.hidden){hidden.push(row.id);if(!row.set)continue;}
  const variation=row.construction?entry[1].indexOf(row.construction):0;assert(variation>=0,'Unknown construction '+row.construction);
  // Inherit actual slider settings. The global preferences apply to each
  // study; local contrast exceptions and contrast cycling never leak onward.
@@ -20,10 +22,10 @@ for(const row of rows){
   const p=c.parameters.profile(row.id,variation,s);
   if(p[key])assert.equal(s[key],value,`Requested value changed: ${row.id} ${key}`);
  }
- presets[row.id]=s;previous=s;
+ presets[row.id]=s;if(!row.hidden)previous=s;
 }
 const source='/* Per-study defaults. Regenerate with node scripts/build-presets.cjs. */\n'+
  'const TorusPresets=(()=>{\n const base='+JSON.stringify(base)+';\n const hidden=new Set('+JSON.stringify(hidden)+');\n const settings={\n'+
  Object.entries(presets).map(([id,s])=>'  '+JSON.stringify(id)+':'+JSON.stringify(s)).join(',\n')+'\n };\n'+
  ' function get(id){return {...base,...settings[id]};}\n return {get,hidden};\n})();\n';
-fs.writeFileSync('dist/presets.js',source);console.log(Object.keys(presets).length+' presets; '+hidden.length+' hidden studies');
+fs.writeFileSync('dist/presets.js',source);console.log(Object.keys(presets).length+' stored presets; '+(entries.length-hidden.length)+' visible studies; '+hidden.length+' hidden studies');

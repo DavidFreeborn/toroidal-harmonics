@@ -110,6 +110,6 @@
  {"id":11,"set":{"wave":0,"density":136}},
  {"id":145,"inherit":false,"set":{"speed":0.6,"density":88,"layers":6,"wave":0.65,"turns":1,"textureMode":0}},
  {"id":146,"inherit":false,"set":{"speed":0.6,"density":40,"layers":3,"wave":0.55,"textureMode":0}},
- {"id":147,"inherit":false,"set":{"speed":1,"density":88,"wave":0.65,"winding":1,"turns":1,"ink":0.95,"textureMode":0}},
+ {"id":147,"hidden":true,"inherit":false,"set":{"speed":1,"density":88,"wave":0.65,"winding":1,"turns":1,"ink":0.95,"textureMode":0}},
  {"id":148,"inherit":false,"set":{"speed":0.6,"wave":0.35,"textureMode":0}}
 ]

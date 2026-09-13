@@ -2,7 +2,7 @@
    screenshots, or generated files. Usage: node scripts/verify-published.cjs URL [URL ...]
    Set NODE_PATH to the bundled Playwright node_modules, as for browser-audit.cjs. */
 const assert=require('node:assert/strict');
-const expectedStudies=103,newStudies=[145,146,147,148];
+const expectedStudies=102,newStudies=[145,146,148];
 // Static hosts may serve the same guide through their extensionless alias.
 const guidePath=value=>value.replace(/\/$/,'').replace(/\.html$/,'');
 function baseURL(value){
@@ -58,7 +58,7 @@ async function verify(browser,url){
    const controls=await page.locator('#controls').evaluate(element=>[...element.querySelectorAll('input,select')].filter(input=>input.getClientRects().length&&!input.closest('[hidden]')).map(input=>({id:input.id,value:input.value,disabled:input.disabled,options:input.tagName==='SELECT'?input.options.length:undefined})));
    const names=controls.map(control=>control.id);for(const key of ['variation','speed','perspective','ink','wave','renderQuality'])assert(names.includes(key),'Missing control '+key+' in study '+id);
    for(const key of id===145?['density','layers','turns']:id===146?['density','layers']:id===147?['density','winding','turns']:[])assert(names.includes(key),'Missing control '+key+' in study '+id);
-   assert(!names.includes('textureMode'),'Unrelated texture modulation exposed in new study');assert(controls.every(control=>!control.disabled&&control.value!==''),'Empty or disabled study controls');assert.equal(controls.find(control=>control.id==='variation').options,3,'Expected three constructions');
+   assert(names.includes('textureMode'),'Light choreography missing from new study');assert(controls.every(control=>!control.disabled&&control.value!==''),'Empty or disabled study controls');assert.equal(controls.find(control=>control.id==='variation').options,3,'Expected three constructions');
    await page.locator('#parameters-close').click();report.studies.push({id,title:await page.locator('#study-title').textContent(),constructions:3,controls:names,readme:guideURL.href});
   }
   // Follow the actual target=_blank link, checking both path and hash routing.

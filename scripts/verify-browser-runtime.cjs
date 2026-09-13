@@ -23,9 +23,9 @@ async function main(){
    }
    report.defaults++;
   }
-  assert.equal(report.defaults,103);assert.equal(report.constructions,314);console.log('PASS 103 studies / 314 constructions');
+  assert.equal(report.defaults,102);assert.equal(report.constructions,311);assert(!ids.includes(147));console.log('PASS 102 studies / 311 constructions');
   report.extremes=0;
-  for(const id of [101,76,117,136,98,145,146,147,148]){
+  for(const id of [101,76,117,136,98,145,146,148]){
    await app.select(id);const variants=await app.page.locator('#variation option').count();
    for(let variant=0;variant<variants;variant++)for(const end of ['min','max']){
     await app.input('variation',variant);

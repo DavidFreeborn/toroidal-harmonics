@@ -1,6 +1,6 @@
 # Toroidal harmonics
 
-103 monochrome kinetic studies inside a torus, with 314 named constructions.
+Mathematical artistry on a torus: 102 kinetic studies, with 311 named constructions.
 
 [Open the artwork](https://davidfreeborn.github.io/toroidal-harmonics/) · [Short study readme](https://davidfreeborn.github.io/toroidal-harmonics/readme.html) · [Independent website edition](https://www.davidpeterwallisfreeborn.com/fun/toroidal-harmonics/)
 
@@ -12,7 +12,7 @@ The Rendering control offers Adaptive, Full display resolution, and Fine (twice 
 
 Incoming studies prepare their shaders, geometry and first GPU draw before appearing. The next random choice and nearby studies prepare in the background when capacity is available. Unprepared studies show a small preparation indicator while the current artwork continues. Random and Extra random retain the pause state.
 
-The four new studies start at their cycle origin: **Talbot Cathedral** uses finite Fourier wave revivals; **Elliptic Eyes** exchanges theta-function zeros and poles; **Spinor Loom** performs an explicit 720° belt trick; **Phason Tide** changes tile adjacency in a periodic pentagrid. Each has three constructions. The small **Readme** link opens the selected study’s one-line explanation and linked concepts and artistic references.
+**Talbot Cathedral** uses finite Fourier wave revivals; **Elliptic Eyes** exchanges theta-function zeros and poles; **Phason Tide** changes tile adjacency in a periodic pentagrid. Each has three constructions, begins at its cycle origin and supports the shared light effects. **Spinor Loom** is retained in the source and suppressed from the visible collection. The small **Readme** link opens the selected study’s one-line explanation and linked concepts; artistic influences appear once in a separate section.
 
 Keys: ← / → select, R random, Shift+R extra random, Space pause, F fullscreen, H hide controls, Escape close panel.
 
@@ -26,6 +26,8 @@ The [current rendering audit and overhaul](scripts/RENDERING-OVERHAUL.md) record
 
 Development verification: `npm ci`, then `npm test`. With Chrome installed, `npm run test:browser` checks production WebGL2 shaders, every construction, responsive rendering and pixel coverage. These dependencies are development tools; serving `dist` requires no installation or build.
 
-Run `npm run build:release` after editing the collection or runtime. It regenerates the short guide and a SHA-256 asset manifest. The website’s `scripts/sync-toroidal-harmonics.js` imports the complete release, verifies every file, and adapts only HTML metadata and navigation. All renderer code and assets remain identical and are served directly from the website.
+Run `npm run build:release` after editing the collection or runtime. It regenerates the short guide, canvas-only preview and SHA-256 asset manifest. The website’s `scripts/sync-toroidal-harmonics.js` imports the complete release, verifies every file, and adapts only main-page/guide HTML metadata and navigation. All renderer code and assets remain identical and are served directly from the website.
 
-The [revision 23 report](docs/release-23.md) summarizes the new studies, guide, independent publication and verification. Mathematical implementation notes: [Talbot and elliptic fields](scripts/REVIVALS-MATHEMATICS.md), [Spinor Loom](docs/spinor-loom.md), [Phason Tide](scripts/PHASON-TIDE.md).
+The noindex `embed.html` preview selects a visible study with the same Random selection logic on each refresh, avoiding the preceding choice when session storage is available. It starts paused, loads its renderer on demand and disables background study preparation. A same-origin parent controls playback through the validated `torus-preview-state` message; the preview reports its selected study after presenting a valid frame. The website supplies a reserved square, static fallback, deferred loading and offscreen/reduced-motion behaviour.
+
+The [revision 24 report](docs/release-24.md) covers light effects, the simplified guide and profile preview; [revision 23](docs/release-23.md) records the four mathematical additions. Implementation notes: [Talbot and elliptic fields](scripts/REVIVALS-MATHEMATICS.md), [Spinor Loom](docs/spinor-loom.md), [Phason Tide](scripts/PHASON-TIDE.md).
