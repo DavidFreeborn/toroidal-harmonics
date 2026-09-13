@@ -1,0 +1,11 @@
+{
+  "talbot": {
+    "values": 7776,
+    "maximumNormalizedError": 0.00026453024748462894
+  },
+  "elliptic": {
+    "values": 1728,
+    "maximumNormalizedError": 0.000027533563144891307
+  },
+  "webglError": 0
+}

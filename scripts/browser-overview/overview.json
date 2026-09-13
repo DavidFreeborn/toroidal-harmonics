@@ -1,0 +1,977 @@
+{
+  "info": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "dpr": 1,
+    "width": 825,
+    "height": 570,
+    "parallel": true,
+    "timer": true
+  },
+  "defaults": [
+    {
+      "id": 138,
+      "title": "Pythagorean recursion",
+      "construction": "Nested counterturn",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "138.png"
+    },
+    {
+      "id": 135,
+      "title": "Quadtree genesis",
+      "construction": "Corner genesis",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "135.png"
+    },
+    {
+      "id": 136,
+      "title": "Sierpiński bloom",
+      "construction": "Ternary growth",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "136.png"
+    },
+    {
+      "id": 137,
+      "title": "Cantor reweaving",
+      "construction": "Alternating divisions",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "137.png"
+    },
+    {
+      "id": 139,
+      "title": "Eyes of emergence",
+      "construction": "Concentric witnesses",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "139.png"
+    },
+    {
+      "id": 140,
+      "title": "Golden mitosis",
+      "construction": "Turning descent",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "140.png"
+    },
+    {
+      "id": 141,
+      "title": "Pentagrid genesis",
+      "construction": "Turning rhomb growth",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "141.png"
+    },
+    {
+      "id": 142,
+      "title": "Rhombic chrysalis",
+      "construction": "Reverse rhomb turn",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "142.png"
+    },
+    {
+      "id": 125,
+      "title": "Square to honeycomb",
+      "construction": "Staggered cells",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "125.png"
+    },
+    {
+      "id": 126,
+      "title": "Cairo to crystal",
+      "construction": "Crystalline orbit",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "126.png"
+    },
+    {
+      "id": 127,
+      "title": "Octagon bloom",
+      "construction": "Inset octagons",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "127.png"
+    },
+    {
+      "id": 128,
+      "title": "Pythagorean turn",
+      "construction": "Reverse turn",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "128.png"
+    },
+    {
+      "id": 129,
+      "title": "Truchet reconnection",
+      "construction": "Double reconnection",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "129.png"
+    },
+    {
+      "id": 130,
+      "title": "Square to swan",
+      "construction": "Emerging flock",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "130.png"
+    },
+    {
+      "id": 131,
+      "title": "Fish and fowl",
+      "construction": "Crosscurrent passage",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "131.png"
+    },
+    {
+      "id": 132,
+      "title": "Reptile interlock",
+      "construction": "Emerging reptiles",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "132.png"
+    },
+    {
+      "id": 133,
+      "title": "Moth mosaic",
+      "construction": "Crosscurrent wings",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "133.png"
+    },
+    {
+      "id": 134,
+      "title": "Scale to wing",
+      "construction": "Crosscurrent wings",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "134.png"
+    },
+    {
+      "id": 101,
+      "title": "Square counterweave",
+      "construction": "Nested frames",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "101.png"
+    },
+    {
+      "id": 102,
+      "title": "Hexagonal cadence",
+      "construction": "Three-tone honeycomb",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "102.png"
+    },
+    {
+      "id": 103,
+      "title": "Triangular fugue",
+      "construction": "Triangular silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "103.png"
+    },
+    {
+      "id": 104,
+      "title": "Rhombic cubes",
+      "construction": "Tumbling-block canon",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "104.png"
+    },
+    {
+      "id": 105,
+      "title": "Octagonal inlay",
+      "construction": "Concentric inlay",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "105.png"
+    },
+    {
+      "id": 106,
+      "title": "Cairo pentagons",
+      "construction": "Pentagonal orbit",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "106.png"
+    },
+    {
+      "id": 107,
+      "title": "Herringbone tide",
+      "construction": "Grained parquet",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "107.png"
+    },
+    {
+      "id": 108,
+      "title": "Kagome counterpoint",
+      "construction": "Hexagons and triangles",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "108.png"
+    },
+    {
+      "id": 109,
+      "title": "Interlocking waves",
+      "construction": "Shared-edge waves",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "109.png"
+    },
+    {
+      "id": 121,
+      "title": "Penrose counterpoint",
+      "construction": "Thick and thin",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "121.png"
+    },
+    {
+      "id": 122,
+      "title": "Pentagrid pathways",
+      "construction": "Twin currents",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "122.png"
+    },
+    {
+      "id": 123,
+      "title": "Golden partitions",
+      "construction": "Inset golden rooms",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "123.png"
+    },
+    {
+      "id": 124,
+      "title": "Rhombic inheritance",
+      "construction": "Rhombic genealogy",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "124.png"
+    },
+    {
+      "id": 92,
+      "title": "Rhombic butterflies",
+      "construction": "Travelling wings",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "92.png"
+    },
+    {
+      "id": 93,
+      "title": "Golden apertures",
+      "construction": "Golden chambers",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "93.png"
+    },
+    {
+      "id": 94,
+      "title": "Pentagrid braid",
+      "construction": "Rhombic weaving",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "94.png"
+    },
+    {
+      "id": 68,
+      "title": "Penrose lanterns",
+      "construction": "Travelling relief",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "68.png"
+    },
+    {
+      "id": 69,
+      "title": "Golden rhomb counterpoint",
+      "construction": "Rhomb interference",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "69.png"
+    },
+    {
+      "id": 70,
+      "title": "Quasicrystal shutters",
+      "construction": "Winding shutters",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "70.png"
+    },
+    {
+      "id": 114,
+      "title": "Quadtree parquet",
+      "construction": "Framed ancestry",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "114.png"
+    },
+    {
+      "id": 115,
+      "title": "Chair substitution",
+      "construction": "Grained chairs",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "115.png"
+    },
+    {
+      "id": 116,
+      "title": "Triangular inheritance",
+      "construction": "Central inheritance",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "116.png"
+    },
+    {
+      "id": 117,
+      "title": "Sierpiński inlay",
+      "construction": "Ternary inlay",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "117.png"
+    },
+    {
+      "id": 118,
+      "title": "Dyadic rooms",
+      "construction": "Breathing rooms",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "118.png"
+    },
+    {
+      "id": 119,
+      "title": "Pinwheel parquet",
+      "construction": "Quarter-turn ancestry",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "119.png"
+    },
+    {
+      "id": 120,
+      "title": "Truchet carpet",
+      "construction": "Recursive arcways",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "120.png"
+    },
+    {
+      "id": 67,
+      "title": "Recursive cube eclipse",
+      "construction": "Corner descent",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "67.png"
+    },
+    {
+      "id": 21,
+      "title": "Rolling reconstruction",
+      "construction": "Oblique tumblers",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "21.png"
+    },
+    {
+      "id": 56,
+      "title": "Recursive gimbals",
+      "construction": "Oblique suspension",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "56.png"
+    },
+    {
+      "id": 59,
+      "title": "Sierpiński shutters",
+      "construction": "Recursive shutters",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "59.png"
+    },
+    {
+      "id": 25,
+      "title": "Kirigami vault",
+      "construction": "Miura tide",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "25.png"
+    },
+    {
+      "id": 27,
+      "title": "Recursive kirigami",
+      "construction": "Pleated descent",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "27.png"
+    },
+    {
+      "id": 22,
+      "title": "Iris vault",
+      "construction": "Six-blade canon",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "22.png"
+    },
+    {
+      "id": 13,
+      "title": "Interlaced currents",
+      "construction": "Crossing tides",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "13.png"
+    },
+    {
+      "id": 60,
+      "title": "Villarceau ribbons",
+      "construction": "Oblique silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "60.png"
+    },
+    {
+      "id": 61,
+      "title": "Cable of cables",
+      "construction": "Counterwound silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "61.png"
+    },
+    {
+      "id": 28,
+      "title": "Jacquard manifold",
+      "construction": "Ninefold jacquard",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "28.png"
+    },
+    {
+      "id": 23,
+      "title": "Braided trefoils",
+      "construction": "Trefoil counterpoint",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "23.png"
+    },
+    {
+      "id": 17,
+      "title": "Coprime weave",
+      "construction": "Torus jacquard",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "17.png"
+    },
+    {
+      "id": 0,
+      "title": "Silk braid",
+      "construction": "Silken counterpoint",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "0.png"
+    },
+    {
+      "id": 33,
+      "title": "Ribbon exchange",
+      "construction": "Over-under exchange",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "33.png"
+    },
+    {
+      "id": 41,
+      "title": "Villarceau counterflow",
+      "construction": "Ribbon families",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "41.png"
+    },
+    {
+      "id": 95,
+      "title": "Julia tapestry",
+      "construction": "Conjugate Julia fields",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "95.png"
+    },
+    {
+      "id": 98,
+      "title": "Paperfolding damask",
+      "construction": "Binary hinges",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "98.png"
+    },
+    {
+      "id": 78,
+      "title": "Recursive witness",
+      "construction": "Eyes within eyes",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "78.png"
+    },
+    {
+      "id": 79,
+      "title": "Ophanim interferometer",
+      "construction": "Sixfold interference",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "79.png"
+    },
+    {
+      "id": 80,
+      "title": "Cathedral of return",
+      "construction": "Counterflow cathedral",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "80.png"
+    },
+    {
+      "id": 75,
+      "title": "Toral substitution",
+      "construction": "Oblique substitution",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "75.png"
+    },
+    {
+      "id": 76,
+      "title": "Sierpiński counterpoint",
+      "construction": "Ternary counterpoint",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "76.png"
+    },
+    {
+      "id": 83,
+      "title": "Renormalisation tide",
+      "construction": "Scale procession",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "83.png"
+    },
+    {
+      "id": 85,
+      "title": "Truchet substitution",
+      "construction": "Recursive reconnection",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "85.png"
+    },
+    {
+      "id": 53,
+      "title": "Indra’s mirrors",
+      "construction": "Infinite covering",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "53.png"
+    },
+    {
+      "id": 50,
+      "title": "Ophanim",
+      "construction": "Seraphic braid",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "50.png"
+    },
+    {
+      "id": 49,
+      "title": "Farey eyes",
+      "construction": "Rational constellation",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "49.png"
+    },
+    {
+      "id": 47,
+      "title": "Poincaré eyes",
+      "construction": "Fractal passage",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "47.png"
+    },
+    {
+      "id": 51,
+      "title": "Neural cathedral",
+      "construction": "Branching choir",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "51.png"
+    },
+    {
+      "id": 97,
+      "title": "Quadrature labyrinth",
+      "construction": "Oblique quadrature",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "97.png"
+    },
+    {
+      "id": 73,
+      "title": "Metamorphic tesserae",
+      "construction": "Nodal tesserae",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "73.png"
+    },
+    {
+      "id": 74,
+      "title": "Figure-ground braid",
+      "construction": "Positive and negative",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "74.png"
+    },
+    {
+      "id": 30,
+      "title": "Rotating squares",
+      "construction": "Hinged tessellation",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "30.png"
+    },
+    {
+      "id": 32,
+      "title": "Hexagonal irises",
+      "construction": "Petal exchange",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "32.png"
+    },
+    {
+      "id": 35,
+      "title": "Orbital quartet",
+      "construction": "Quartered heavens",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "35.png"
+    },
+    {
+      "id": 38,
+      "title": "Four-way exchange",
+      "construction": "Woven switches",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "38.png"
+    },
+    {
+      "id": 34,
+      "title": "Saddle metamorphosis",
+      "construction": "Morse tide",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "34.png"
+    },
+    {
+      "id": 26,
+      "title": "Cellular exchange",
+      "construction": "Cellular quadrille",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "26.png"
+    },
+    {
+      "id": 8,
+      "title": "Truchet currents",
+      "construction": "Arc exchange",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "8.png"
+    },
+    {
+      "id": 99,
+      "title": "Nested separatrices",
+      "construction": "Critical ancestry",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "99.png"
+    },
+    {
+      "id": 81,
+      "title": "Nodal jacquard",
+      "construction": "Counterwound modes",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "81.png"
+    },
+    {
+      "id": 82,
+      "title": "Vortex lace",
+      "construction": "Diagonal vortices",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "82.png"
+    },
+    {
+      "id": 84,
+      "title": "Reversible loom",
+      "construction": "Counterflow return",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "84.png"
+    },
+    {
+      "id": 19,
+      "title": "Toroidal eigenmodes",
+      "construction": "Degenerate rotation",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "19.png"
+    },
+    {
+      "id": 15,
+      "title": "Hamiltonian silk",
+      "construction": "Hamiltonian current",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "15.png"
+    },
+    {
+      "id": 16,
+      "title": "Separatrix engraving",
+      "construction": "Nested contours",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "16.png"
+    },
+    {
+      "id": 18,
+      "title": "Phase vortices",
+      "construction": "Phase constellation",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "18.png"
+    },
+    {
+      "id": 20,
+      "title": "Moore filaments",
+      "construction": "Moore labyrinth",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "20.png"
+    },
+    {
+      "id": 4,
+      "title": "Guilloché",
+      "construction": "Resonant engraving",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "4.png"
+    },
+    {
+      "id": 10,
+      "title": "Breathing lattice",
+      "construction": "Breathing lace",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "10.png"
+    },
+    {
+      "id": 12,
+      "title": "Harmonic ribbons",
+      "construction": "Harmonic tide",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "12.png"
+    },
+    {
+      "id": 14,
+      "title": "Meridian flow",
+      "construction": "Sheared meridians",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "14.png"
+    },
+    {
+      "id": 7,
+      "title": "Pearl waves",
+      "construction": "Pearl constellation",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "7.png"
+    },
+    {
+      "id": 11,
+      "title": "Feather tide",
+      "construction": "Feather counterpoint",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "11.png"
+    }
+  ],
+  "details": [
+    {
+      "id": 61,
+      "phase": 0.4,
+      "variation": 2,
+      "title": "Cable of cables",
+      "construction": "Counterwound silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "61-v2-0.png"
+    },
+    {
+      "id": 61,
+      "phase": 1.3,
+      "variation": 2,
+      "title": "Cable of cables",
+      "construction": "Counterwound silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "61-v2-1.png"
+    },
+    {
+      "id": 61,
+      "phase": 2.1,
+      "variation": 2,
+      "title": "Cable of cables",
+      "construction": "Counterwound silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "61-v2-2.png"
+    },
+    {
+      "id": 61,
+      "phase": 3.7,
+      "variation": 2,
+      "title": "Cable of cables",
+      "construction": "Counterwound silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "61-v2-3.png"
+    },
+    {
+      "id": 61,
+      "phase": 5.2,
+      "variation": 2,
+      "title": "Cable of cables",
+      "construction": "Counterwound silk",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "61-v2-4.png"
+    },
+    {
+      "id": 67,
+      "phase": 0.4,
+      "variation": 2,
+      "title": "Recursive cube eclipse",
+      "construction": "Counterturn eclipse",
+      "error": 0,
+      "width": 825,
+      "height": 570,
+      "file": "67-v2-0.png"
+    }
+  ],
+  "errors": [],
+  "hiddenRequestedCases": [
+    57,
+    62,
+    86
+  ]
+}

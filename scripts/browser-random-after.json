@@ -1,0 +1,170 @@
+{
+  "mode": "random",
+  "info": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "headless": true,
+    "dpr": 1,
+    "width": 1100,
+    "height": 760,
+    "parallel": true,
+    "timer": true
+  },
+  "cases": [
+    {
+      "title": "Quadrature labyrinth",
+      "selectionMs": 0.5999999642372131,
+      "width": 1100,
+      "gpuMedianMs": 0.121856,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.699999999999818,
+      "frameP95Ms": 16.900000000000546,
+      "frameMaxMs": 23.5,
+      "slowFrames": 0,
+      "longTasks": []
+    },
+    {
+      "title": "Cable of cables",
+      "selectionMs": 0.5999999642372131,
+      "width": 1100,
+      "gpuMedianMs": 2.01216,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999891,
+      "frameP95Ms": 16.80000000000109,
+      "frameMaxMs": 32.20000000000073,
+      "slowFrames": 1,
+      "longTasks": []
+    },
+    {
+      "title": "Interlocking waves",
+      "selectionMs": 0.7000000476837158,
+      "width": 1100,
+      "gpuMedianMs": 0.498688,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999891,
+      "frameP95Ms": 16.899999999999636,
+      "frameMaxMs": 26.100000000000364,
+      "slowFrames": 1,
+      "longTasks": []
+    },
+    {
+      "title": "Reptile interlock",
+      "selectionMs": 201.19999998807907,
+      "width": 1100,
+      "gpuMedianMs": 0.294912,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.69999999999891,
+      "frameP95Ms": 16.80000000000109,
+      "frameMaxMs": 21.69999999999891,
+      "slowFrames": 0,
+      "longTasks": [
+        {
+          "at": 13859,
+          "ms": 158
+        }
+      ]
+    },
+    {
+      "title": "Rolling reconstruction",
+      "selectionMs": 27.600000023841858,
+      "width": 1100,
+      "gpuMedianMs": 0.523264,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 17,
+      "frameMaxMs": 24.400000000001455,
+      "slowFrames": 0,
+      "longTasks": []
+    },
+    {
+      "title": "Rhombic inheritance",
+      "selectionMs": 23.30000001192093,
+      "width": 1100,
+      "gpuMedianMs": 1.73056,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 17,
+      "frameMaxMs": 25.400000000001455,
+      "slowFrames": 1,
+      "longTasks": []
+    },
+    {
+      "title": "Ophanim interferometer",
+      "selectionMs": 13.699999988079071,
+      "width": 1100,
+      "gpuMedianMs": 0.8448,
+      "gpuSamples": 16,
+      "frameMedianMs": 16.700000000000728,
+      "frameP95Ms": 17.69999999999709,
+      "frameMaxMs": 32.20000000000073,
+      "slowFrames": 3,
+      "longTasks": []
+    },
+    {
+      "title": "Villarceau ribbons",
+      "selectionMs": 19.30000001192093,
+      "width": 1100,
+      "gpuMedianMs": 0.69632,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.700000000000728,
+      "frameP95Ms": 17,
+      "frameMaxMs": 30.599999999998545,
+      "slowFrames": 2,
+      "longTasks": []
+    },
+    {
+      "title": "Toral substitution",
+      "selectionMs": 21.400000035762787,
+      "width": 1100,
+      "gpuMedianMs": 1.212416,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 17,
+      "frameMaxMs": 25.700000000000728,
+      "slowFrames": 1,
+      "longTasks": []
+    },
+    {
+      "title": "Chair substitution",
+      "selectionMs": 0.8999999761581421,
+      "width": 1100,
+      "gpuMedianMs": 1.137664,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 17.400000000001455,
+      "frameMaxMs": 27.299999999999272,
+      "slowFrames": 2,
+      "longTasks": []
+    },
+    {
+      "title": "Pinwheel parquet",
+      "selectionMs": 33.30000001192093,
+      "width": 1100,
+      "gpuMedianMs": 1.266688,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 17,
+      "frameMaxMs": 27.100000000002183,
+      "slowFrames": 2,
+      "longTasks": []
+    },
+    {
+      "title": "Golden apertures",
+      "selectionMs": 0.699999988079071,
+      "width": 1100,
+      "gpuMedianMs": 1.527808,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 17,
+      "frameMaxMs": 33.900000000001455,
+      "slowFrames": 1,
+      "longTasks": []
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "medianSelectionMs": 19.30000001192093,
+    "p95SelectionMs": 201.19999998807907,
+    "medianGPUTimeMs": 1.137664
+  }
+}

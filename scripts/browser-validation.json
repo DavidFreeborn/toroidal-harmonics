@@ -1,0 +1,153 @@
+{
+  "renderer": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "headless": true,
+    "dpr": 2,
+    "width": 2000,
+    "height": 1400,
+    "parallel": true,
+    "timer": true
+  },
+  "constructions": 314,
+  "defaults": 103,
+  "errors": [],
+  "responsive": [
+    {
+      "quality": "native",
+      "viewport": {
+        "width": 1000,
+        "height": 700
+      },
+      "width": 2000,
+      "height": 1400,
+      "cssWidth": 1000,
+      "cssHeight": 700,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "fine",
+      "viewport": {
+        "width": 1000,
+        "height": 700
+      },
+      "width": 4000,
+      "height": 2800,
+      "cssWidth": 1000,
+      "cssHeight": 700,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "adaptive",
+      "viewport": {
+        "width": 1000,
+        "height": 700
+      },
+      "width": 2000,
+      "height": 1400,
+      "cssWidth": 1000,
+      "cssHeight": 700,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "native",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 780,
+      "height": 1688,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "fine",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 1560,
+      "height": 3376,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "adaptive",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "width": 780,
+      "height": 1688,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "native",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "width": 3200,
+      "height": 1800,
+      "cssWidth": 1600,
+      "cssHeight": 900,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "fine",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "width": 6400,
+      "height": 3600,
+      "cssWidth": 1600,
+      "cssHeight": 900,
+      "dpr": 2,
+      "error": 0
+    },
+    {
+      "quality": "adaptive",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "width": 3200,
+      "height": 1800,
+      "cssWidth": 1600,
+      "cssHeight": 900,
+      "dpr": 2,
+      "error": 0
+    }
+  ],
+  "shaders": [
+    "artwork.js",
+    "kinetic.js",
+    "sculptures.js",
+    "symmetry.js",
+    "cycles.js",
+    "visionary.js",
+    "topology.js",
+    "chiaroscuro.js",
+    "mechanisms.js",
+    "quasicrystal.js",
+    "metamorphosis.js",
+    "tessellations.js",
+    "transformations.js",
+    "revivals.js",
+    "spinor.js",
+    "phason.js"
+  ],
+  "extremes": 54
+}

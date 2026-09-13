@@ -1,0 +1,98 @@
+[
+  {
+    "folder": "revivals-browser",
+    "kind": 0,
+    "variant": 0,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 5.382775119617225e-05
+  },
+  {
+    "folder": "revivals-browser",
+    "kind": 0,
+    "variant": 1,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 5.6220095693779907e-05
+  },
+  {
+    "folder": "revivals-browser",
+    "kind": 0,
+    "variant": 2,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0001303827751196172
+  },
+  {
+    "folder": "revivals-browser",
+    "kind": 1,
+    "variant": 0,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0014342105263157896,
+    "half_complement_max_8bit_error": 2.0,
+    "half_complement_mean_8bit_error": 0.9249019138755981
+  },
+  {
+    "folder": "revivals-browser",
+    "kind": 1,
+    "variant": 1,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0009102870813397129,
+    "half_complement_max_8bit_error": 2.0,
+    "half_complement_mean_8bit_error": 0.9557093301435406
+  },
+  {
+    "folder": "revivals-browser",
+    "kind": 1,
+    "variant": 2,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0023205741626794256,
+    "half_complement_max_8bit_error": 2.0,
+    "half_complement_mean_8bit_error": 0.9132117224880383
+  },
+  {
+    "folder": "revivals-browser-density6",
+    "kind": 0,
+    "variant": 0,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0008528708133971292
+  },
+  {
+    "folder": "revivals-browser-density6",
+    "kind": 0,
+    "variant": 1,
+    "period_max_8bit_error": 2.0,
+    "period_mean_8bit_error": 0.0005215311004784689
+  },
+  {
+    "folder": "revivals-browser-density6",
+    "kind": 0,
+    "variant": 2,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0010143540669856458
+  },
+  {
+    "folder": "revivals-browser-density6",
+    "kind": 1,
+    "variant": 0,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0043421052631578945,
+    "half_complement_max_8bit_error": 2.0,
+    "half_complement_mean_8bit_error": 0.800127990430622
+  },
+  {
+    "folder": "revivals-browser-density6",
+    "kind": 1,
+    "variant": 1,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.0036889952153110047,
+    "half_complement_max_8bit_error": 2.0,
+    "half_complement_mean_8bit_error": 0.8581937799043062
+  },
+  {
+    "folder": "revivals-browser-density6",
+    "kind": 1,
+    "variant": 2,
+    "period_max_8bit_error": 1.0,
+    "period_mean_8bit_error": 0.005444976076555024,
+    "half_complement_max_8bit_error": 2.0,
+    "half_complement_mean_8bit_error": 0.7938995215311004
+  }
+]

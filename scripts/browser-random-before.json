@@ -1,0 +1,168 @@
+{
+  "mode": "random",
+  "info": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "dpr": 1,
+    "width": 1100,
+    "height": 760,
+    "parallel": true,
+    "timer": true
+  },
+  "cases": [
+    {
+      "title": "Quadrature labyrinth",
+      "selectionMs": 2429.199999988079,
+      "width": 1100,
+      "gpuMedianMs": 1.784832,
+      "gpuSamples": 36,
+      "frameMedianMs": 16.69999999999891,
+      "frameP95Ms": 17.099999999998545,
+      "frameMaxMs": 20,
+      "slowFrames": 0,
+      "longTasks": []
+    },
+    {
+      "title": "Cable of cables",
+      "selectionMs": 274.5,
+      "width": 1100,
+      "gpuMedianMs": 1.488896,
+      "gpuSamples": 20,
+      "frameMedianMs": 16.69999999999891,
+      "frameP95Ms": 17,
+      "frameMaxMs": 22.5,
+      "slowFrames": 0,
+      "longTasks": []
+    },
+    {
+      "title": "Interlocking waves",
+      "selectionMs": 1480.5,
+      "width": 1100,
+      "gpuMedianMs": 3.986432,
+      "gpuSamples": 29,
+      "frameMedianMs": 16.69999999999891,
+      "frameP95Ms": 17,
+      "frameMaxMs": 25.100000000000364,
+      "slowFrames": 1,
+      "longTasks": []
+    },
+    {
+      "title": "Reptile interlock",
+      "selectionMs": 201.19999998807907,
+      "width": 1100,
+      "gpuMedianMs": 2.337792,
+      "gpuSamples": 19,
+      "frameMedianMs": 16.700000000000728,
+      "frameP95Ms": 24.100000000002183,
+      "frameMaxMs": 166.59999999999854,
+      "slowFrames": 5,
+      "longTasks": [
+        {
+          "at": 16534,
+          "ms": 187
+        }
+      ]
+    },
+    {
+      "title": "Rolling reconstruction",
+      "selectionMs": 295.69999998807907,
+      "width": 1100,
+      "gpuMedianMs": 0.887808,
+      "gpuSamples": 20,
+      "frameMedianMs": 16.700000000000728,
+      "frameP95Ms": 16.899999999997817,
+      "frameMaxMs": 21.80000000000291,
+      "slowFrames": 0,
+      "longTasks": []
+    },
+    {
+      "title": "Rhombic inheritance",
+      "selectionMs": 653.1000000238419,
+      "width": 1100,
+      "gpuMedianMs": 2.354176,
+      "gpuSamples": 23,
+      "frameMedianMs": 16.700000000000728,
+      "frameP95Ms": 17,
+      "frameMaxMs": 29.200000000000728,
+      "slowFrames": 2,
+      "longTasks": []
+    },
+    {
+      "title": "Ophanim interferometer",
+      "selectionMs": 0.699999988079071,
+      "width": 1100,
+      "gpuMedianMs": 1.422336,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 16.900000000001455,
+      "frameMaxMs": 17.799999999999272,
+      "slowFrames": 0,
+      "longTasks": []
+    },
+    {
+      "title": "Villarceau ribbons",
+      "selectionMs": 0.800000011920929,
+      "width": 1100,
+      "gpuMedianMs": 0.329728,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 16.900000000001455,
+      "frameMaxMs": 20.399999999997817,
+      "slowFrames": 0,
+      "longTasks": []
+    },
+    {
+      "title": "Toral substitution",
+      "selectionMs": 0.699999988079071,
+      "width": 1100,
+      "gpuMedianMs": 1.404928,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.700000000000728,
+      "frameP95Ms": 17.400000000001455,
+      "frameMaxMs": 28.400000000001455,
+      "slowFrames": 1,
+      "longTasks": []
+    },
+    {
+      "title": "Chair substitution",
+      "selectionMs": 0.5999999642372131,
+      "width": 1100,
+      "gpuMedianMs": 1.421312,
+      "gpuSamples": 17,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 16.900000000001455,
+      "frameMaxMs": 30.200000000004366,
+      "slowFrames": 2,
+      "longTasks": []
+    },
+    {
+      "title": "Pinwheel parquet",
+      "selectionMs": 0.699999988079071,
+      "width": 1100,
+      "gpuMedianMs": 2.32448,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 17,
+      "frameMaxMs": 29.099999999998545,
+      "slowFrames": 1,
+      "longTasks": []
+    },
+    {
+      "title": "Golden apertures",
+      "selectionMs": 0.3999999761581421,
+      "width": 1100,
+      "gpuMedianMs": 1.50016,
+      "gpuSamples": 18,
+      "frameMedianMs": 16.69999999999709,
+      "frameP95Ms": 16.89999999999418,
+      "frameMaxMs": 29.900000000001455,
+      "slowFrames": 1,
+      "longTasks": []
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "medianSelectionMs": 201.19999998807907,
+    "p95SelectionMs": 2429.199999988079,
+    "medianGPUTimeMs": 1.50016
+  }
+}

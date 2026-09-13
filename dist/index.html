@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Toroidal harmonics</title>
+  <meta name="description" content="103 kinetic studies of tessellation, recursion, rotation and light in a toroidal chamber.">
+  <link rel="stylesheet" href="./style.css?v=23">
+</head>
+<body>
+  <main id="artwork">
+    <canvas id="field" role="img" aria-label="Animated black curves flowing upwards over the central column, floor and ceiling of a white toroidal chamber."></canvas>
+    <header class="masthead"><h1>Toroidal harmonics</h1><a id="readme-link" href="./readme.html#study-138" target="_blank" rel="noopener" title="Short explanations and references (opens in a new tab)">Readme</a></header>
+    <div class="actions">
+      <button id="pause" type="button" aria-label="Pause animation" title="Pause (Space)"></button>
+      <button id="settings" type="button" aria-label="Parameters" aria-expanded="false" title="Parameters"></button>
+      <button id="fullscreen" type="button" aria-label="Enter fullscreen" title="Fullscreen (F)"></button>
+    </div>
+    <nav class="study-bar" aria-label="Switch study">
+      <button id="previous" type="button" aria-label="Previous study" title="Previous study (Left arrow)"></button>
+      <button id="collection-toggle" type="button" aria-expanded="false" aria-controls="collection">
+        <span id="study-count">01 / 103</span><span id="study-title" aria-live="polite" aria-atomic="true">Pythagorean recursion</span><span class="grid-icon" aria-hidden="true">⠿</span>
+      </button>
+      <button id="next" type="button" aria-label="Next study" title="Next study (Right arrow)"></button>
+      <div class="random-actions"><button id="random" type="button" title="Random study with its defaults (R)">Random</button><button id="extra-random" type="button" title="Random study and parameters (Shift+R)">Extra random</button></div>
+    </nav>
+    <section id="collection" aria-label="Choose a study" hidden>
+      <div class="collection-heading"><h2>Studies</h2><button id="collection-close" type="button" aria-label="Close studies">×</button></div>
+      <div id="study-grid"></div>
+      <p id="study-description" aria-live="polite">Turning squares give birth to nested corner regions, then fold the hierarchy back into their parents.</p>
+    </section>
+    <section id="controls" aria-label="Parameters" hidden>
+      <div class="parameters-heading"><h2>Parameters</h2><button id="parameters-close" aria-label="Close parameters" type="button">×</button></div>
+      <button id="reset-defaults" type="button">Restore defaults</button>
+      <div id="study-options">
+        <label id="variation-label" for="variation">Construction<select id="variation"></select></label>
+        <p id="variation-description"></p>
+        <label id="recursion-label" for="recursion"><span id="recursion-name">Levels</span> <output id="recursion-value">3</output><input id="recursion" type="range" min="1" max="4" step="1" value="3"></label>
+        <label id="turns-label" for="turns"><span id="turns-name">Rotation</span> <select id="turns"><option value="1">One turn</option><option value="2">Two turns</option><option value="3">Three turns</option></select></label>
+        <label id="winding-label" for="winding"><span id="winding-name">Winding</span> <select id="winding"><option value="0">Meridians · 1 : 0</option><option value="1">Diagonal · 1 : 1</option><option value="2" selected>Trefoil · 2 : 3</option><option value="3">Long return · 3 : 5</option></select></label>
+        <label id="layers-label" for="layers"><span id="layers-name">Layers</span> <output id="layers-value">3</output><input id="layers" type="range" min="1" max="5" step="1" value="3"></label>
+        <label id="balance-label" for="balance"><span id="balance-name">Balance</span> <output id="balance-value">0.50</output><input id="balance" type="range" min="0" max="1" step="0.01" value="0.5"></label>
+        <label id="spectral-label" for="spectral"><span id="spectral-name">Mode family</span> <select id="spectral"><option value="0">Broad · low modes</option><option value="1" selected>Intermediate modes</option><option value="2">Fine modes</option></select></label>
+      </div>
+      <label for="textureMode" id="textureMode-label"><span id="textureMode-name">Light choreography</span> <select id="textureMode"><option value="0">Fixed pigments</option><option value="1" selected>Winding counterphase</option><option value="2">Standing-wave damask</option><option value="3">Recursive parity</option><option value="4">Braided light</option><option value="5">Moiré exchange</option><option value="6">Spectral pulse</option></select></label>
+      <label for="textureStrength" id="textureStrength-label"><span id="textureStrength-name">Light interplay</span> <output id="textureStrength-value">0.65</output><input id="textureStrength" type="range" min="0" max="1" step="0.01" value="0.65"></label>
+      <label for="textureScale" id="textureScale-label"><span id="textureScale-name">Texture frequency</span> <output id="textureScale-value">2</output><input id="textureScale" type="range" min="1" max="5" step="1" value="2"></label>
+      <label for="ink" id="ink-label"><span id="ink-name">Dark–light contrast</span> <output id="ink-value">0.86</output><input id="ink" type="range" min="0" max="1" step="0.01" value="0.86"></label>
+      <label for="inkCycle" id="inkCycle-label" hidden><span id="inkCycle-name">Contrast motion</span><select id="inkCycle"><option value="0">Fixed contrast</option><option value="1">Slow harmonic cycle</option></select></label>
+      <label id="palette-label" for="palette"><span id="palette-name">Shading</span> <select id="palette"><option value="0">Porcelain & graphite</option><option value="1">Opposing tones</option><option value="2">Six greys</option><option value="3">Paper & ink</option></select></label>
+      <label id="speed-label" for="speed"><span id="speed-name">Flow</span> <output id="speed-value">1.00</output><input id="speed" type="range" min="0.2" max="2" step="0.05" value="1"></label>
+      <label id="wave-label" for="wave"><span id="wave-name">Oscillation</span> <output id="wave-value">0.65</output><input id="wave" type="range" min="0" max="1" step="0.01" value="0.65"><small id="wave-help" hidden></small></label>
+      <label id="density-label" for="density"><span id="density-name">Density</span> <output id="density-value">88</output><input id="density" type="range" min="40" max="160" step="4" value="88"></label>
+      <label id="perspective-label" for="perspective"><span id="perspective-name">Perspective</span> <output id="perspective-value">76°</output><input id="perspective" type="range" min="55" max="105" step="1" value="76"></label>
+      <label for="renderQuality">Rendering<select id="renderQuality"><option value="adaptive">Adaptive</option><option value="native">Full display resolution</option><option value="fine">Fine · 2× display resolution</option></select></label>
+      <p>← → switch studies · R random<br>Shift+R extra random<br>Space to pause · H to hide controls</p>
+    </section>
+    <div id="error" role="alert" hidden></div>
+    <div id="preparing-status" role="status">Preparing study…</div>
+  </main>
+  <script defer src="./programs.js?v=23"></script>
+  <script defer src="./lightfield.js?v=23"></script>
+  <script defer src="./performance.js?v=23"></script>
+  <script defer src="./eigenmodes.js?v=23"></script>
+  <script defer src="./kinetic.js?v=23"></script>
+  <script defer src="./sculptures.js?v=23"></script>
+  <script defer src="./symmetry.js?v=23"></script>
+  <script defer src="./cycles.js?v=23"></script>
+  <script defer src="./visionary.js?v=23"></script>
+  <script defer src="./spectrum.js?v=23"></script>
+  <script defer src="./topology.js?v=23"></script>
+  <script defer src="./chiaroscuro.js?v=23"></script>
+  <script defer src="./mechanisms.js?v=23"></script>
+  <script defer src="./quasicrystal-data.js?v=23"></script>
+  <script defer src="./quasicrystal.js?v=23"></script>
+  <script defer src="./metamorphosis.js?v=23"></script>
+  <script defer src="./tessellation-data.js?v=23"></script>
+  <script defer src="./tessellations.js?v=23"></script>
+  <script defer src="./transformations.js?v=23"></script>
+  <script defer src="./revivals.js?v=23"></script>
+  <script defer src="./spinor.js?v=23"></script>
+  <script defer src="./phason.js?v=23"></script>
+  <script defer src="./presets.js?v=23"></script>
+  <script defer src="./collection.js?v=23"></script>
+  <script defer src="./parameters.js?v=23"></script>
+  <script defer src="./selection.js?v=23"></script>
+  <script defer src="./artwork.js?v=23"></script>
+</body>
+</html>
+

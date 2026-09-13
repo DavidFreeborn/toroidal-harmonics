@@ -1,0 +1,924 @@
+{
+  "cases": 99,
+  "phase": 0.4,
+  "raster": [
+    2200,
+    1520
+  ],
+  "beforeMedian": 4.124672,
+  "afterMedian": 2.486272,
+  "medianPairedReduction": 0.3539303871724677,
+  "sumReduction": 0.4995422668115286,
+  "faster": 69,
+  "minimumSamples": 4,
+  "rows": [
+    {
+      "id": 138,
+      "title": "Pythagorean recursion",
+      "before": 1.33632,
+      "after": 3.625984,
+      "ratio": 2.713409961685824,
+      "beforeSamples": 7,
+      "afterSamples": 8
+    },
+    {
+      "id": 135,
+      "title": "Quadtree genesis",
+      "before": 3.910656,
+      "after": 5.367808,
+      "ratio": 1.3726106310552502,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 136,
+      "title": "Sierpiński bloom",
+      "before": 4.059136,
+      "after": 5.275648,
+      "ratio": 1.2996972754793141,
+      "beforeSamples": 4,
+      "afterSamples": 7
+    },
+    {
+      "id": 137,
+      "title": "Cantor reweaving",
+      "before": 1.78688,
+      "after": 3.073024,
+      "ratio": 1.7197707736389685,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 139,
+      "title": "Eyes of emergence",
+      "before": 3.20512,
+      "after": 4.409344,
+      "ratio": 1.3757188498402555,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 140,
+      "title": "Golden mitosis",
+      "before": 4.753408,
+      "after": 3.745792,
+      "ratio": 0.7880224041361481,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 141,
+      "title": "Pentagrid genesis",
+      "before": 1.012736,
+      "after": 2.158592,
+      "ratio": 2.1314459049544996,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 142,
+      "title": "Rhombic chrysalis",
+      "before": 0.963584,
+      "after": 2.445312,
+      "ratio": 2.5377258235919236,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 125,
+      "title": "Square to honeycomb",
+      "before": 3.48672,
+      "after": 3.979264,
+      "ratio": 1.1412628487518355,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 126,
+      "title": "Cairo to crystal",
+      "before": 2.444288,
+      "after": 1.977344,
+      "ratio": 0.8089652283200671,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 127,
+      "title": "Octagon bloom",
+      "before": 4.452352,
+      "after": 4.706304,
+      "ratio": 1.0570377184912603,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 128,
+      "title": "Pythagorean turn",
+      "before": 4.178944,
+      "after": 4.113408,
+      "ratio": 0.9843175692232294,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 129,
+      "title": "Truchet reconnection",
+      "before": 0.83968,
+      "after": 2.885632,
+      "ratio": 3.436585365853659,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 130,
+      "title": "Square to swan",
+      "before": 1.314816,
+      "after": 4.214784,
+      "ratio": 3.205607476635514,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 131,
+      "title": "Fish and fowl",
+      "before": 2.438144,
+      "after": 4.291584,
+      "ratio": 1.7601847963040742,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 132,
+      "title": "Reptile interlock",
+      "before": 1.66912,
+      "after": 1.680384,
+      "ratio": 1.006748466257669,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 133,
+      "title": "Moth mosaic",
+      "before": 4.140032,
+      "after": 2.967552,
+      "ratio": 0.7167944595597329,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 134,
+      "title": "Scale to wing",
+      "before": 4.140032,
+      "after": 2.363392,
+      "ratio": 0.5708632203809053,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 101,
+      "title": "Square counterweave",
+      "before": 5.069824,
+      "after": 1.840128,
+      "ratio": 0.3629569783882044,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 102,
+      "title": "Hexagonal cadence",
+      "before": 4.279296,
+      "after": 2.392064,
+      "ratio": 0.5589854032065087,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 103,
+      "title": "Triangular fugue",
+      "before": 4.532224,
+      "after": 2.402304,
+      "ratio": 0.5300497062810664,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 104,
+      "title": "Rhombic cubes",
+      "before": 3.697664,
+      "after": 2.45248,
+      "ratio": 0.663251176959291,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 105,
+      "title": "Octagonal inlay",
+      "before": 4.775936,
+      "after": 2.562048,
+      "ratio": 0.5364493996569468,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 106,
+      "title": "Cairo pentagons",
+      "before": 4.124672,
+      "after": 0.7424,
+      "ratio": 0.17999006951340613,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 107,
+      "title": "Herringbone tide",
+      "before": 4.702208,
+      "after": 0.95232,
+      "ratio": 0.2025261324041812,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 108,
+      "title": "Kagome counterpoint",
+      "before": 4.124672,
+      "after": 1.550336,
+      "ratio": 0.3758689175769612,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 109,
+      "title": "Interlocking waves",
+      "before": 3.319808,
+      "after": 2.41664,
+      "ratio": 0.7279457125231339,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 121,
+      "title": "Penrose counterpoint",
+      "before": 2.680832,
+      "after": 1.419264,
+      "ratio": 0.5294117647058824,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 122,
+      "title": "Pentagrid pathways",
+      "before": 0.804864,
+      "after": 1.425408,
+      "ratio": 1.7709923664122138,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 123,
+      "title": "Golden partitions",
+      "before": 0.80896,
+      "after": 2.98496,
+      "ratio": 3.689873417721519,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 124,
+      "title": "Rhombic inheritance",
+      "before": 1.841152,
+      "after": 2.61632,
+      "ratio": 1.4210233592880979,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 92,
+      "title": "Rhombic butterflies",
+      "before": 2.678784,
+      "after": 3.600384,
+      "ratio": 1.3440366972477065,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 93,
+      "title": "Golden apertures",
+      "before": 3.340288,
+      "after": 4.429824,
+      "ratio": 1.3261802575107295,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 94,
+      "title": "Pentagrid braid",
+      "before": 3.90144,
+      "after": 3.103744,
+      "ratio": 0.7955380577427821,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 68,
+      "title": "Penrose lanterns",
+      "before": 3.188736,
+      "after": 2.637824,
+      "ratio": 0.8272318561335903,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 69,
+      "title": "Golden rhomb counterpoint",
+      "before": 3.547136,
+      "after": 0.80384,
+      "ratio": 0.2266166281755196,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 70,
+      "title": "Quasicrystal shutters",
+      "before": 5.57056,
+      "after": 1.020928,
+      "ratio": 0.1832720588235294,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 114,
+      "title": "Quadtree parquet",
+      "before": 2.668544,
+      "after": 1.00352,
+      "ratio": 0.37605525709900234,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 115,
+      "title": "Chair substitution",
+      "before": 3.87072,
+      "after": 1.123328,
+      "ratio": 0.29021164021164025,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 116,
+      "title": "Triangular inheritance",
+      "before": 4.35712,
+      "after": 0.46592,
+      "ratio": 0.10693301997649823,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 117,
+      "title": "Sierpiński inlay",
+      "before": 4.292608,
+      "after": 2.907136,
+      "ratio": 0.6772423664122137,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 118,
+      "title": "Dyadic rooms",
+      "before": 4.384768,
+      "after": 1.636352,
+      "ratio": 0.37319009808500697,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 119,
+      "title": "Pinwheel parquet",
+      "before": 4.523008,
+      "after": 2.808832,
+      "ratio": 0.6210097351143311,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 120,
+      "title": "Truchet carpet",
+      "before": 3.332096,
+      "after": 2.69312,
+      "ratio": 0.8082360172095882,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 67,
+      "title": "Recursive cube eclipse",
+      "before": 1.10592,
+      "after": 1.024,
+      "ratio": 0.9259259259259259,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 21,
+      "title": "Rolling reconstruction",
+      "before": 1.081344,
+      "after": 1.226752,
+      "ratio": 1.134469696969697,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 56,
+      "title": "Recursive gimbals",
+      "before": 1.903616,
+      "after": 1.809408,
+      "ratio": 0.9505110274341043,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 59,
+      "title": "Sierpiński shutters",
+      "before": 2.752512,
+      "after": 1.947648,
+      "ratio": 0.7075892857142858,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 25,
+      "title": "Kirigami vault",
+      "before": 3.094528,
+      "after": 3.905536,
+      "ratio": 1.2620780939774985,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 27,
+      "title": "Recursive kirigami",
+      "before": 2.438144,
+      "after": 2.120704,
+      "ratio": 0.8698026039479211,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 22,
+      "title": "Iris vault",
+      "before": 2.164736,
+      "after": 2.936832,
+      "ratio": 1.356669820245979,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 13,
+      "title": "Interlaced currents",
+      "before": 12.726272,
+      "after": 3.334144,
+      "ratio": 0.2619890569681365,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 60,
+      "title": "Villarceau ribbons",
+      "before": 0.428032,
+      "after": 0.498688,
+      "ratio": 1.1650717703349283,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 61,
+      "title": "Cable of cables",
+      "before": 0.734208,
+      "after": 0.802816,
+      "ratio": 1.093444909344491,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 28,
+      "title": "Jacquard manifold",
+      "before": 2.358272,
+      "after": 1.289216,
+      "ratio": 0.5466782457663917,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 23,
+      "title": "Braided trefoils",
+      "before": 1.540096,
+      "after": 1.304576,
+      "ratio": 0.8470744680851064,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 17,
+      "title": "Coprime weave",
+      "before": 13.060096,
+      "after": 2.6112,
+      "ratio": 0.19993727458052377,
+      "beforeSamples": 4,
+      "afterSamples": 7
+    },
+    {
+      "id": 0,
+      "title": "Silk braid",
+      "before": 10.527744,
+      "after": 1.780736,
+      "ratio": 0.16914697013909152,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 33,
+      "title": "Ribbon exchange",
+      "before": 0.982016,
+      "after": 5.277696,
+      "ratio": 5.374348279457768,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 41,
+      "title": "Villarceau counterflow",
+      "before": 10.924032,
+      "after": 2.39616,
+      "ratio": 0.21934758155230596,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 95,
+      "title": "Julia tapestry",
+      "before": 4.948992,
+      "after": 2.520064,
+      "ratio": 0.5092075315539003,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 98,
+      "title": "Paperfolding damask",
+      "before": 4.491264,
+      "after": 2.731008,
+      "ratio": 0.6080711354309165,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 78,
+      "title": "Recursive witness",
+      "before": 4.486144,
+      "after": 2.948096,
+      "ratio": 0.6571559004793426,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 79,
+      "title": "Ophanim interferometer",
+      "before": 4.877312,
+      "after": 2.847744,
+      "ratio": 0.583875708587025,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 80,
+      "title": "Cathedral of return",
+      "before": 5.039104,
+      "after": 2.568192,
+      "ratio": 0.5096525096525096,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 75,
+      "title": "Toral substitution",
+      "before": 5.236736,
+      "after": 3.383296,
+      "ratio": 0.6460696128275323,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 76,
+      "title": "Sierpiński counterpoint",
+      "before": 5.34016,
+      "after": 3.06176,
+      "ratio": 0.573346116970278,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 83,
+      "title": "Renormalisation tide",
+      "before": 5.372928,
+      "after": 0.681984,
+      "ratio": 0.12692967409948544,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 85,
+      "title": "Truchet substitution",
+      "before": 5.28384,
+      "after": 2.084864,
+      "ratio": 0.39457364341085277,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 53,
+      "title": "Indra’s mirrors",
+      "before": 12.1088,
+      "after": 8.328192,
+      "ratio": 0.6877801268498942,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 50,
+      "title": "Ophanim",
+      "before": 12.130304,
+      "after": 1.129472,
+      "ratio": 0.09311159885193314,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 49,
+      "title": "Farey eyes",
+      "before": 10.156032,
+      "after": 3.17952,
+      "ratio": 0.31306715063520874,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 47,
+      "title": "Poincaré eyes",
+      "before": 12.512256,
+      "after": 2.486272,
+      "ratio": 0.19870693182748178,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 51,
+      "title": "Neural cathedral",
+      "before": 12.19584,
+      "after": 4.806656,
+      "ratio": 0.3941225860621327,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 97,
+      "title": "Quadrature labyrinth",
+      "before": 3.87072,
+      "after": 0.741376,
+      "ratio": 0.19153439153439156,
+      "beforeSamples": 6,
+      "afterSamples": 7
+    },
+    {
+      "id": 73,
+      "title": "Metamorphic tesserae",
+      "before": 3.833856,
+      "after": 1.104896,
+      "ratio": 0.2881944444444445,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 74,
+      "title": "Figure-ground braid",
+      "before": 5.075968,
+      "after": 2.289664,
+      "ratio": 0.45107928182368373,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 30,
+      "title": "Rotating squares",
+      "before": 13.447168,
+      "after": 3.38432,
+      "ratio": 0.25167529698446545,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 32,
+      "title": "Hexagonal irises",
+      "before": 0.979968,
+      "after": 3.410944,
+      "ratio": 3.480668756530826,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 35,
+      "title": "Orbital quartet",
+      "before": 10.13248,
+      "after": 1.40288,
+      "ratio": 0.13845376452753916,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 38,
+      "title": "Four-way exchange",
+      "before": 10.806272,
+      "after": 0.393216,
+      "ratio": 0.03638775703591396,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 34,
+      "title": "Saddle metamorphosis",
+      "before": 6.762496,
+      "after": 0.428032,
+      "ratio": 0.06329497274379164,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 26,
+      "title": "Cellular exchange",
+      "before": 0.944128,
+      "after": 2.83648,
+      "ratio": 3.004338394793926,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 8,
+      "title": "Truchet currents",
+      "before": 0.390144,
+      "after": 0.672768,
+      "ratio": 1.7244094488188977,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 99,
+      "title": "Nested separatrices",
+      "before": 3.562496,
+      "after": 2.4576,
+      "ratio": 0.6898534061511928,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 81,
+      "title": "Nodal jacquard",
+      "before": 4.31616,
+      "after": 3.06176,
+      "ratio": 0.7093712930011863,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 82,
+      "title": "Vortex lace",
+      "before": 5.204992,
+      "after": 2.453504,
+      "ratio": 0.47137517214243563,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 84,
+      "title": "Reversible loom",
+      "before": 5.12,
+      "after": 2.823168,
+      "ratio": 0.5514,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 19,
+      "title": "Toroidal eigenmodes",
+      "before": 14.11072,
+      "after": 2.382848,
+      "ratio": 0.16886792452830188,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 15,
+      "title": "Hamiltonian silk",
+      "before": 13.074432,
+      "after": 3.372032,
+      "ratio": 0.2579104010025063,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 16,
+      "title": "Separatrix engraving",
+      "before": 14.040064,
+      "after": 2.671616,
+      "ratio": 0.19028517248924223,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 18,
+      "title": "Phase vortices",
+      "before": 13.155328,
+      "after": 3.124224,
+      "ratio": 0.23748735113256011,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 20,
+      "title": "Moore filaments",
+      "before": 0.384,
+      "after": 2.506752,
+      "ratio": 6.5280000000000005,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 4,
+      "title": "Guilloché",
+      "before": 10.474496,
+      "after": 2.495488,
+      "ratio": 0.23824420764493107,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 10,
+      "title": "Breathing lattice",
+      "before": 10.162176,
+      "after": 0.472064,
+      "ratio": 0.04645304312777106,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 12,
+      "title": "Harmonic ribbons",
+      "before": 0.36864,
+      "after": 0.418816,
+      "ratio": 1.136111111111111,
+      "beforeSamples": 5,
+      "afterSamples": 7
+    },
+    {
+      "id": 14,
+      "title": "Meridian flow",
+      "before": 10.353664,
+      "after": 1.380352,
+      "ratio": 0.1333201463752349,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 7,
+      "title": "Pearl waves",
+      "before": 13.563904,
+      "after": 2.803712,
+      "ratio": 0.20670391061452512,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    },
+    {
+      "id": 11,
+      "title": "Feather tide",
+      "before": 0.360448,
+      "after": 2.363392,
+      "ratio": 6.5568181818181825,
+      "beforeSamples": 5,
+      "afterSamples": 8
+    }
+  ],
+  "random": {
+    "count": 12,
+    "initialDelayMs": 3000,
+    "betweenSelectionsMs": 2400,
+    "seed": 1337,
+    "before": {
+      "medianSelectionMs": 201.19999998807907,
+      "p95SelectionMs": 2429.199999988079,
+      "medianGPUTimeMs": 1.50016
+    },
+    "after": {
+      "medianSelectionMs": 19.30000001192093,
+      "p95SelectionMs": 201.19999998807907,
+      "medianGPUTimeMs": 1.137664
+    },
+    "medianReduction": 0.9040755466547493
+  }
+}

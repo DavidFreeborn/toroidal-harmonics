@@ -1,0 +1,497 @@
+{
+  "studies": 18,
+  "cases": 54,
+  "all_improved": true,
+  "width": 500,
+  "height": 340,
+  "reference_width": 2000,
+  "reference_height": 1360,
+  "rows": [
+    {
+      "study": 74,
+      "phase": 0.4,
+      "before_rmse": 7.808397817131773,
+      "after_rmse": 4.772155142687877,
+      "after_self_rmse": 4.97608397886389,
+      "evidence": "browser-quality-final",
+      "reduction": 0.38884323590459513
+    },
+    {
+      "study": 74,
+      "phase": 2.1,
+      "before_rmse": 10.918443381835752,
+      "after_rmse": 7.591146158519147,
+      "after_self_rmse": 7.824860457316194,
+      "evidence": "browser-quality-final",
+      "reduction": 0.3047409879737981
+    },
+    {
+      "study": 74,
+      "phase": 5.2,
+      "before_rmse": 10.910452624460097,
+      "after_rmse": 7.576589718646898,
+      "after_self_rmse": 7.783902317868439,
+      "evidence": "browser-quality-final",
+      "reduction": 0.30556595776228623
+    },
+    {
+      "study": 75,
+      "phase": 0.4,
+      "before_rmse": 19.900479598122608,
+      "after_rmse": 9.364230441670362,
+      "after_self_rmse": 8.659623344614259,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5294469967169146
+    },
+    {
+      "study": 75,
+      "phase": 2.1,
+      "before_rmse": 19.98317350996612,
+      "after_rmse": 9.240353634689402,
+      "after_self_rmse": 8.53734047305958,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5375932841657507
+    },
+    {
+      "study": 75,
+      "phase": 5.2,
+      "before_rmse": 19.77570389912537,
+      "after_rmse": 9.331909205075064,
+      "after_self_rmse": 8.67332896263699,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5281124124493091
+    },
+    {
+      "study": 76,
+      "phase": 0.4,
+      "before_rmse": 24.835266196657194,
+      "after_rmse": 4.541842072525718,
+      "after_self_rmse": 3.076291694270115,
+      "evidence": "browser-quality",
+      "reduction": 0.8171212647144066
+    },
+    {
+      "study": 76,
+      "phase": 2.1,
+      "before_rmse": 24.81222196465946,
+      "after_rmse": 4.394703362806053,
+      "after_self_rmse": 2.815910677059283,
+      "evidence": "browser-quality",
+      "reduction": 0.8228815069821028
+    },
+    {
+      "study": 76,
+      "phase": 5.2,
+      "before_rmse": 24.699645865525138,
+      "after_rmse": 4.412237660923377,
+      "after_self_rmse": 2.8800234884663087,
+      "evidence": "browser-quality",
+      "reduction": 0.821364335142885
+    },
+    {
+      "study": 77,
+      "phase": 0.4,
+      "before_rmse": 12.87195469410372,
+      "after_rmse": 6.705042878311816,
+      "after_self_rmse": 6.006761386382946,
+      "evidence": "browser-quality-final",
+      "reduction": 0.47909676209603136
+    },
+    {
+      "study": 77,
+      "phase": 2.1,
+      "before_rmse": 12.8288509870159,
+      "after_rmse": 6.5313862144534784,
+      "after_self_rmse": 5.86597216254601,
+      "evidence": "browser-quality-final",
+      "reduction": 0.4908829932576265
+    },
+    {
+      "study": 77,
+      "phase": 5.2,
+      "before_rmse": 12.540602293444799,
+      "after_rmse": 6.475833809588674,
+      "after_self_rmse": 5.832086701526105,
+      "evidence": "browser-quality-final",
+      "reduction": 0.4836106226752992
+    },
+    {
+      "study": 78,
+      "phase": 0.4,
+      "before_rmse": 34.92033471303773,
+      "after_rmse": 11.399198888260422,
+      "after_self_rmse": 9.82496370297142,
+      "evidence": "browser-quality-final",
+      "reduction": 0.6735655891635982
+    },
+    {
+      "study": 78,
+      "phase": 2.1,
+      "before_rmse": 35.343718802971615,
+      "after_rmse": 11.776793231755807,
+      "after_self_rmse": 10.108938677055598,
+      "evidence": "browser-quality-final",
+      "reduction": 0.6667924703281183
+    },
+    {
+      "study": 78,
+      "phase": 5.2,
+      "before_rmse": 36.38106674696412,
+      "after_rmse": 11.953898945532375,
+      "after_self_rmse": 10.330034736004464,
+      "evidence": "browser-quality-final",
+      "reduction": 0.6714252765408566
+    },
+    {
+      "study": 81,
+      "phase": 0.4,
+      "before_rmse": 10.30836467888778,
+      "after_rmse": 6.232666316414244,
+      "after_self_rmse": 6.58795648044485,
+      "evidence": "browser-quality-final",
+      "reduction": 0.3953777819697084
+    },
+    {
+      "study": 81,
+      "phase": 2.1,
+      "before_rmse": 10.324767765512439,
+      "after_rmse": 6.226771422891736,
+      "after_self_rmse": 6.581790834433687,
+      "evidence": "browser-quality-final",
+      "reduction": 0.3969092996269743
+    },
+    {
+      "study": 81,
+      "phase": 5.2,
+      "before_rmse": 10.363536757190909,
+      "after_rmse": 6.34115409796337,
+      "after_self_rmse": 6.7044677816582965,
+      "evidence": "browser-quality-final",
+      "reduction": 0.3881283729163736
+    },
+    {
+      "study": 84,
+      "phase": 0.4,
+      "before_rmse": 7.450720849452796,
+      "after_rmse": 4.666929964561033,
+      "after_self_rmse": 4.900907478992749,
+      "evidence": "browser-quality-final",
+      "reduction": 0.3736270545012047
+    },
+    {
+      "study": 84,
+      "phase": 2.1,
+      "before_rmse": 12.662267476524843,
+      "after_rmse": 9.395792237204155,
+      "after_self_rmse": 9.728823760594386,
+      "evidence": "browser-quality-final",
+      "reduction": 0.2579692180232771
+    },
+    {
+      "study": 84,
+      "phase": 5.2,
+      "before_rmse": 14.044052121805871,
+      "after_rmse": 11.261000112308487,
+      "after_self_rmse": 11.53796826849103,
+      "evidence": "browser-quality-final",
+      "reduction": 0.19816588441566696
+    },
+    {
+      "study": 85,
+      "phase": 0.4,
+      "before_rmse": 32.15210971030562,
+      "after_rmse": 15.428248728340149,
+      "after_self_rmse": 14.016853930809404,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.520148168585187
+    },
+    {
+      "study": 85,
+      "phase": 2.1,
+      "before_rmse": 30.848642738758045,
+      "after_rmse": 17.692530826843953,
+      "after_self_rmse": 16.27826483020696,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.4264729577675984
+    },
+    {
+      "study": 85,
+      "phase": 5.2,
+      "before_rmse": 29.73226302698606,
+      "after_rmse": 13.312951676955084,
+      "after_self_rmse": 11.642536614652728,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.552238870452889
+    },
+    {
+      "study": 96,
+      "phase": 0.4,
+      "before_rmse": 12.064807109450001,
+      "after_rmse": 5.185986207191114,
+      "after_self_rmse": 4.192241433325867,
+      "evidence": "browser-quality-final",
+      "reduction": 0.5701558955609753
+    },
+    {
+      "study": 96,
+      "phase": 2.1,
+      "before_rmse": 12.55735851766511,
+      "after_rmse": 5.565942655746538,
+      "after_self_rmse": 4.416611024436776,
+      "evidence": "browser-quality-final",
+      "reduction": 0.5567584816570597
+    },
+    {
+      "study": 96,
+      "phase": 5.2,
+      "before_rmse": 11.922963015074044,
+      "after_rmse": 5.114700267222842,
+      "after_self_rmse": 3.997552927950386,
+      "evidence": "browser-quality-final",
+      "reduction": 0.5710210405956645
+    },
+    {
+      "study": 98,
+      "phase": 0.4,
+      "before_rmse": 24.801457262688036,
+      "after_rmse": 11.914884166700169,
+      "after_self_rmse": 9.45149350165172,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5195893515247092
+    },
+    {
+      "study": 98,
+      "phase": 2.1,
+      "before_rmse": 24.173969592980647,
+      "after_rmse": 11.651297832279054,
+      "after_self_rmse": 9.564760075094286,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5180229797400664
+    },
+    {
+      "study": 98,
+      "phase": 5.2,
+      "before_rmse": 25.289321392053765,
+      "after_rmse": 12.208646164766616,
+      "after_self_rmse": 10.031632615939266,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5172410530318645
+    },
+    {
+      "study": 100,
+      "phase": 0.4,
+      "before_rmse": 12.808652636126142,
+      "after_rmse": 5.334630479512257,
+      "after_self_rmse": 4.889603015282408,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5835135333074606
+    },
+    {
+      "study": 100,
+      "phase": 2.1,
+      "before_rmse": 13.42925866290817,
+      "after_rmse": 5.132997060541669,
+      "after_self_rmse": 4.613867842774458,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.6177750991781035
+    },
+    {
+      "study": 100,
+      "phase": 5.2,
+      "before_rmse": 12.838272286180787,
+      "after_rmse": 5.229324554291658,
+      "after_self_rmse": 4.736376748727064,
+      "evidence": "browser-quality-recursion",
+      "reduction": 0.5926769242991876
+    },
+    {
+      "study": 101,
+      "phase": 0.4,
+      "before_rmse": 27.44545392549503,
+      "after_rmse": 4.1113730352881035,
+      "after_self_rmse": 2.0712073773526396,
+      "evidence": "browser-quality",
+      "reduction": 0.8501983954629038
+    },
+    {
+      "study": 101,
+      "phase": 2.1,
+      "before_rmse": 26.78886302837321,
+      "after_rmse": 4.0912108088380075,
+      "after_self_rmse": 2.055084083008599,
+      "evidence": "browser-quality",
+      "reduction": 0.8472794159085872
+    },
+    {
+      "study": 101,
+      "phase": 5.2,
+      "before_rmse": 26.671530647093043,
+      "after_rmse": 4.062628821486953,
+      "after_self_rmse": 2.0378607583905812,
+      "evidence": "browser-quality",
+      "reduction": 0.8476792023959171
+    },
+    {
+      "study": 114,
+      "phase": 0.4,
+      "before_rmse": 9.849439219629536,
+      "after_rmse": 6.983781210776867,
+      "after_self_rmse": 6.836447735999949,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.29094631125206893
+    },
+    {
+      "study": 114,
+      "phase": 2.1,
+      "before_rmse": 9.601433103816264,
+      "after_rmse": 6.863987865065374,
+      "after_self_rmse": 6.717259595295409,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.2851079843135962
+    },
+    {
+      "study": 114,
+      "phase": 5.2,
+      "before_rmse": 10.08080558172166,
+      "after_rmse": 6.845060477539732,
+      "after_self_rmse": 6.684453429193656,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.3209808063404104
+    },
+    {
+      "study": 116,
+      "phase": 0.4,
+      "before_rmse": 20.3867478582361,
+      "after_rmse": 6.803503855064856,
+      "after_self_rmse": 6.1878619323735435,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.6662781183946271
+    },
+    {
+      "study": 116,
+      "phase": 2.1,
+      "before_rmse": 20.624159020287777,
+      "after_rmse": 6.902148003254025,
+      "after_self_rmse": 6.198188065404086,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.6653367540240331
+    },
+    {
+      "study": 116,
+      "phase": 5.2,
+      "before_rmse": 20.720829531430162,
+      "after_rmse": 6.868070625557592,
+      "after_self_rmse": 6.124783789701334,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.6685426799569083
+    },
+    {
+      "study": 117,
+      "phase": 0.4,
+      "before_rmse": 26.655542079076383,
+      "after_rmse": 6.21271514007883,
+      "after_self_rmse": 4.474344513281181,
+      "evidence": "browser-quality-final",
+      "reduction": 0.7669259502714979
+    },
+    {
+      "study": 117,
+      "phase": 2.1,
+      "before_rmse": 26.958826340311234,
+      "after_rmse": 6.32186681289633,
+      "after_self_rmse": 4.516017897114539,
+      "evidence": "browser-quality-final",
+      "reduction": 0.7654991826019031
+    },
+    {
+      "study": 117,
+      "phase": 5.2,
+      "before_rmse": 26.401628069228654,
+      "after_rmse": 6.275932553156121,
+      "after_self_rmse": 4.396751474601648,
+      "evidence": "browser-quality-final",
+      "reduction": 0.7622899414877078
+    },
+    {
+      "study": 118,
+      "phase": 0.4,
+      "before_rmse": 4.635474466482559,
+      "after_rmse": 2.3302095336231536,
+      "after_self_rmse": 2.290057795314859,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.4973093799842806
+    },
+    {
+      "study": 118,
+      "phase": 2.1,
+      "before_rmse": 4.78655039729891,
+      "after_rmse": 2.4032759504721146,
+      "after_self_rmse": 2.311979035117648,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.49791065569302206
+    },
+    {
+      "study": 118,
+      "phase": 5.2,
+      "before_rmse": 4.548512361847811,
+      "after_rmse": 2.2370411129830563,
+      "after_self_rmse": 2.186642605080433,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.5081818108823895
+    },
+    {
+      "study": 119,
+      "phase": 0.4,
+      "before_rmse": 7.831536548205745,
+      "after_rmse": 6.387254772546009,
+      "after_self_rmse": 6.271121956096476,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.18441869826817447
+    },
+    {
+      "study": 119,
+      "phase": 2.1,
+      "before_rmse": 7.818363000014773,
+      "after_rmse": 6.293265307874292,
+      "after_self_rmse": 6.169108525548889,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.1950661144970628
+    },
+    {
+      "study": 119,
+      "phase": 5.2,
+      "before_rmse": 7.865686088769296,
+      "after_rmse": 6.366507492107335,
+      "after_self_rmse": 6.247778428699088,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.1905973083266701
+    },
+    {
+      "study": 120,
+      "phase": 0.4,
+      "before_rmse": 12.923471351177511,
+      "after_rmse": 9.57763786425565,
+      "after_self_rmse": 9.345510718427073,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.258895879907453
+    },
+    {
+      "study": 120,
+      "phase": 2.1,
+      "before_rmse": 12.697357761268565,
+      "after_rmse": 9.283995083253886,
+      "after_self_rmse": 9.04039659463208,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.2688246438504429
+    },
+    {
+      "study": 120,
+      "phase": 5.2,
+      "before_rmse": 12.50792431174075,
+      "after_rmse": 9.094716630452831,
+      "after_self_rmse": 8.862302183970032,
+      "evidence": "browser-quality-tiles",
+      "reduction": 0.2728836213122956
+    }
+  ]
+}

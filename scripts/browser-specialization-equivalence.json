@@ -1,0 +1,506 @@
+[
+  {
+    "file": "metamorphosis.js",
+    "kind": 0,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 1,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 2,
+    "mean": 0.000013563368055555555,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 3,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 4,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 5,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 6,
+    "mean": 0.00003390842013888889,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 7,
+    "mean": 0.000013563368055555555,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 8,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 9,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 10,
+    "mean": 0.00003390842013888889,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 11,
+    "mean": 0.000020345052083333332,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 12,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 13,
+    "mean": 0.00002712673611111111,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 14,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 15,
+    "mean": 0.00002712673611111111,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 16,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 17,
+    "mean": 0.00002712673611111111,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 18,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 19,
+    "mean": 0.000006781684027777777,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 20,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 0,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 1,
+    "mean": 0.00025770399305555556,
+    "max": 3,
+    "over2": 2,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 2,
+    "mean": 0.00015597873263888888,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 3,
+    "mean": 0.0003390842013888889,
+    "max": 3,
+    "over2": 2,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 4,
+    "mean": 0.00002712673611111111,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 5,
+    "mean": 0.00015597873263888888,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 6,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 7,
+    "mean": 0.00037977430555555556,
+    "max": 4,
+    "over2": 1,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 8,
+    "mean": 0.00023057725694444444,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 9,
+    "mean": 0.00011528862847222222,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 10,
+    "mean": 0.00008816189236111111,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 11,
+    "mean": 0.00016276041666666666,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 12,
+    "mean": 0.00014919704861111112,
+    "max": 1,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 13,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 14,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 15,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 16,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 17,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 18,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 19,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 147456
+  },
+  {
+    "file": "topology.js",
+    "kind": 0,
+    "mean": 0.018778483072916668,
+    "max": 18,
+    "over2": 296,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 4,
+    "mean": 0.014546712239583334,
+    "max": 13,
+    "over2": 160,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 7,
+    "mean": 0.011260986328125,
+    "max": 21,
+    "over2": 76,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 10,
+    "mean": 0.0008290608723958334,
+    "max": 3,
+    "over2": 2,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 13,
+    "mean": 0.013010660807291666,
+    "max": 20,
+    "over2": 164,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 14,
+    "mean": 0.027837117513020832,
+    "max": 17,
+    "over2": 360,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 15,
+    "mean": 0.026092529296875,
+    "max": 21,
+    "over2": 351,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 16,
+    "mean": 0.0013580322265625,
+    "max": 3,
+    "over2": 1,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 17,
+    "mean": 0.0082855224609375,
+    "max": 14,
+    "over2": 70,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 18,
+    "mean": 0.005732218424479167,
+    "max": 22,
+    "over2": 43,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 19,
+    "mean": 0.0115509033203125,
+    "max": 10,
+    "over2": 98,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 30,
+    "mean": 0.0181732177734375,
+    "max": 15,
+    "over2": 271,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 34,
+    "mean": 0.0013478597005208333,
+    "max": 5,
+    "over2": 2,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 35,
+    "mean": 0.0153350830078125,
+    "max": 14,
+    "over2": 128,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 38,
+    "mean": 0.010960896809895834,
+    "max": 11,
+    "over2": 127,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 39,
+    "mean": 0.0227508544921875,
+    "max": 38,
+    "over2": 248,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 41,
+    "mean": 0,
+    "max": 0,
+    "over2": 0,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 47,
+    "mean": 0.01885986328125,
+    "max": 22,
+    "over2": 211,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 49,
+    "mean": 0.028605143229166668,
+    "max": 10,
+    "over2": 491,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 50,
+    "mean": 0.0116119384765625,
+    "max": 6,
+    "over2": 22,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 51,
+    "mean": 0.0030568440755208335,
+    "max": 14,
+    "over2": 34,
+    "samples": 196608
+  },
+  {
+    "file": "topology.js",
+    "kind": 53,
+    "mean": 0.0329437255859375,
+    "max": 35,
+    "over2": 483,
+    "samples": 196608
+  }
+]

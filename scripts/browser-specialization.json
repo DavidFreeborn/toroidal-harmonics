@@ -1,0 +1,58 @@
+[
+  {
+    "file": "metamorphosis.js",
+    "kind": null,
+    "ms": 8277.100000023842,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 5,
+    "ms": 616.8000000119209,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 14,
+    "ms": 312.39999997615814,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  {
+    "file": "metamorphosis.js",
+    "kind": 17,
+    "ms": 306.5,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  {
+    "file": "tessellations.js",
+    "kind": null,
+    "ms": 8791.300000011921,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 0,
+    "ms": 721.4000000357628,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 8,
+    "ms": 305.80000001192093,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  {
+    "file": "tessellations.js",
+    "kind": 16,
+    "ms": 2620.399999976158,
+    "parallel": true,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  }
+]

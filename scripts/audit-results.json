@@ -1,0 +1,992 @@
+{
+  "baseline_commit": "da93d68d31df23bdb9d8d71db47282dedad3d8b0",
+  "renderer": "Mesa llvmpipe (LLVM 20.1.2, 256 bits)",
+  "resolution": [
+    900,
+    620
+  ],
+  "threads": 4,
+  "perspective": 105,
+  "method": "Median wall time through completed native drawing. Excludes compilation, warm-up and readback. Software comparison, not browser GPU FPS. Actual curated settings at fixed raster resolution; no adaptive resolution in these benchmarks.",
+  "full_collection": [
+    {
+      "study": 138,
+      "construction": "Nested counterturn",
+      "before_ms": 38.862,
+      "after_ms": 32.22,
+      "reduction_percent": 17.09,
+      "mean_image_error": 2.7e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 135,
+      "construction": "Corner genesis",
+      "before_ms": 39.402,
+      "after_ms": 29.864,
+      "reduction_percent": 24.21,
+      "mean_image_error": 4.7e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 136,
+      "construction": "Ternary growth",
+      "before_ms": 37.125,
+      "after_ms": 28.314,
+      "reduction_percent": 23.73,
+      "mean_image_error": 7e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 137,
+      "construction": "Alternating divisions",
+      "before_ms": 33.696,
+      "after_ms": 28.209,
+      "reduction_percent": 16.28,
+      "mean_image_error": 4.5e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 139,
+      "construction": "Concentric witnesses",
+      "before_ms": 40.18,
+      "after_ms": 31.963,
+      "reduction_percent": 20.45,
+      "mean_image_error": 2.3e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 140,
+      "construction": "Turning descent",
+      "before_ms": 36.63,
+      "after_ms": 31.46,
+      "reduction_percent": 14.11,
+      "mean_image_error": 2.7e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 141,
+      "construction": "Turning rhomb growth",
+      "before_ms": 27.292,
+      "after_ms": 29.204,
+      "reduction_percent": -7.01,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 142,
+      "construction": "Reverse rhomb turn",
+      "before_ms": 25.924,
+      "after_ms": 27.396,
+      "reduction_percent": -5.68,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 125,
+      "construction": "Staggered cells",
+      "before_ms": 39.17,
+      "after_ms": 34.734,
+      "reduction_percent": 11.32,
+      "mean_image_error": 5e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 126,
+      "construction": "Crystalline orbit",
+      "before_ms": 31.515,
+      "after_ms": 27.946,
+      "reduction_percent": 11.32,
+      "mean_image_error": 2e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 127,
+      "construction": "Inset octagons",
+      "before_ms": 32.945,
+      "after_ms": 29.25,
+      "reduction_percent": 11.22,
+      "mean_image_error": 3.2e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 128,
+      "construction": "Reverse turn",
+      "before_ms": 35.45,
+      "after_ms": 25.802,
+      "reduction_percent": 27.22,
+      "mean_image_error": 2.3e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 129,
+      "construction": "Double reconnection",
+      "before_ms": 31.361,
+      "after_ms": 26.86,
+      "reduction_percent": 14.35,
+      "mean_image_error": 1.6e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 130,
+      "construction": "Emerging flock",
+      "before_ms": 41.334,
+      "after_ms": 37.679,
+      "reduction_percent": 8.84,
+      "mean_image_error": 0.000539,
+      "pixels_gt4": 3.41e-05
+    },
+    {
+      "study": 131,
+      "construction": "Crosscurrent passage",
+      "before_ms": 43.668,
+      "after_ms": 36.919,
+      "reduction_percent": 15.46,
+      "mean_image_error": 0.000681,
+      "pixels_gt4": 3.41e-05
+    },
+    {
+      "study": 132,
+      "construction": "Emerging reptiles",
+      "before_ms": 40.778,
+      "after_ms": 33.664,
+      "reduction_percent": 17.45,
+      "mean_image_error": 0.00038,
+      "pixels_gt4": 1.79e-05
+    },
+    {
+      "study": 133,
+      "construction": "Crosscurrent wings",
+      "before_ms": 48.351,
+      "after_ms": 40.278,
+      "reduction_percent": 16.7,
+      "mean_image_error": 0.000482,
+      "pixels_gt4": 3.58e-05
+    },
+    {
+      "study": 134,
+      "construction": "Crosscurrent wings",
+      "before_ms": 50.571,
+      "after_ms": 36.336,
+      "reduction_percent": 28.15,
+      "mean_image_error": 0.000441,
+      "pixels_gt4": 2.69e-05
+    },
+    {
+      "study": 101,
+      "construction": "Nested frames",
+      "before_ms": 35.833,
+      "after_ms": 29.622,
+      "reduction_percent": 17.33,
+      "mean_image_error": 5e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 102,
+      "construction": "Three-tone honeycomb",
+      "before_ms": 31.332,
+      "after_ms": 17.899,
+      "reduction_percent": 42.87,
+      "mean_image_error": 7.3e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 103,
+      "construction": "Triangular silk",
+      "before_ms": 38.651,
+      "after_ms": 26.016,
+      "reduction_percent": 32.69,
+      "mean_image_error": 7e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 104,
+      "construction": "Tumbling-block canon",
+      "before_ms": 38.267,
+      "after_ms": 31.209,
+      "reduction_percent": 18.44,
+      "mean_image_error": 4.1e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 105,
+      "construction": "Concentric inlay",
+      "before_ms": 35.259,
+      "after_ms": 29.524,
+      "reduction_percent": 16.27,
+      "mean_image_error": 4e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 106,
+      "construction": "Pentagonal orbit",
+      "before_ms": 35.937,
+      "after_ms": 29.114,
+      "reduction_percent": 18.99,
+      "mean_image_error": 2.9e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 107,
+      "construction": "Grained parquet",
+      "before_ms": 36.861,
+      "after_ms": 28.852,
+      "reduction_percent": 21.73,
+      "mean_image_error": 5e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 108,
+      "construction": "Hexagons and triangles",
+      "before_ms": 28.495,
+      "after_ms": 24.103,
+      "reduction_percent": 15.41,
+      "mean_image_error": 4.5e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 109,
+      "construction": "Shared-edge waves",
+      "before_ms": 45.795,
+      "after_ms": 33.958,
+      "reduction_percent": 25.85,
+      "mean_image_error": 2.9e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 121,
+      "construction": "Thick and thin",
+      "before_ms": 29.429,
+      "after_ms": 26.985,
+      "reduction_percent": 8.3,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 122,
+      "construction": "Twin currents",
+      "before_ms": 27.133,
+      "after_ms": 26.804,
+      "reduction_percent": 1.21,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 123,
+      "construction": "Inset golden rooms",
+      "before_ms": 25.301,
+      "after_ms": 23.89,
+      "reduction_percent": 5.58,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 124,
+      "construction": "Rhombic genealogy",
+      "before_ms": 31.975,
+      "after_ms": 28.236,
+      "reduction_percent": 11.69,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 92,
+      "construction": "Travelling wings",
+      "before_ms": 39.972,
+      "after_ms": 36.962,
+      "reduction_percent": 7.53,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 93,
+      "construction": "Golden chambers",
+      "before_ms": 45.228,
+      "after_ms": 37.297,
+      "reduction_percent": 17.54,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 94,
+      "construction": "Rhombic weaving",
+      "before_ms": 44.802,
+      "after_ms": 38.477,
+      "reduction_percent": 14.12,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 68,
+      "construction": "Travelling relief",
+      "before_ms": 28.987,
+      "after_ms": 22.941,
+      "reduction_percent": 20.86,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 69,
+      "construction": "Rhomb interference",
+      "before_ms": 26.748,
+      "after_ms": 19.92,
+      "reduction_percent": 25.53,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 70,
+      "construction": "Winding shutters",
+      "before_ms": 43.742,
+      "after_ms": 35.382,
+      "reduction_percent": 19.11,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 114,
+      "construction": "Framed ancestry",
+      "before_ms": 41.864,
+      "after_ms": 35.162,
+      "reduction_percent": 16.01,
+      "mean_image_error": 4.7e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 115,
+      "construction": "Grained chairs",
+      "before_ms": 43.222,
+      "after_ms": 32.748,
+      "reduction_percent": 24.23,
+      "mean_image_error": 5.6e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 116,
+      "construction": "Central inheritance",
+      "before_ms": 36.238,
+      "after_ms": 32.316,
+      "reduction_percent": 10.82,
+      "mean_image_error": 9e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 117,
+      "construction": "Ternary inlay",
+      "before_ms": 35.899,
+      "after_ms": 31.059,
+      "reduction_percent": 13.48,
+      "mean_image_error": 9.1e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 118,
+      "construction": "Breathing rooms",
+      "before_ms": 43.972,
+      "after_ms": 36.841,
+      "reduction_percent": 16.22,
+      "mean_image_error": 3.6e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 119,
+      "construction": "Quarter-turn ancestry",
+      "before_ms": 43.607,
+      "after_ms": 34.919,
+      "reduction_percent": 19.92,
+      "mean_image_error": 4.8e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 120,
+      "construction": "Recursive arcways",
+      "before_ms": 49.365,
+      "after_ms": 41.507,
+      "reduction_percent": 15.92,
+      "mean_image_error": 9e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 67,
+      "construction": "Corner descent",
+      "before_ms": 76.923,
+      "after_ms": 60.266,
+      "reduction_percent": 21.65,
+      "mean_image_error": 0.006432,
+      "pixels_gt4": 0.0002867
+    },
+    {
+      "study": 21,
+      "construction": "Oblique tumblers",
+      "before_ms": 30.097,
+      "after_ms": 23.61,
+      "reduction_percent": 21.55,
+      "mean_image_error": 0.002059,
+      "pixels_gt4": 8.24e-05
+    },
+    {
+      "study": 56,
+      "construction": "Oblique suspension",
+      "before_ms": 87.665,
+      "after_ms": 59.497,
+      "reduction_percent": 32.13,
+      "mean_image_error": 0.003624,
+      "pixels_gt4": 0.0002652
+    },
+    {
+      "study": 59,
+      "construction": "Recursive shutters",
+      "before_ms": 44.193,
+      "after_ms": 41.626,
+      "reduction_percent": 5.81,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 25,
+      "construction": "Miura tide",
+      "before_ms": 67.541,
+      "after_ms": 63.796,
+      "reduction_percent": 5.54,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 27,
+      "construction": "Pleated descent",
+      "before_ms": 69.973,
+      "after_ms": 61.059,
+      "reduction_percent": 12.74,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 22,
+      "construction": "Six-blade canon",
+      "before_ms": 72.781,
+      "after_ms": 69.433,
+      "reduction_percent": 4.6,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 13,
+      "construction": "Crossing tides",
+      "before_ms": 48.488,
+      "after_ms": 36.258,
+      "reduction_percent": 25.22,
+      "mean_image_error": 5.6e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 60,
+      "construction": "Oblique silk",
+      "before_ms": 32.091,
+      "after_ms": 30.548,
+      "reduction_percent": 4.81,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 61,
+      "construction": "Counterwound silk",
+      "before_ms": 122.358,
+      "after_ms": 79.308,
+      "reduction_percent": 35.18,
+      "mean_image_error": 0.002968,
+      "pixels_gt4": 0.0002473
+    },
+    {
+      "study": 28,
+      "construction": "Ninefold jacquard",
+      "before_ms": 175.328,
+      "after_ms": 149.985,
+      "reduction_percent": 14.45,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 23,
+      "construction": "Trefoil counterpoint",
+      "before_ms": 95.891,
+      "after_ms": 58.155,
+      "reduction_percent": 39.35,
+      "mean_image_error": 0.005475,
+      "pixels_gt4": 0.0001935
+    },
+    {
+      "study": 17,
+      "construction": "Torus jacquard",
+      "before_ms": 42.445,
+      "after_ms": 34.378,
+      "reduction_percent": 19.01,
+      "mean_image_error": 1.1e-05,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 0,
+      "construction": "Silken counterpoint",
+      "before_ms": 39.287,
+      "after_ms": 33.458,
+      "reduction_percent": 14.84,
+      "mean_image_error": 2e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 33,
+      "construction": "Over-under exchange",
+      "before_ms": 27.883,
+      "after_ms": 22.716,
+      "reduction_percent": 18.53,
+      "mean_image_error": 3.4e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 41,
+      "construction": "Ribbon families",
+      "before_ms": 35.817,
+      "after_ms": 27.918,
+      "reduction_percent": 22.05,
+      "mean_image_error": 1.6e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 95,
+      "construction": "Conjugate Julia fields",
+      "before_ms": 45.686,
+      "after_ms": 36.171,
+      "reduction_percent": 20.83,
+      "mean_image_error": 7e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 98,
+      "construction": "Binary hinges",
+      "before_ms": 58.503,
+      "after_ms": 48.865,
+      "reduction_percent": 16.47,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 78,
+      "construction": "Eyes within eyes",
+      "before_ms": 60.998,
+      "after_ms": 53.889,
+      "reduction_percent": 11.65,
+      "mean_image_error": 3.4e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 79,
+      "construction": "Sixfold interference",
+      "before_ms": 44.491,
+      "after_ms": 40.607,
+      "reduction_percent": 8.73,
+      "mean_image_error": 4.5e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 80,
+      "construction": "Counterflow cathedral",
+      "before_ms": 42.753,
+      "after_ms": 37.298,
+      "reduction_percent": 12.76,
+      "mean_image_error": 4.5e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 75,
+      "construction": "Oblique substitution",
+      "before_ms": 46.406,
+      "after_ms": 37.456,
+      "reduction_percent": 19.29,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 76,
+      "construction": "Ternary counterpoint",
+      "before_ms": 37.983,
+      "after_ms": 36.788,
+      "reduction_percent": 3.15,
+      "mean_image_error": 9e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 83,
+      "construction": "Scale procession",
+      "before_ms": 42.096,
+      "after_ms": 35.874,
+      "reduction_percent": 14.78,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 85,
+      "construction": "Recursive reconnection",
+      "before_ms": 43.58,
+      "after_ms": 36.869,
+      "reduction_percent": 15.4,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 53,
+      "construction": "Infinite covering",
+      "before_ms": 70.883,
+      "after_ms": 58.335,
+      "reduction_percent": 17.7,
+      "mean_image_error": 5.9e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 50,
+      "construction": "Seraphic braid",
+      "before_ms": 55.623,
+      "after_ms": 46.525,
+      "reduction_percent": 16.36,
+      "mean_image_error": 2.2e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 49,
+      "construction": "Rational constellation",
+      "before_ms": 167.709,
+      "after_ms": 93.695,
+      "reduction_percent": 44.13,
+      "mean_image_error": 1.3e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 47,
+      "construction": "Fractal passage",
+      "before_ms": 109.3,
+      "after_ms": 94.828,
+      "reduction_percent": 13.24,
+      "mean_image_error": 3e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 51,
+      "construction": "Branching choir",
+      "before_ms": 111.654,
+      "after_ms": 88.005,
+      "reduction_percent": 21.18,
+      "mean_image_error": 2.3e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 97,
+      "construction": "Oblique quadrature",
+      "before_ms": 40.217,
+      "after_ms": 34.576,
+      "reduction_percent": 14.03,
+      "mean_image_error": 2.7e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 73,
+      "construction": "Nodal tesserae",
+      "before_ms": 37.798,
+      "after_ms": 31.859,
+      "reduction_percent": 15.71,
+      "mean_image_error": 5.6e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 74,
+      "construction": "Positive and negative",
+      "before_ms": 40.123,
+      "after_ms": 33.889,
+      "reduction_percent": 15.54,
+      "mean_image_error": 3.2e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 30,
+      "construction": "Hinged tessellation",
+      "before_ms": 51.317,
+      "after_ms": 42.242,
+      "reduction_percent": 17.68,
+      "mean_image_error": 1.3e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 32,
+      "construction": "Petal exchange",
+      "before_ms": 30.71,
+      "after_ms": 25.032,
+      "reduction_percent": 18.49,
+      "mean_image_error": 4.1e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 35,
+      "construction": "Quartered heavens",
+      "before_ms": 54.051,
+      "after_ms": 42.028,
+      "reduction_percent": 22.24,
+      "mean_image_error": 1.6e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 38,
+      "construction": "Woven switches",
+      "before_ms": 31.947,
+      "after_ms": 28.134,
+      "reduction_percent": 11.94,
+      "mean_image_error": 5.2e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 34,
+      "construction": "Morse tide",
+      "before_ms": 40.198,
+      "after_ms": 35.893,
+      "reduction_percent": 10.71,
+      "mean_image_error": 9.9e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 26,
+      "construction": "Cellular quadrille",
+      "before_ms": 121.501,
+      "after_ms": 114.793,
+      "reduction_percent": 5.52,
+      "mean_image_error": 1.1e-05,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 8,
+      "construction": "Arc exchange",
+      "before_ms": 24.707,
+      "after_ms": 23.999,
+      "reduction_percent": 2.87,
+      "mean_image_error": 2.5e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 99,
+      "construction": "Critical ancestry",
+      "before_ms": 44.923,
+      "after_ms": 35.756,
+      "reduction_percent": 20.41,
+      "mean_image_error": 0.0,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 81,
+      "construction": "Counterwound modes",
+      "before_ms": 47.834,
+      "after_ms": 39.377,
+      "reduction_percent": 17.68,
+      "mean_image_error": 1.3e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 82,
+      "construction": "Diagonal vortices",
+      "before_ms": 36.167,
+      "after_ms": 33.291,
+      "reduction_percent": 7.95,
+      "mean_image_error": 2e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 84,
+      "construction": "Counterflow return",
+      "before_ms": 49.842,
+      "after_ms": 42.786,
+      "reduction_percent": 14.16,
+      "mean_image_error": 1.6e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 19,
+      "construction": "Degenerate rotation",
+      "before_ms": 35.919,
+      "after_ms": 33.242,
+      "reduction_percent": 7.45,
+      "mean_image_error": 2e-06,
+      "pixels_gt4": 0.0
+    },
+    {
+      "study": 15,
+      "construction": "Hamiltonian current",
+      "before_ms": 43.792,
+      "after_ms": 41.869,
+      "reduction_percent": 4.39,
+      "mean_image_error": 2.7e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 16,
+      "construction": "Nested contours",
+      "before_ms": 57.123,
+      "after_ms": 51.801,
+      "reduction_percent": 9.32,
+      "mean_image_error": 6.6e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 18,
+      "construction": "Phase constellation",
+      "before_ms": 57.985,
+      "after_ms": 51.609,
+      "reduction_percent": 11.0,
+      "mean_image_error": 4.8e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 20,
+      "construction": "Moore labyrinth",
+      "before_ms": 39.705,
+      "after_ms": 36.095,
+      "reduction_percent": 9.09,
+      "mean_image_error": 7e-05,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 4,
+      "construction": "Resonant engraving",
+      "before_ms": 31.738,
+      "after_ms": 30.884,
+      "reduction_percent": 2.69,
+      "mean_image_error": 1.8e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 10,
+      "construction": "Breathing lace",
+      "before_ms": 41.12,
+      "after_ms": 36.225,
+      "reduction_percent": 11.9,
+      "mean_image_error": 4.5e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 12,
+      "construction": "Harmonic tide",
+      "before_ms": 31.999,
+      "after_ms": 29.195,
+      "reduction_percent": 8.76,
+      "mean_image_error": 0.000111,
+      "pixels_gt4": 3.6e-06
+    },
+    {
+      "study": 14,
+      "construction": "Sheared meridians",
+      "before_ms": 40.339,
+      "after_ms": 34.562,
+      "reduction_percent": 14.32,
+      "mean_image_error": 2.5e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 7,
+      "construction": "Pearl constellation",
+      "before_ms": 57.838,
+      "after_ms": 50.032,
+      "reduction_percent": 13.5,
+      "mean_image_error": 1.8e-05,
+      "pixels_gt4": 1.8e-06
+    },
+    {
+      "study": 11,
+      "construction": "Feather counterpoint",
+      "before_ms": 30.664,
+      "after_ms": 26.912,
+      "reduction_percent": 12.24,
+      "mean_image_error": 2.3e-05,
+      "pixels_gt4": 3.6e-06
+    }
+  ],
+  "repeated_targeted": [
+    {
+      "study": 138,
+      "before_ms": 35.321,
+      "after_ms": 33.508,
+      "reduction_percent": 5.13
+    },
+    {
+      "study": 67,
+      "before_ms": 65.404,
+      "after_ms": 57.718,
+      "reduction_percent": 11.75
+    },
+    {
+      "study": 21,
+      "before_ms": 26.669,
+      "after_ms": 20.604,
+      "reduction_percent": 22.74
+    },
+    {
+      "study": 56,
+      "before_ms": 78.865,
+      "after_ms": 58.061,
+      "reduction_percent": 26.38
+    },
+    {
+      "study": 61,
+      "before_ms": 121.884,
+      "after_ms": 85.315,
+      "reduction_percent": 30.0
+    },
+    {
+      "study": 28,
+      "before_ms": 164.299,
+      "after_ms": 152.77,
+      "reduction_percent": 7.02
+    },
+    {
+      "study": 23,
+      "before_ms": 90.569,
+      "after_ms": 63.808,
+      "reduction_percent": 29.55
+    },
+    {
+      "study": 49,
+      "before_ms": 152.074,
+      "after_ms": 97.699,
+      "reduction_percent": 35.76
+    },
+    {
+      "study": 51,
+      "before_ms": 97.561,
+      "after_ms": 95.138,
+      "reduction_percent": 2.48
+    },
+    {
+      "study": 38,
+      "before_ms": 28.876,
+      "after_ms": 30.535,
+      "reduction_percent": -5.75
+    },
+    {
+      "study": 26,
+      "before_ms": 115.683,
+      "after_ms": 104.738,
+      "reduction_percent": 9.46
+    }
+  ],
+  "rechecked_controls": [
+    {
+      "study": 141,
+      "before_ms": 31.035,
+      "after_ms": 28.711,
+      "reduction_percent": 7.49
+    },
+    {
+      "study": 142,
+      "before_ms": 28.613,
+      "after_ms": 28.357,
+      "reduction_percent": 0.89
+    },
+    {
+      "study": 38,
+      "before_ms": 32.302,
+      "after_ms": 30.616,
+      "reduction_percent": 5.22
+    }
+  ]
+}

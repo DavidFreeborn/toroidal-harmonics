@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+node_modules/
+# Reproducible full-resolution audit frames; retain metrics and contact sheets.
+scripts/browser-overview/*.png
+scripts/browser-quality*/before-*.png
+scripts/browser-quality*/after-*.png
+scripts/browser-quality*/reference-*.png
+scripts/browser-extended/before-*.png
+scripts/browser-extended/after-*.png
+scripts/browser-extended/reference-*.png
+scripts/browser-before/
+scripts/browser-baseline.png
+scripts/browser-current.png
+scripts/spinor-audit/variant*-phase*.png
+scripts/revivals-browser*/*-*-*.png
+scripts/revivals-design/
+scripts/publication-qa/

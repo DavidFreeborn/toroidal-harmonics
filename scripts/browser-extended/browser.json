@@ -1,0 +1,30 @@
+[
+  {
+    "role": "after",
+    "info": {
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "headless": true,
+      "dpr": 1,
+      "width": 500,
+      "height": 340,
+      "parallel": true,
+      "timer": true
+    },
+    "errors": []
+  },
+  {
+    "role": "after-reference",
+    "info": {
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+      "headless": true,
+      "dpr": 4,
+      "width": 1000,
+      "height": 680,
+      "parallel": true,
+      "timer": true
+    },
+    "errors": []
+  }
+]

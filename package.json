@@ -1,0 +1,20 @@
+{
+  "name": "toroidal-harmonics",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Buildless WebGL2 artwork; development-only verification tools",
+  "scripts": {
+    "build:guide": "node scripts/build-guide.cjs",
+    "build:release": "node scripts/build-guide.cjs && node scripts/build-release.cjs",
+    "test": "node scripts/verify-project.cjs",
+    "test:browser": "node scripts/verify-browser-runtime.cjs && node scripts/verify-pixel-coverage.cjs && node scripts/verify-recursive-jacobian.cjs",
+    "test:specialization": "node scripts/verify-specialization.cjs",
+    "audit:performance": "node scripts/browser-audit.cjs",
+    "audit:visual": "node scripts/compare-browser-quality.cjs"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.13",
+    "playwright": "1.61.0"
+  },
+  "engines": { "node": ">=20" }
+}

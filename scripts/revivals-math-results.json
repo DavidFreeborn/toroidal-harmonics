@@ -1,0 +1,57 @@
+{
+  "Talbot_separable_field_vs_independent_2D_spectrum": {
+    "maximum_error": 6.200255161175462e-14,
+    "tolerance": 2e-10,
+    "cases": 729
+  },
+  "Talbot_exact_full_period": {
+    "maximum_error": 3.3133340893287854e-13,
+    "tolerance": 2e-10,
+    "cases": 729
+  },
+  "Talbot_fractional_Gauss_sum_translated_copies": {
+    "maximum_error": 2.0272583559370112e-13,
+    "tolerance": 2e-10,
+    "cases": 3645
+  },
+  "Theta_three_term_absolute_truncation": {
+    "maximum_error": 1.1509566007948305e-12,
+    "tolerance": 3e-12,
+    "cases": 10000
+  },
+  "Balanced_theta_ratio_lattice_periodicity": {
+    "maximum_error": 3.561697386560775e-14,
+    "tolerance": 2e-11,
+    "cases": 6579
+  },
+  "Green_potential_matches_balanced_ratio": {
+    "maximum_error": 5.773159728050814e-15,
+    "tolerance": 2e-11,
+    "cases": 2193
+  },
+  "Elliptic_half_period_reciprocity": {
+    "maximum_error": 6.6567572277640434e-15,
+    "tolerance": 2e-11,
+    "cases": 2193
+  },
+  "Elliptic_exact_full_period": {
+    "maximum_error": 7.224512919636684e-15,
+    "tolerance": 2e-11,
+    "cases": 2193
+  },
+  "Covering_hierarchy_log_of_meromorphic_product": {
+    "maximum_error": 2.3092638912203256e-14,
+    "tolerance": 2e-10,
+    "cases": 19737
+  },
+  "Covering_hierarchy_half_period_sign_exchange": {
+    "maximum_error": 3.019806626980426e-14,
+    "tolerance": 2e-10,
+    "cases": 19737
+  },
+  "covering_degrees": [
+    4,
+    2,
+    5
+  ]
+}
