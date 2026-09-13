@@ -3,6 +3,8 @@
    Set NODE_PATH to the bundled Playwright node_modules, as for browser-audit.cjs. */
 const assert=require('node:assert/strict');
 const expectedStudies=103,newStudies=[145,146,147,148];
+// Static hosts may serve the same guide through their extensionless alias.
+const guidePath=value=>value.replace(/\/$/,'').replace(/\.html$/,'');
 function baseURL(value){
  const url=new URL(value);assert(['http:','https:'].includes(url.protocol),'Expected an HTTP(S) deployment URL');
  url.search='';url.hash='';if(!url.pathname.endsWith('/')&&!url.pathname.endsWith('/index.html'))url.pathname+='/';
@@ -14,7 +16,7 @@ async function verify(browser,url){
  const problem=(kind,message)=>{if(active)report.errors.push({kind,message});};
  context.on('page',page=>{
   page.on('pageerror',error=>problem('page',error.message));
-  page.on('console',message=>{if(message.type()==='error')problem('console',message.text());});
+  page.on('console',message=>{if(message.type()==='error')problem('console',message.text()+' '+(message.location().url||''));});
   page.on('requestfailed',request=>problem('request',request.url()+' '+request.failure()?.errorText));
   page.on('response',response=>{if(response.status()>=400)problem('http',response.status()+' '+response.url());});
  });
@@ -51,7 +53,7 @@ async function verify(browser,url){
    const choice=page.locator('.study-choice').filter({has:page.locator('img[src*="/'+id+'.webp"]')});assert.equal(await choice.count(),1,'Missing study '+id);await choice.click();await ready(id);
    const state=await checkpoint();assert(state.draws>before,'Study '+id+' submitted no visible draw');assert.equal(await choice.getAttribute('aria-pressed'),'true');
    const guideHref=await page.locator('#readme-link').getAttribute('href'),guideURL=new URL(guideHref,page.url());
-   assert.equal(guideURL.origin,actualBase.origin,'Readme left the deployment origin');assert.equal(guideURL.pathname,new URL('readme.html',actualBase).pathname,'Readme left the deployment directory');assert.equal(guideURL.hash,'#study-'+id,'Readme selected the wrong explainer');
+   assert.equal(guideURL.origin,actualBase.origin,'Readme left the deployment origin');assert.equal(guidePath(guideURL.pathname),new URL('readme',actualBase).pathname,'Readme left the deployment directory');assert.equal(guideURL.hash,'#study-'+id,'Readme selected the wrong explainer');
    await page.locator('#settings').click();
    const controls=await page.locator('#controls').evaluate(element=>[...element.querySelectorAll('input,select')].filter(input=>input.getClientRects().length&&!input.closest('[hidden]')).map(input=>({id:input.id,value:input.value,disabled:input.disabled,options:input.tagName==='SELECT'?input.options.length:undefined})));
    const names=controls.map(control=>control.id);for(const key of ['variation','speed','perspective','ink','wave','renderQuality'])assert(names.includes(key),'Missing control '+key+' in study '+id);
@@ -60,8 +62,10 @@ async function verify(browser,url){
    await page.locator('#parameters-close').click();report.studies.push({id,title:await page.locator('#study-title').textContent(),constructions:3,controls:names,readme:guideURL.href});
   }
   // Follow the actual target=_blank link, checking both path and hash routing.
-  const popupPromise=page.waitForEvent('popup');await page.locator('#readme-link').click();const guide=await popupPromise;await guide.waitForLoadState('domcontentloaded');
-  const guideURL=new URL(guide.url());assert.equal(guideURL.origin,actualBase.origin);assert.equal(guideURL.pathname,new URL('readme.html',actualBase).pathname);assert.equal(guideURL.hash,'#study-148');
+  const popupPromise=page.waitForEvent('popup');await page.locator('#readme-link').click();const guide=await popupPromise;
+  // A popup can be delivered while its initial blank document is current.
+  await guide.waitForURL(value=>value.pathname.endsWith('/readme.html')||value.pathname.endsWith('/readme'),{waitUntil:'domcontentloaded'});
+  const guideURL=new URL(guide.url());assert.equal(guideURL.origin,actualBase.origin);assert.equal(guidePath(guideURL.pathname),new URL('readme',actualBase).pathname);assert.equal(guideURL.hash,'#study-148');
   await guide.waitForFunction(()=>document.activeElement?.id==='study-148');
   const data=await guide.evaluate(()=>({
    articles:[...document.querySelectorAll('article[id^="study-"]')].map(article=>({id:Number(article.id.slice(6)),text:article.querySelector('p')?.textContent?.trim(),title:article.querySelector('h3 a')?.textContent?.trim(),href:article.querySelector('h3 a')?.href,references:article.querySelectorAll('.references a').length})),
@@ -73,7 +77,7 @@ async function verify(browser,url){
   assert(data.concepts>=39&&data.influences===5,'Missing mathematical concepts or artistic influences');assert.deepEqual(data.badLinks,[]);assert(data.selectedVisible,'Selected explainer was not revealed');
   report.guide={url:guide.url(),explainers:data.articles.length,concepts:data.concepts,influences:data.influences,selected:148};
   await checkpoint();assert.equal(report.errors.length,0,'Browser or network errors occurred');report.pass=true;
- }catch(error){problem('assertion',error.message);}finally{active=false;await context.close();}
+ }catch(error){problem('assertion',error.message+' '+(error.stack?.split('\n')[1]?.trim()||''));}finally{active=false;await context.close();}
  return report;
 }
 async function main(args=process.argv.slice(2)){
