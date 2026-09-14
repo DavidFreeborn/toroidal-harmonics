@@ -19,7 +19,7 @@ const html=`<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='32' rx='25' ry='16' fill='none' stroke='black' stroke-width='9'/%3E%3C/svg%3E">
 <title>Toroidal harmonics · Readme</title><meta name="description" content="Short notes, mathematical concepts and artistic influences for ${count} toroidal studies.">
-<link rel="stylesheet" href="./readme.css?v=24"><script defer src="./readme.js?v=24"></script></head>
+<link rel="stylesheet" href="./readme.css?v=25"><script defer src="./readme.js?v=25"></script></head>
 <body><main><nav class="back"><a href="./">← Artwork</a></nav><h1>Toroidal harmonics <span>Readme</span></h1>
 <p class="intro">Short notes and references for the collection.</p>
 <details id="concepts"><summary>Mathematical concepts</summary><dl>${glossary}</dl></details>

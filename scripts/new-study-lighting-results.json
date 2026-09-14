@@ -10,9 +10,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11020202668601087,
-      "strengthMean": 0.06482472376635749,
-      "frequencyMean": 0.09207586370660631
+      "effectMean": 0.05056279616992883,
+      "strengthMean": 0.029742822229536614,
+      "frequencyMean": 0.03434225197923462
     },
     {
       "study": 145,
@@ -21,9 +21,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10873670979104975,
-      "strengthMean": 0.06396277267485444,
-      "frequencyMean": 0.08329186477089934
+      "effectMean": 0.0355230166039126,
+      "strengthMean": 0.02089589288768614,
+      "frequencyMean": 0.03807943633848316
     },
     {
       "study": 145,
@@ -32,9 +32,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10877037363965511,
-      "strengthMean": 0.06398257486801578,
-      "frequencyMean": 0.0860548845678295
+      "effectMean": 0.041847249249340995,
+      "strengthMean": 0.02461602979025718,
+      "frequencyMean": 0.03788818480583442
     },
     {
       "study": 145,
@@ -43,9 +43,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1209628334500766,
-      "strengthMean": 0.07115461008241007,
-      "frequencyMean": 0.08633713305123986
+      "effectMean": 0.04897502649708423,
+      "strengthMean": 0.028808839948231416,
+      "frequencyMean": 0.03655399740008844
     },
     {
       "study": 145,
@@ -54,9 +54,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1171252620279533,
-      "strengthMean": 0.06889721524860513,
-      "frequencyMean": 0.048427175599830334
+      "effectMean": 0.04890770138598038,
+      "strengthMean": 0.028769237104411746,
+      "frequencyMean": 0.02363591102436079
     },
     {
       "study": 145,
@@ -65,9 +65,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10545432213955958,
-      "strengthMean": 0.062031956270361246,
-      "frequencyMean": 0.08709243657811137
+      "effectMean": 0.04820591992221456,
+      "strengthMean": 0.02835642427961912,
+      "frequencyMean": 0.038058777182744634
     },
     {
       "study": 145,
@@ -76,9 +76,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2899791079159968,
-      "strengthMean": 0.17057595138670545,
-      "frequencyMean": 0.21505023862815423
+      "effectMean": 0.23171774736260886,
+      "strengthMean": 0.1363045616688148,
+      "frequencyMean": 0.17091118456499482
     },
     {
       "study": 145,
@@ -87,9 +87,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.30600573754341814,
-      "strengthMean": 0.1800033809136039,
-      "frequencyMean": 0.2123023976398806
+      "effectMean": 0.24761667416373712,
+      "strengthMean": 0.14565687187384604,
+      "frequencyMean": 0.170844247755688
     },
     {
       "study": 145,
@@ -98,9 +98,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.29144529375970374,
-      "strengthMean": 0.17143841358613993,
-      "frequencyMean": 0.2211933429352939
+      "effectMean": 0.23426596844879813,
+      "strengthMean": 0.1378035152435628,
+      "frequencyMean": 0.17772835241250753
     },
     {
       "study": 145,
@@ -109,9 +109,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.32192954589467343,
-      "strengthMean": 0.18937032730629902,
-      "frequencyMean": 0.21955586674291475
+      "effectMean": 0.2590392996737178,
+      "strengthMean": 0.15237606345511845,
+      "frequencyMean": 0.17839465557145476
     },
     {
       "study": 145,
@@ -120,9 +120,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.32166570451896737,
-      "strengthMean": 0.18921512661088194,
-      "frequencyMean": 0.1180032594611682
+      "effectMean": 0.25865302813928215,
+      "strengthMean": 0.15214884497855896,
+      "frequencyMean": 0.0949088105827617
     },
     {
       "study": 145,
@@ -131,9 +131,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2864015731531915,
-      "strengthMean": 0.16847151903382176,
-      "frequencyMean": 0.22440139484230961
+      "effectMean": 0.2326118325481523,
+      "strengthMean": 0.13683049414044035,
+      "frequencyMean": 0.18109087707317817
     },
     {
       "study": 145,
@@ -142,9 +142,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.300385004104762,
-      "strengthMean": 0.17669706708643804,
-      "frequencyMean": 0.24631271198276491
+      "effectMean": 0.23560579100301932,
+      "strengthMean": 0.1385916462282818,
+      "frequencyMean": 0.19190955492271397
     },
     {
       "study": 145,
@@ -153,9 +153,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.3246912125401567,
-      "strengthMean": 0.19099483715579232,
-      "frequencyMean": 0.22430243333825606
+      "effectMean": 0.2545077861575051,
+      "strengthMean": 0.1497104673123059,
+      "frequencyMean": 0.17482053265036318
     },
     {
       "study": 145,
@@ -164,9 +164,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.30349486270357706,
-      "strengthMean": 0.17852639577796997,
-      "frequencyMean": 0.23987677816055772
+      "effectMean": 0.24157767927115195,
+      "strengthMean": 0.142104521739756,
+      "frequencyMean": 0.1898001753445235
     },
     {
       "study": 145,
@@ -175,9 +175,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.30919386849584707,
-      "strengthMean": 0.18187875209998144,
-      "frequencyMean": 0.22567352633894766
+      "effectMean": 0.24004430297112445,
+      "strengthMean": 0.14120253572266186,
+      "frequencyMean": 0.1786458699720945
     },
     {
       "study": 145,
@@ -186,9 +186,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.3257385593811829,
-      "strengthMean": 0.19161092348256467,
-      "frequencyMean": 0.1322557566126596
+      "effectMean": 0.25389298007332234,
+      "strengthMean": 0.14934881653041224,
+      "frequencyMean": 0.10397593868182495
     },
     {
       "study": 145,
@@ -197,9 +197,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.3073316603709331,
-      "strengthMean": 0.18078333549157255,
-      "frequencyMean": 0.22780792881816192
+      "effectMean": 0.23972574926218923,
+      "strengthMean": 0.1410151511911615,
+      "frequencyMean": 0.17896852449230624
     },
     {
       "study": 145,
@@ -208,9 +208,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.08658987258958074,
-      "strengthMean": 0.05093522084658533,
-      "frequencyMean": 0.06886092869277408
+      "effectMean": 0.03376614349543739,
+      "strengthMean": 0.01986243791768836,
+      "frequencyMean": 0.020899894127854746
     },
     {
       "study": 145,
@@ -219,9 +219,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.08322570072434908,
-      "strengthMean": 0.04895629616651769,
-      "frequencyMean": 0.05848803318618097
+      "effectMean": 0.023280209565861944,
+      "strengthMean": 0.01369424144645977,
+      "frequencyMean": 0.026397082004161184
     },
     {
       "study": 145,
@@ -230,9 +230,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.09071063184300825,
-      "strengthMean": 0.05335919695244229,
-      "frequencyMean": 0.06848089623264803
+      "effectMean": 0.027511347238776743,
+      "strengthMean": 0.016183145996551088,
+      "frequencyMean": 0.025233660640816943
     },
     {
       "study": 145,
@@ -241,9 +241,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.09138822808391854,
-      "strengthMean": 0.053757782746308956,
-      "frequencyMean": 0.06566415321954495
+      "effectMean": 0.03264153851362359,
+      "strengthMean": 0.019200905514914914,
+      "frequencyMean": 0.025043436182220994
     },
     {
       "study": 145,
@@ -252,9 +252,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.09010290872182933,
-      "strengthMean": 0.053001712695504466,
-      "frequencyMean": 0.03835458035948911
+      "effectMean": 0.03167712404745709,
+      "strengthMean": 0.018633603046654654,
+      "frequencyMean": 0.015557997895298699
     },
     {
       "study": 145,
@@ -263,9 +263,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.08346713927244309,
-      "strengthMean": 0.04909831875538244,
-      "frequencyMean": 0.06648645426344046
+      "effectMean": 0.03329999137922228,
+      "strengthMean": 0.019588230783338902,
+      "frequencyMean": 0.02505492089821101
     },
     {
       "study": 145,
@@ -274,9 +274,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.27851546246376363,
-      "strengthMean": 0.16383263031938936,
-      "frequencyMean": 0.20360751664998133
+      "effectMean": 0.20652842061479698,
+      "strengthMean": 0.12148731013491504,
+      "frequencyMean": 0.15146189928164364
     },
     {
       "study": 145,
@@ -285,9 +285,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.29955079761421904,
-      "strengthMean": 0.1762063571794153,
-      "frequencyMean": 0.20212271392107473
+      "effectMean": 0.21626563106778204,
+      "strengthMean": 0.12721508109887675,
+      "frequencyMean": 0.15173833908728407
     },
     {
       "study": 145,
@@ -296,9 +296,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2816536549546113,
-      "strengthMean": 0.16567862576208758,
-      "frequencyMean": 0.21315978111992576
+      "effectMean": 0.20754668610090282,
+      "strengthMean": 0.12208628981131203,
+      "frequencyMean": 0.15746142492552775
     },
     {
       "study": 145,
@@ -307,9 +307,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.30910204804672503,
-      "strengthMean": 0.1818247400332935,
-      "frequencyMean": 0.21325193630851078
+      "effectMean": 0.22783969429492987,
+      "strengthMean": 0.13402335396157963,
+      "frequencyMean": 0.15753028388689927
     },
     {
       "study": 145,
@@ -318,9 +318,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.30964732359819375,
-      "strengthMean": 0.18214549049246836,
-      "frequencyMean": 0.1124690906919196
+      "effectMean": 0.22469135580387378,
+      "strengthMean": 0.13217139003330142,
+      "frequencyMean": 0.08557465079955116
     },
     {
       "study": 145,
@@ -329,9 +329,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.27790013482593745,
-      "strengthMean": 0.16347067283085048,
-      "frequencyMean": 0.2171776136764782
+      "effectMean": 0.20483504459916316,
+      "strengthMean": 0.12049120650007436,
+      "frequencyMean": 0.1599116824036793
     },
     {
       "study": 145,
@@ -340,9 +340,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2570913123006655,
-      "strengthMean": 0.15123018870256352,
-      "frequencyMean": 0.207583367664132
+      "effectMean": 0.19791109174349747,
+      "strengthMean": 0.1164182930196024,
+      "frequencyMean": 0.15900143701634822
     },
     {
       "study": 145,
@@ -351,9 +351,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2805639353194403,
-      "strengthMean": 0.1650376143932342,
-      "frequencyMean": 0.1909910011059682
+      "effectMean": 0.21666434932579,
+      "strengthMean": 0.12744962129748025,
+      "frequencyMean": 0.14484838158087274
     },
     {
       "study": 145,
@@ -362,9 +362,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2619582517341273,
-      "strengthMean": 0.15409309430748924,
-      "frequencyMean": 0.20668900262148782
+      "effectMean": 0.19835897136919234,
+      "strengthMean": 0.11668175178357904,
+      "frequencyMean": 0.15754036004996538
     },
     {
       "study": 145,
@@ -373,9 +373,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2627961388072684,
-      "strengthMean": 0.1545859690315865,
-      "frequencyMean": 0.19182257317551044
+      "effectMean": 0.20411223115388566,
+      "strengthMean": 0.1200660221581984,
+      "frequencyMean": 0.15029085684977872
     },
     {
       "study": 145,
@@ -384,9 +384,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.27889771297689303,
-      "strengthMean": 0.16405748352367897,
-      "frequencyMean": 0.1129340497112604
+      "effectMean": 0.2128768550383649,
+      "strengthMean": 0.12522168340995615,
+      "frequencyMean": 0.08700732908499215
     },
     {
       "study": 145,
@@ -395,9 +395,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2647033497219127,
-      "strengthMean": 0.15570785779494722,
-      "frequencyMean": 0.19635899441070911
+      "effectMean": 0.19911893208611467,
+      "strengthMean": 0.11712878726532173,
+      "frequencyMean": 0.1506843323990407
     },
     {
       "study": 145,
@@ -406,9 +406,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1159698780538127,
-      "strengthMean": 0.06821757769987678,
-      "frequencyMean": 0.09438910933338528
+      "effectMean": 0.04346357769135135,
+      "strengthMean": 0.025566811152037353,
+      "frequencyMean": 0.028860940780635825
     },
     {
       "study": 145,
@@ -417,9 +417,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.09364403825960918,
-      "strengthMean": 0.05508473037360256,
-      "frequencyMean": 0.07779847621246848
+      "effectMean": 0.02903279354466742,
+      "strengthMean": 0.017078114483969,
+      "frequencyMean": 0.03589617157244489
     },
     {
       "study": 145,
@@ -428,9 +428,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10710456763101982,
-      "strengthMean": 0.0630026891004408,
-      "frequencyMean": 0.08906474715519669
+      "effectMean": 0.040216594230762646,
+      "strengthMean": 0.02365682090376967,
+      "frequencyMean": 0.0343344716904374
     },
     {
       "study": 145,
@@ -439,9 +439,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.12118770718416272,
-      "strengthMean": 0.07128688898152094,
-      "frequencyMean": 0.0879077182537251
+      "effectMean": 0.03977183238149254,
+      "strengthMean": 0.023395196146483697,
+      "frequencyMean": 0.03328101979028278
     },
     {
       "study": 145,
@@ -450,9 +450,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11309271531343836,
-      "strengthMean": 0.06652512901762914,
-      "frequencyMean": 0.05647478121243859
+      "effectMean": 0.041436631365472334,
+      "strengthMean": 0.024374489853802184,
+      "frequencyMean": 0.01928424804263655
     },
     {
       "study": 145,
@@ -461,9 +461,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11517770008487621,
-      "strengthMean": 0.0677515905060566,
-      "frequencyMean": 0.08855769672833379
+      "effectMean": 0.04698286126447535,
+      "strengthMean": 0.027636977973998,
+      "frequencyMean": 0.03359785428905194
     },
     {
       "study": 145,
@@ -472,9 +472,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2607800352811038,
-      "strengthMean": 0.15340002596467042,
-      "frequencyMean": 0.19544258178201412
+      "effectMean": 0.20291175152211013,
+      "strengthMean": 0.11935985759332239,
+      "frequencyMean": 0.15014219531865985
     },
     {
       "study": 145,
@@ -483,9 +483,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.28575933355668065,
-      "strengthMean": 0.16809373123355312,
-      "frequencyMean": 0.1958798946149562
+      "effectMean": 0.21080984610030515,
+      "strengthMean": 0.1240057957597442,
+      "frequencyMean": 0.14731926481720786
     },
     {
       "study": 145,
@@ -494,9 +494,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2612715512588321,
-      "strengthMean": 0.15368915304822456,
-      "frequencyMean": 0.2004269857362405
+      "effectMean": 0.2027829315437347,
+      "strengthMean": 0.1192840811584326,
+      "frequencyMean": 0.15372339655604347
     },
     {
       "study": 145,
@@ -505,9 +505,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2987496085767031,
-      "strengthMean": 0.17573506974953157,
-      "frequencyMean": 0.20326598627105918
+      "effectMean": 0.2243836599507383,
+      "strengthMean": 0.13199039254308528,
+      "frequencyMean": 0.15378257143985055
     },
     {
       "study": 145,
@@ -516,9 +516,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2929390360619767,
-      "strengthMean": 0.1723170858683509,
-      "frequencyMean": 0.10681592616771757
+      "effectMean": 0.22314394701028173,
+      "strengthMean": 0.13126114954984172,
+      "frequencyMean": 0.08296482836158248
     },
     {
       "study": 145,
@@ -527,9 +527,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.26194487534266125,
-      "strengthMean": 0.1540852259002308,
-      "frequencyMean": 0.20600694725284152
+      "effectMean": 0.20063974919631536,
+      "strengthMean": 0.11802338546937624,
+      "frequencyMean": 0.15622621100524983
     },
     {
       "study": 145,
@@ -538,9 +538,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.3029764089601899,
-      "strengthMean": 0.17822142305389702,
-      "frequencyMean": 0.24817425036952623
+      "effectMean": 0.22926080663395706,
+      "strengthMean": 0.1348593024006277,
+      "frequencyMean": 0.18601455967987848
     },
     {
       "study": 145,
@@ -549,9 +549,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.3295181776446622,
-      "strengthMean": 0.19383422860579974,
-      "frequencyMean": 0.22495344148654278
+      "effectMean": 0.24709132075227816,
+      "strengthMean": 0.14534784030938266,
+      "frequencyMean": 0.170030501452712
     },
     {
       "study": 145,
@@ -560,9 +560,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.3078022105742713,
-      "strengthMean": 0.18106012985965042,
-      "frequencyMean": 0.24290213113603054
+      "effectMean": 0.23148682643859916,
+      "strengthMean": 0.13616872579919717,
+      "frequencyMean": 0.1828448645333703
     },
     {
       "study": 145,
@@ -571,9 +571,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.3115238518093148,
-      "strengthMean": 0.18324933069445912,
-      "frequencyMean": 0.22829831594991778
+      "effectMean": 0.235004296861689,
+      "strengthMean": 0.1382378260539512,
+      "frequencyMean": 0.17153840797804645
     },
     {
       "study": 145,
@@ -582,9 +582,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.32990250962277723,
-      "strengthMean": 0.19406030629848334,
-      "frequencyMean": 0.13449840761882115
+      "effectMean": 0.2479383721376962,
+      "strengthMean": 0.14584610583681917,
+      "frequencyMean": 0.10104593723134382
     },
     {
       "study": 145,
@@ -593,9 +593,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.30970743659887295,
-      "strengthMean": 0.18218085117847627,
-      "frequencyMean": 0.23034115429895377
+      "effectMean": 0.233128811657459,
+      "strengthMean": 0.13713459941907952,
+      "frequencyMean": 0.1738142995735333
     },
     {
       "study": 146,
@@ -604,9 +604,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2586439901269428,
-      "strengthMean": 0.15214352836650588,
-      "frequencyMean": 0.20638075207158513
+      "effectMean": 0.20600146986515194,
+      "strengthMean": 0.12117733922427347,
+      "frequencyMean": 0.16325366355323984
     },
     {
       "study": 146,
@@ -615,9 +615,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2416599801032672,
-      "strengthMean": 0.1421529340886991,
-      "frequencyMean": 0.1814085824611208
+      "effectMean": 0.1938603868994216,
+      "strengthMean": 0.11403552574641006,
+      "frequencyMean": 0.14077229360823781
     },
     {
       "study": 146,
@@ -626,9 +626,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2591266448668276,
-      "strengthMean": 0.1524274432686277,
-      "frequencyMean": 0.2021030951307859
+      "effectMean": 0.20166169941316267,
+      "strengthMean": 0.11862453332994184,
+      "frequencyMean": 0.16512254599747808
     },
     {
       "study": 146,
@@ -637,9 +637,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2566924242336716,
-      "strengthMean": 0.15099554859239106,
-      "frequencyMean": 0.19761653959318953
+      "effectMean": 0.2088529895829445,
+      "strengthMean": 0.12285470412679057,
+      "frequencyMean": 0.15745509737842606
     },
     {
       "study": 146,
@@ -648,9 +648,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2625479503363046,
-      "strengthMean": 0.15443997554327574,
-      "frequencyMean": 0.11271638980697803
+      "effectMean": 0.21455427701214996,
+      "strengthMean": 0.12620840246183268,
+      "frequencyMean": 0.08857591218363516
     },
     {
       "study": 146,
@@ -659,9 +659,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.257730988472841,
-      "strengthMean": 0.15160646854947532,
-      "frequencyMean": 0.19786639295042815
+      "effectMean": 0.2026329810898708,
+      "strengthMean": 0.11919587523919456,
+      "frequencyMean": 0.15672557652171484
     },
     {
       "study": 146,
@@ -670,9 +670,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2119218327776583,
-      "strengthMean": 0.12465990573363425,
-      "frequencyMean": 0.15418547292731752
+      "effectMean": 0.18936270859252213,
+      "strengthMean": 0.11138983262569789,
+      "frequencyMean": 0.13262583834177183
     },
     {
       "study": 146,
@@ -681,9 +681,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.25068863252297224,
-      "strengthMean": 0.1474639062561933,
-      "frequencyMean": 0.1583854418128009
+      "effectMean": 0.20911241066563557,
+      "strengthMean": 0.12300730463041211,
+      "frequencyMean": 0.1365221840399458
     },
     {
       "study": 146,
@@ -692,9 +692,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.20175524702490708,
-      "strengthMean": 0.11867956083793532,
-      "frequencyMean": 0.16060393231365114
+      "effectMean": 0.1879892213958101,
+      "strengthMean": 0.11058189880414333,
+      "frequencyMean": 0.14192132082859066
     },
     {
       "study": 146,
@@ -703,9 +703,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23302477779849473,
-      "strengthMean": 0.13707340324599085,
-      "frequencyMean": 0.16051308225372518
+      "effectMean": 0.20685074961988903,
+      "strengthMean": 0.12167691585076765,
+      "frequencyMean": 0.14201963728346942
     },
     {
       "study": 146,
@@ -714,9 +714,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2368622768139465,
-      "strengthMean": 0.13933075572222978,
-      "frequencyMean": 0.08342454374298375
+      "effectMean": 0.20535723151971813,
+      "strengthMean": 0.12079837580164497,
+      "frequencyMean": 0.07821465056297877
     },
     {
       "study": 146,
@@ -725,9 +725,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.21203560551163553,
-      "strengthMean": 0.12472683073058927,
-      "frequencyMean": 0.16318826444576603
+      "effectMean": 0.18436066291370812,
+      "strengthMean": 0.10844745250756205,
+      "frequencyMean": 0.14425764185119244
     },
     {
       "study": 146,
@@ -736,9 +736,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.14728918092873755,
-      "strengthMean": 0.08664069753362211,
-      "frequencyMean": 0.10401052414009758
+      "effectMean": 0.1668149523441116,
+      "strengthMean": 0.09812644594153012,
+      "frequencyMean": 0.12505406940201944
     },
     {
       "study": 146,
@@ -747,9 +747,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1691830186213007,
-      "strengthMean": 0.09951942600909289,
-      "frequencyMean": 0.10359996328264226
+      "effectMean": 0.17854466197565505,
+      "strengthMean": 0.1050262754036091,
+      "frequencyMean": 0.11695296491500978
     },
     {
       "study": 146,
@@ -758,9 +758,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.14254198995598183,
-      "strengthMean": 0.08384823199848639,
-      "frequencyMean": 0.10896738816565878
+      "effectMean": 0.15952787464425455,
+      "strengthMean": 0.09383992950992334,
+      "frequencyMean": 0.1240364444173255
     },
     {
       "study": 146,
@@ -769,9 +769,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1366082998413276,
-      "strengthMean": 0.08035782586807727,
-      "frequencyMean": 0.10583355012162925
+      "effectMean": 0.15926417585854902,
+      "strengthMean": 0.0936848124913054,
+      "frequencyMean": 0.11751557204082598
     },
     {
       "study": 146,
@@ -780,9 +780,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.15363399369458752,
-      "strengthMean": 0.09037294038129899,
-      "frequencyMean": 0.06286566403022417
+      "effectMean": 0.17310302791441823,
+      "strengthMean": 0.10182531417655644,
+      "frequencyMean": 0.0705854681338513
     },
     {
       "study": 146,
@@ -791,9 +791,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.13687575257836215,
-      "strengthMean": 0.0805151512120946,
-      "frequencyMean": 0.1037869564495395
+      "effectMean": 0.16028703616763612,
+      "strengthMean": 0.09428649496852483,
+      "frequencyMean": 0.12014675998063301
     },
     {
       "study": 146,
@@ -802,9 +802,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2217957561073366,
-      "strengthMean": 0.13046809583503008,
-      "frequencyMean": 0.17273824290154235
+      "effectMean": 0.21767526677699192,
+      "strengthMean": 0.12804427864427287,
+      "frequencyMean": 0.17620681882323713
     },
     {
       "study": 146,
@@ -813,9 +813,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.21234594744997926,
-      "strengthMean": 0.1249093848930236,
-      "frequencyMean": 0.15558850944340852
+      "effectMean": 0.21300425650993435,
+      "strengthMean": 0.12529662552980303,
+      "frequencyMean": 0.16133752462594037
     },
     {
       "study": 146,
@@ -824,9 +824,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.21203602207513292,
-      "strengthMean": 0.12472707591186091,
-      "frequencyMean": 0.1716263224807335
+      "effectMean": 0.20247121359770145,
+      "strengthMean": 0.1191007178366073,
+      "frequencyMean": 0.16529563516283732
     },
     {
       "study": 146,
@@ -835,9 +835,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2174998461965019,
-      "strengthMean": 0.12794109009651453,
-      "frequencyMean": 0.1699098714487222
+      "effectMean": 0.21345980095386288,
+      "strengthMean": 0.1255645928596633,
+      "frequencyMean": 0.16430215912857254
     },
     {
       "study": 146,
@@ -846,9 +846,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2245219462360679,
-      "strengthMean": 0.13207173713209902,
-      "frequencyMean": 0.09501999623681844
+      "effectMean": 0.22036258506479747,
+      "strengthMean": 0.12962505406196875,
+      "frequencyMean": 0.09718122458786059
     },
     {
       "study": 146,
@@ -857,9 +857,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2182048919066388,
-      "strengthMean": 0.12835582283126065,
-      "frequencyMean": 0.16946845512846018
+      "effectMean": 0.2087957610369606,
+      "strengthMean": 0.1228210397971452,
+      "frequencyMean": 0.16543109340037435
     },
     {
       "study": 146,
@@ -868,9 +868,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.19865405118637433,
-      "strengthMean": 0.11685532810282563,
-      "frequencyMean": 0.153024850178905
+      "effectMean": 0.17457105043221913,
+      "strengthMean": 0.10268885671437354,
+      "frequencyMean": 0.1324398166620168
     },
     {
       "study": 146,
@@ -879,9 +879,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22313362531132375,
-      "strengthMean": 0.13125507791146032,
-      "frequencyMean": 0.15191185038853208
+      "effectMean": 0.1937576719784705,
+      "strengthMean": 0.11397510492106862,
+      "frequencyMean": 0.13008826704594867
     },
     {
       "study": 146,
@@ -890,9 +890,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.21196894330166122,
-      "strengthMean": 0.12468761766380836,
-      "frequencyMean": 0.15920791799581738
+      "effectMean": 0.17592817918623702,
+      "strengthMean": 0.10348716766181744,
+      "frequencyMean": 0.1376505953110361
     },
     {
       "study": 146,
@@ -901,9 +901,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22736747240225502,
-      "strengthMean": 0.1337455763790455,
-      "frequencyMean": 0.15795329879138495
+      "effectMean": 0.20791989998519966,
+      "strengthMean": 0.12230582752470748,
+      "frequencyMean": 0.14140022828250534
     },
     {
       "study": 146,
@@ -912,9 +912,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22746374979031067,
-      "strengthMean": 0.13380221010019835,
-      "frequencyMean": 0.08563761844075915
+      "effectMean": 0.20317239425468292,
+      "strengthMean": 0.1195131770717291,
+      "frequencyMean": 0.07394079863508357
     },
     {
       "study": 146,
@@ -923,9 +923,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.20926759102535056,
-      "strengthMean": 0.12309858699925579,
-      "frequencyMean": 0.15827372756021676
+      "effectMean": 0.1774679698084004,
+      "strengthMean": 0.10439292687682279,
+      "frequencyMean": 0.13943098235567544
     },
     {
       "study": 146,
@@ -934,9 +934,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1593065050825234,
-      "strengthMean": 0.09370971197474566,
-      "frequencyMean": 0.1289199862291794
+      "effectMean": 0.1690100475722044,
+      "strengthMean": 0.09941767846926682,
+      "frequencyMean": 0.1344772484118163
     },
     {
       "study": 146,
@@ -945,9 +945,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.18651694286383894,
-      "strengthMean": 0.10971585239657212,
-      "frequencyMean": 0.11663492834277762
+      "effectMean": 0.19032124738001502,
+      "strengthMean": 0.11195367877609318,
+      "frequencyMean": 0.1246037025840575
     },
     {
       "study": 146,
@@ -956,9 +956,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.16245954070063817,
-      "strengthMean": 0.0955644387672485,
-      "frequencyMean": 0.13145699292904697
+      "effectMean": 0.17299478610167088,
+      "strengthMean": 0.10176164213178461,
+      "frequencyMean": 0.1364275433356852
     },
     {
       "study": 146,
@@ -967,9 +967,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.16967108989878066,
-      "strengthMean": 0.09980652653716375,
-      "frequencyMean": 0.12724712139309055
+      "effectMean": 0.178173920259765,
+      "strengthMean": 0.10480819198941886,
+      "frequencyMean": 0.1295770087549086
     },
     {
       "study": 146,
@@ -978,9 +978,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.20173345975705492,
-      "strengthMean": 0.11866674477321547,
-      "frequencyMean": 0.07332409733972285
+      "effectMean": 0.19599740614442204,
+      "strengthMean": 0.11529259559675996,
+      "frequencyMean": 0.07774348034263312
     },
     {
       "study": 146,
@@ -989,9 +989,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.16771101459820867,
-      "strengthMean": 0.09865354116967948,
-      "frequencyMean": 0.12339380938339094
+      "effectMean": 0.17801356486442768,
+      "strengthMean": 0.10471386523704496,
+      "frequencyMean": 0.12993539797503217
     },
     {
       "study": 146,
@@ -1000,9 +1000,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23385472684189648,
-      "strengthMean": 0.1375616082751466,
-      "frequencyMean": 0.18566158445758613
+      "effectMean": 0.18387062235888152,
+      "strengthMean": 0.10815919331346115,
+      "frequencyMean": 0.1509314083651506
     },
     {
       "study": 146,
@@ -1011,9 +1011,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22313328809352903,
-      "strengthMean": 0.13125487953458437,
-      "frequencyMean": 0.1717907749997597
+      "effectMean": 0.1777769605201601,
+      "strengthMean": 0.10457468637836924,
+      "frequencyMean": 0.1358528524117446
     },
     {
       "study": 146,
@@ -1022,9 +1022,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22763909716307104,
-      "strengthMean": 0.13390535587851363,
-      "frequencyMean": 0.1792302185340511
+      "effectMean": 0.1792664232438545,
+      "strengthMean": 0.10545084107273149,
+      "frequencyMean": 0.14279299202944043
     },
     {
       "study": 146,
@@ -1033,9 +1033,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.25081175852942167,
-      "strengthMean": 0.14753633324988352,
-      "frequencyMean": 0.17654776110816783
+      "effectMean": 0.1946846336272136,
+      "strengthMean": 0.11452037668103995,
+      "frequencyMean": 0.14200023806981996
     },
     {
       "study": 146,
@@ -1044,9 +1044,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23892138540040006,
-      "strengthMean": 0.1405419956630877,
-      "frequencyMean": 0.10194993023707287
+      "effectMean": 0.18736670248402085,
+      "strengthMean": 0.11021571105848951,
+      "frequencyMean": 0.08016575764422255
     },
     {
       "study": 146,
@@ -1055,9 +1055,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22617564005756982,
-      "strengthMean": 0.13304449843634425,
-      "frequencyMean": 0.17851150379814582
+      "effectMean": 0.17992785463417765,
+      "strengthMean": 0.10583991826584596,
+      "frequencyMean": 0.14248814709005522
     },
     {
       "study": 146,
@@ -1066,9 +1066,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22654787504339682,
-      "strengthMean": 0.13326346021346003,
-      "frequencyMean": 0.16488691713530815
+      "effectMean": 0.19090330123917323,
+      "strengthMean": 0.11229606336752856,
+      "frequencyMean": 0.13665613487102168
     },
     {
       "study": 146,
@@ -1077,9 +1077,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.25054235696684785,
-      "strengthMean": 0.14737786170625936,
-      "frequencyMean": 0.16971100667003405
+      "effectMean": 0.19592981383857477,
+      "strengthMean": 0.11525283566718579,
+      "frequencyMean": 0.13630393979643818
     },
     {
       "study": 146,
@@ -1088,9 +1088,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.22759429023199118,
-      "strengthMean": 0.13387899850886242,
-      "frequencyMean": 0.17237992095118154
+      "effectMean": 0.1888482687175755,
+      "strengthMean": 0.11108722074796291,
+      "frequencyMean": 0.1434463450140232
     },
     {
       "study": 146,
@@ -1099,9 +1099,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2520357711064207,
-      "strengthMean": 0.14825634086599332,
-      "frequencyMean": 0.1744200146269825
+      "effectMean": 0.20888564551273703,
+      "strengthMean": 0.12287391345206412,
+      "frequencyMean": 0.1441944468844709
     },
     {
       "study": 146,
@@ -1110,9 +1110,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24532217938793688,
-      "strengthMean": 0.14430716914030614,
-      "frequencyMean": 0.09299544370570732
+      "effectMean": 0.2046162855924029,
+      "strengthMean": 0.12036252525459448,
+      "frequencyMean": 0.07771165575577883
     },
     {
       "study": 146,
@@ -1121,9 +1121,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2257632900774421,
-      "strengthMean": 0.13280193965823112,
-      "frequencyMean": 0.17426574536704142
+      "effectMean": 0.19076371554853144,
+      "strengthMean": 0.11221395420323627,
+      "frequencyMean": 0.1454284645170157
     },
     {
       "study": 146,
@@ -1132,9 +1132,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11721700494252797,
-      "strengthMean": 0.06895118159710281,
-      "frequencyMean": 0.08620137468357246
+      "effectMean": 0.15829657814157888,
+      "strengthMean": 0.09311563757284023,
+      "frequencyMean": 0.1227523385210299
     },
     {
       "study": 146,
@@ -1143,9 +1143,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.14495748344248485,
-      "strengthMean": 0.08526911077270101,
-      "frequencyMean": 0.07961982876103817
+      "effectMean": 0.17278266607759593,
+      "strengthMean": 0.10163686605185583,
+      "frequencyMean": 0.11355730347883185
     },
     {
       "study": 146,
@@ -1154,9 +1154,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11847558529455621,
-      "strengthMean": 0.06969152296677418,
-      "frequencyMean": 0.09122450460633692
+      "effectMean": 0.15455856609233623,
+      "strengthMean": 0.09091680691730372,
+      "frequencyMean": 0.1229172442542263
     },
     {
       "study": 146,
@@ -1165,9 +1165,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11976878450747624,
-      "strengthMean": 0.07045222837243935,
-      "frequencyMean": 0.08887658528769035
+      "effectMean": 0.16026259143518473,
+      "strengthMean": 0.09427211596748335,
+      "frequencyMean": 0.1180919498802847
     },
     {
       "study": 146,
@@ -1176,9 +1176,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1324050550130199,
-      "strengthMean": 0.0778853290245355,
-      "frequencyMean": 0.055442572840423636
+      "effectMean": 0.16721024777019589,
+      "strengthMean": 0.098358972774866,
+      "frequencyMean": 0.07017037449914328
     },
     {
       "study": 146,
@@ -1187,9 +1187,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11514912714175228,
-      "strengthMean": 0.06773478274358653,
-      "frequencyMean": 0.0872484335029433
+      "effectMean": 0.15657091065052306,
+      "strengthMean": 0.09210053897074678,
+      "frequencyMean": 0.11756493695222824
     },
     {
       "study": 147,
@@ -1792,9 +1792,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.25588999450775934,
-      "strengthMean": 0.1505235308548601,
-      "frequencyMean": 0.18996442467712107
+      "effectMean": 0.24980778915770233,
+      "strengthMean": 0.14694576285546646,
+      "frequencyMean": 0.20041716075907476
     },
     {
       "study": 148,
@@ -1803,9 +1803,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24666503344137294,
-      "strengthMean": 0.14509708317431927,
-      "frequencyMean": 0.17377454241440402
+      "effectMean": 0.23552556316702644,
+      "strengthMean": 0.13854445339959717,
+      "frequencyMean": 0.17383363487260794
     },
     {
       "study": 148,
@@ -1814,9 +1814,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24706670070703363,
-      "strengthMean": 0.14533335828260038,
-      "frequencyMean": 0.19746239269740976
+      "effectMean": 0.2389376650178912,
+      "strengthMean": 0.14055157227870618,
+      "frequencyMean": 0.19346610551896115
     },
     {
       "study": 148,
@@ -1825,9 +1825,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2404763594974859,
-      "strengthMean": 0.14145668659669106,
-      "frequencyMean": 0.19235512388207676
+      "effectMean": 0.2417763151371136,
+      "strengthMean": 0.14222136655222462,
+      "frequencyMean": 0.19062018824867913
     },
     {
       "study": 148,
@@ -1836,9 +1836,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23591727771558493,
-      "strengthMean": 0.1387748735742207,
-      "frequencyMean": 0.10787969579707185
+      "effectMean": 0.24474425895840052,
+      "strengthMean": 0.14396721565935877,
+      "frequencyMean": 0.10796384843739691
     },
     {
       "study": 148,
@@ -1847,9 +1847,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2387010504507998,
-      "strengthMean": 0.1404123871251696,
-      "frequencyMean": 0.1901241316791956
+      "effectMean": 0.23795613805486937,
+      "strengthMean": 0.13997420326665055,
+      "frequencyMean": 0.18706144521233495
     },
     {
       "study": 148,
@@ -1858,9 +1858,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23861978624724792,
-      "strengthMean": 0.14036458456145987,
-      "frequencyMean": 0.17989080745982475
+      "effectMean": 0.2445320492050252,
+      "strengthMean": 0.1438423865778201,
+      "frequencyMean": 0.17793951850663606
     },
     {
       "study": 148,
@@ -1869,9 +1869,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23797734577295737,
-      "strengthMean": 0.13998667845143328,
-      "frequencyMean": 0.17610505222463954
+      "effectMean": 0.25067927559848613,
+      "strengthMean": 0.14745840215709904,
+      "frequencyMean": 0.1721077114867016
     },
     {
       "study": 148,
@@ -1880,9 +1880,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.25072674704799947,
-      "strengthMean": 0.14748632645850276,
-      "frequencyMean": 0.18484421283226932
+      "effectMean": 0.24714716129165026,
+      "strengthMean": 0.1453806877681762,
+      "frequencyMean": 0.18409074960866498
     },
     {
       "study": 148,
@@ -1891,9 +1891,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2661258095808576,
-      "strengthMean": 0.1565445990440408,
-      "frequencyMean": 0.18414139560892098
+      "effectMean": 0.2607430684420251,
+      "strengthMean": 0.15337828053642708,
+      "frequencyMean": 0.18718053014584835
     },
     {
       "study": 148,
@@ -1902,9 +1902,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.26002342527267913,
-      "strengthMean": 0.15295496100423572,
-      "frequencyMean": 0.10122570380264567
+      "effectMean": 0.25344116807801503,
+      "strengthMean": 0.14908304490423194,
+      "frequencyMean": 0.09848900968584283
     },
     {
       "study": 148,
@@ -1913,9 +1913,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2435823317685969,
-      "strengthMean": 0.14328372926460856,
-      "frequencyMean": 0.18559651525282045
+      "effectMean": 0.24318371045906548,
+      "strengthMean": 0.14304924593588195,
+      "frequencyMean": 0.18520515152646444
     },
     {
       "study": 148,
@@ -1924,9 +1924,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24390000488653063,
-      "strengthMean": 0.14347059579540655,
-      "frequencyMean": 0.19602031403552578
+      "effectMean": 0.23520172225454933,
+      "strengthMean": 0.13835395866606798,
+      "frequencyMean": 0.19098461166314254
     },
     {
       "study": 148,
@@ -1935,9 +1935,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.27208359943150834,
-      "strengthMean": 0.16004918119837053,
-      "frequencyMean": 0.18299595848731603
+      "effectMean": 0.2548068250286881,
+      "strengthMean": 0.14988637236844873,
+      "frequencyMean": 0.17324450065809122
     },
     {
       "study": 148,
@@ -1946,9 +1946,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24115519880317812,
-      "strengthMean": 0.14185600382544097,
-      "frequencyMean": 0.1977364570248855
+      "effectMean": 0.2378955351465596,
+      "strengthMean": 0.13993855468156238,
+      "frequencyMean": 0.188571698115745
     },
     {
       "study": 148,
@@ -1957,9 +1957,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.25975198624787893,
-      "strengthMean": 0.15279529098006606,
-      "frequencyMean": 0.1841723676126011
+      "effectMean": 0.25076782274614245,
+      "strengthMean": 0.1475104887440466,
+      "frequencyMean": 0.17887243654926846
     },
     {
       "study": 148,
@@ -1968,9 +1968,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.26237832701479585,
-      "strengthMean": 0.15434019735585025,
-      "frequencyMean": 0.10841678357585559
+      "effectMean": 0.25664561734505364,
+      "strengthMean": 0.15096801495689183,
+      "frequencyMean": 0.10527983959541003
     },
     {
       "study": 148,
@@ -1979,9 +1979,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24475712949631337,
-      "strengthMean": 0.14397478663902968,
-      "frequencyMean": 0.1838995387252825
+      "effectMean": 0.24271926300926597,
+      "strengthMean": 0.14277604165908997,
+      "frequencyMean": 0.17910208116328166
     },
     {
       "study": 148,
@@ -1990,9 +1990,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10580645931490422,
-      "strengthMean": 0.06223909578958145,
-      "frequencyMean": 0.09439857598235077
+      "effectMean": 0.1113351674997499,
+      "strengthMean": 0.06549127698285288,
+      "frequencyMean": 0.08551878964582019
     },
     {
       "study": 148,
@@ -2001,9 +2001,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.09596205733313665,
-      "strengthMean": 0.05644827090426671,
-      "frequencyMean": 0.07692879585250591
+      "effectMean": 0.10823412056114731,
+      "strengthMean": 0.06366713185831362,
+      "frequencyMean": 0.08172907444730465
     },
     {
       "study": 148,
@@ -2012,9 +2012,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.0919744203801284,
-      "strengthMean": 0.054102602096380986,
-      "frequencyMean": 0.07854579349143685
+      "effectMean": 0.11246977757441941,
+      "strengthMean": 0.06615869484994619,
+      "frequencyMean": 0.08938398615199813
     },
     {
       "study": 148,
@@ -2023,9 +2023,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10861379636637801,
-      "strengthMean": 0.06389047057597384,
-      "frequencyMean": 0.08121658801751024
+      "effectMean": 0.11666799507698174,
+      "strengthMean": 0.06862823455313363,
+      "frequencyMean": 0.08667235873029065
     },
     {
       "study": 148,
@@ -2034,9 +2034,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11834362284480449,
-      "strengthMean": 0.06961389799306,
-      "frequencyMean": 0.044159688419065125
+      "effectMean": 0.11927984787358913,
+      "strengthMean": 0.07016461868509148,
+      "frequencyMean": 0.0509582117776352
     },
     {
       "study": 148,
@@ -2045,9 +2045,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.1060805728124747,
-      "strengthMean": 0.062400338855695736,
-      "frequencyMean": 0.07839603592277523
+      "effectMean": 0.11250091313757532,
+      "strengthMean": 0.06617700981752767,
+      "frequencyMean": 0.08828547859147048
     },
     {
       "study": 148,
@@ -2056,9 +2056,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10306847420683467,
-      "strengthMean": 0.060628516209693444,
-      "frequencyMean": 0.07527440997430611
+      "effectMean": 0.10691452271591763,
+      "strengthMean": 0.06289089771516129,
+      "frequencyMean": 0.07977102409586223
     },
     {
       "study": 148,
@@ -2067,9 +2067,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11865320283496575,
-      "strengthMean": 0.0697960038710748,
-      "frequencyMean": 0.07983802462000643
+      "effectMean": 0.12553493179778094,
+      "strengthMean": 0.07384407992660934,
+      "frequencyMean": 0.08408899285057653
     },
     {
       "study": 148,
@@ -2078,9 +2078,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.09907978221392776,
-      "strengthMean": 0.05828222682918171,
-      "frequencyMean": 0.07965853046384423
+      "effectMean": 0.11259049704817285,
+      "strengthMean": 0.06622970638016507,
+      "frequencyMean": 0.0849244305524983
     },
     {
       "study": 148,
@@ -2089,9 +2089,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.12437725895878513,
-      "strengthMean": 0.0731630958942498,
-      "frequencyMean": 0.08313672782746422
+      "effectMean": 0.12900811001823473,
+      "strengthMean": 0.07588712585427194,
+      "frequencyMean": 0.0840132362809527
     },
     {
       "study": 148,
@@ -2100,9 +2100,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.12233004615890505,
-      "strengthMean": 0.07195885286736567,
-      "frequencyMean": 0.04017287950723998
+      "effectMean": 0.12515339369937548,
+      "strengthMean": 0.07361964564543913,
+      "frequencyMean": 0.044082225253822056
     },
     {
       "study": 148,
@@ -2111,9 +2111,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10360828703662926,
-      "strengthMean": 0.06094605286795162,
-      "frequencyMean": 0.08363980333946198
+      "effectMean": 0.11182760987478767,
+      "strengthMean": 0.06578094905489706,
+      "frequencyMean": 0.08817764530977001
     },
     {
       "study": 148,
@@ -2122,9 +2122,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10859604778248798,
-      "strengthMean": 0.06388003015945287,
-      "frequencyMean": 0.09036413693642813
+      "effectMean": 0.11443556720322787,
+      "strengthMean": 0.06731504175141625,
+      "frequencyMean": 0.09486569245175568
     },
     {
       "study": 148,
@@ -2133,9 +2133,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11707824387915687,
-      "strengthMean": 0.06886955735444644,
-      "frequencyMean": 0.08118908684206293
+      "effectMean": 0.12131673538880766,
+      "strengthMean": 0.07136278780316471,
+      "frequencyMean": 0.08710378828362247
     },
     {
       "study": 148,
@@ -2144,9 +2144,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11911144402264737,
-      "strengthMean": 0.07006555744051597,
-      "frequencyMean": 0.0864538778036645
+      "effectMean": 0.11363453567694458,
+      "strengthMean": 0.06684384663458331,
+      "frequencyMean": 0.09143544908635125
     },
     {
       "study": 148,
@@ -2155,9 +2155,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.10985380568904062,
-      "strengthMean": 0.0646198876678351,
-      "frequencyMean": 0.08711241183870945
+      "effectMean": 0.11330589784955175,
+      "strengthMean": 0.06665053028278965,
+      "frequencyMean": 0.084682714601513
     },
     {
       "study": 148,
@@ -2166,9 +2166,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.12067701663140311,
-      "strengthMean": 0.07098648258992894,
-      "frequencyMean": 0.0492826147262597
+      "effectMean": 0.12333174615345012,
+      "strengthMean": 0.0725480883914894,
+      "frequencyMean": 0.0502986072091186
     },
     {
       "study": 148,
@@ -2177,9 +2177,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.11520826162946336,
-      "strengthMean": 0.06776956790029297,
-      "frequencyMean": 0.0851934203507302
+      "effectMean": 0.11171158337476134,
+      "strengthMean": 0.06571269825888687,
+      "frequencyMean": 0.0857438258749839
     },
     {
       "study": 148,
@@ -2188,9 +2188,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.26046406706526876,
-      "strengthMean": 0.1532141618194642,
-      "frequencyMean": 0.19227113884955377
+      "effectMean": 0.24398747417705058,
+      "strengthMean": 0.14352204805758942,
+      "frequencyMean": 0.20064725339761935
     },
     {
       "study": 148,
@@ -2199,9 +2199,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2513276675278824,
-      "strengthMean": 0.14783980920294032,
-      "frequencyMean": 0.17766236292738374
+      "effectMean": 0.23712997079937023,
+      "strengthMean": 0.13948822257638807,
+      "frequencyMean": 0.17383842930005564
     },
     {
       "study": 148,
@@ -2210,9 +2210,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2487642056408235,
-      "strengthMean": 0.14633189054306553,
-      "frequencyMean": 0.19958165945643652
+      "effectMean": 0.24100348241278302,
+      "strengthMean": 0.14176675898339786,
+      "frequencyMean": 0.19315457855472315
     },
     {
       "study": 148,
@@ -2221,9 +2221,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24168484049162295,
-      "strengthMean": 0.14216755780812076,
-      "frequencyMean": 0.19348578333624158
+      "effectMean": 0.24472056090698144,
+      "strengthMean": 0.14395327584390377,
+      "frequencyMean": 0.1892733465725872
     },
     {
       "study": 148,
@@ -2232,9 +2232,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23878449865349632,
-      "strengthMean": 0.1404614741073105,
-      "frequencyMean": 0.10906067922612485
+      "effectMean": 0.24843392640460396,
+      "strengthMean": 0.1461376082982249,
+      "frequencyMean": 0.10766530500545328
     },
     {
       "study": 148,
@@ -2243,9 +2243,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24124197727120522,
-      "strengthMean": 0.1419070500072518,
-      "frequencyMean": 0.19194833151910148
+      "effectMean": 0.24053554072344757,
+      "strengthMean": 0.14149149899937832,
+      "frequencyMean": 0.18677952889232652
     },
     {
       "study": 148,
@@ -2254,9 +2254,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23971534136101333,
-      "strengthMean": 0.14100902884778901,
-      "frequencyMean": 0.18158446957535157
+      "effectMean": 0.24731408261686738,
+      "strengthMean": 0.14547887683842087,
+      "frequencyMean": 0.17837211173967013
     },
     {
       "study": 148,
@@ -2265,9 +2265,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.23900745402881346,
-      "strengthMean": 0.14059262451874846,
-      "frequencyMean": 0.176394593791718
+      "effectMean": 0.2504062284058984,
+      "strengthMean": 0.14729778606661884,
+      "frequencyMean": 0.17121176211375397
     },
     {
       "study": 148,
@@ -2276,9 +2276,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2504582231533112,
-      "strengthMean": 0.14732837127584472,
-      "frequencyMean": 0.185461948199025
+      "effectMean": 0.2503280339872369,
+      "strengthMean": 0.1472517892685077,
+      "frequencyMean": 0.18488771966349304
     },
     {
       "study": 148,
@@ -2287,9 +2287,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.26668819282241946,
-      "strengthMean": 0.15687541271158392,
-      "frequencyMean": 0.18466540447496466
+      "effectMean": 0.2575720450244758,
+      "strengthMean": 0.15151297258241606,
+      "frequencyMean": 0.18743397184541458
     },
     {
       "study": 148,
@@ -2298,9 +2298,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.25887664529843524,
-      "strengthMean": 0.15228038452749554,
-      "frequencyMean": 0.10028191068224922
+      "effectMean": 0.25573119336877426,
+      "strengthMean": 0.15043011874968215,
+      "frequencyMean": 0.09940347810739199
     },
     {
       "study": 148,
@@ -2309,9 +2309,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24469229553348917,
-      "strengthMean": 0.1439366490995698,
-      "frequencyMean": 0.18700581441564942
+      "effectMean": 0.24448258450212795,
+      "strengthMean": 0.1438132895395525,
+      "frequencyMean": 0.18597748865133987
     },
     {
       "study": 148,
@@ -2320,9 +2320,9 @@
       "mode": 1,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2460747793502378,
-      "strengthMean": 0.14474987492535132,
-      "frequencyMean": 0.19958442712752664
+      "effectMean": 0.2320537856066122,
+      "strengthMean": 0.13650223126197406,
+      "frequencyMean": 0.19048138152059188
     },
     {
       "study": 148,
@@ -2331,9 +2331,9 @@
       "mode": 2,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2770844174935767,
-      "strengthMean": 0.1629908389860165,
-      "frequencyMean": 0.18437352505125917
+      "effectMean": 0.25135453141137987,
+      "strengthMean": 0.14785561148602772,
+      "frequencyMean": 0.17289379343756908
     },
     {
       "study": 148,
@@ -2342,9 +2342,9 @@
       "mode": 3,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24436454179654407,
-      "strengthMean": 0.1437438527507931,
-      "frequencyMean": 0.19941931584468298
+      "effectMean": 0.2362647882617404,
+      "strengthMean": 0.13897929181364982,
+      "frequencyMean": 0.1872353222543924
     },
     {
       "study": 148,
@@ -2353,9 +2353,9 @@
       "mode": 4,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2593065709374555,
-      "strengthMean": 0.15253328193929602,
-      "frequencyMean": 0.18514245889574257
+      "effectMean": 0.245974021829418,
+      "strengthMean": 0.14469060588155777,
+      "frequencyMean": 0.17726724265900307
     },
     {
       "study": 148,
@@ -2364,9 +2364,9 @@
       "mode": 5,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.2649506058732269,
-      "strengthMean": 0.15585330265672714,
-      "frequencyMean": 0.10915830163032131
+      "effectMean": 0.2561951374684048,
+      "strengthMean": 0.15070302685274906,
+      "frequencyMean": 0.10213543958360044
     },
     {
       "study": 148,
@@ -2375,9 +2375,9 @@
       "mode": 6,
       "baseMaximumError": 0,
       "zeroMaximumError": 0,
-      "effectMean": 0.24782852606271757,
-      "strengthMean": 0.14578149061013723,
-      "frequencyMean": 0.18581513420915804
+      "effectMean": 0.24039333235875596,
+      "strengthMean": 0.1414078470778887,
+      "frequencyMean": 0.1777418943068948
     }
   ]
 }

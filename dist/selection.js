@@ -11,6 +11,9 @@ const TorusSelection=(()=>{
   // Select controlling choices before their dependent ranges. A held form,
   // for example, must be chosen before its subdivision controls are sampled.
   const order=['textureMode','inkCycle','ink','palette','winding','balance','layers','recursion','spectral','turns','wave','density','textureStrength','textureScale','speed','perspective'];
+  // These two studies reveal inheritance/contour breadth after choosing depth.
+  // Older held-form studies instead require balance before their layer count.
+  if(id===146||id===148){order.splice(order.indexOf('layers'),1);order.splice(order.indexOf('balance'),0,'layers');}
   for(const key of order){
    const spec=TorusParameters.profile(id,s.variation,s)[key];if(!spec)continue;
    const values=spec.values||(key==='textureMode'?[0,1,2,3,4,5,6]:key==='spectral'?[0,1,2]:null);

@@ -27,7 +27,8 @@ for(const [id,variants] of entries)for(let j=0;j<15;j++){
 const seen=new Set();for(let j=0;j<entries.length-1;j++)seen.add(c.S.index(0,entries.length,()=>true,()=>(j+.5)/(entries.length-1)));assert.equal(seen.size,entries.length-1);assert(!seen.has(0));
 assert.equal(c.S.index(0,entries.length,i=>i===12,rng),12);
 for(const id of [145,146,147,148]){
- const state=c.P.get(id),p=c.params.profile(id,0,state);assert.equal(state.textureMode,0,'Default mathematical shading remains unchanged');
+ const state=c.P.get(id),p=c.params.profile(id,0,{...state,textureMode:0});
+ if(id!==147){assert(state.textureMode>0,'Visible studies start with curated lighting');assert(state.textureStrength>0&&state.textureStrength<=.35);}
  assert(p.textureMode&&!p.textureStrength&&!p.textureScale,'Off mode exposes only the choreography selector');
  for(const mode of [1,2,3,4,5,6]){
   const active=c.params.profile(id,0,{...state,textureMode:mode,textureStrength:.65});assert(active.textureMode&&active.textureStrength&&active.textureScale);

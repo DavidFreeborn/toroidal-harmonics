@@ -12,7 +12,8 @@ void main(){vec2 a=aUV*TAU;vAngles=a;vPosition=vec3((3.0+1.8*cos(a.y))*cos(a.x),
  const fragmentSource = `#version 300 es
 precision highp float;
 uniform float uTime,uWave,uDensity,uLayers,uInk;
-uniform highp int uKind,uVariant;
+uniform float uAperture,uEngraving,uGenerationRatio;
+uniform highp int uKind,uVariant,uWinding,uTreatment;
 uniform vec2 uEvolution[9],uDiagonal[9];
 uniform vec4 uDivisors[3];
 in vec3 vPosition;
@@ -24,7 +25,7 @@ struct Kernel{vec2 a,b,c,da,db,dc;};
 struct Field{vec2 value,x,y;};
 Kernel kernel(float x,bool diagonal){
  vec2 step=vec2(cos(TAU*x),sin(TAU*x)),harmonic=vec2(1,0);
- Kernel k;k.a=vec2(1,0);k.b=vec2(0);k.c=vec2(0);k.da=vec2(0);k.db=vec2(0);k.dc=vec2(0);
+ Kernel k;k.a=diagonal?uDiagonal[0]:uEvolution[0];k.b=vec2(0);k.c=vec2(0);k.da=vec2(0);k.db=vec2(0);k.dc=vec2(0);
  for(int j=1;j<=8;j++){
   if(float(j)>uLayers)break;
   float n=float(j),n2=n*n;harmonic=multiply(harmonic,step);
@@ -37,13 +38,16 @@ Kernel kernel(float x,bool diagonal){
 }
 Field rosette(Kernel a,Kernel b,bool cross){
  vec2 core=multiply(a.a,b.a),cx=multiply(a.da,b.a),cy=multiply(a.a,b.da),petal,px,py;
+ // Gaussian width changes seed size, not arbitrary overall brightness. The
+ // normalized second/fourth spectral moments keep lobe amplitudes comparable.
+ float aperture=uAperture>0.0?uAperture:1.0;
  if(cross){
-  petal=.22*(multiply(a.b,b.a)-multiply(a.a,b.b));
-  px=.22*(multiply(a.db,b.a)-multiply(a.da,b.b));py=.22*(multiply(a.b,b.da)-multiply(a.a,b.db));
+  petal=.22*aperture*(multiply(a.b,b.a)-multiply(a.a,b.b));
+  px=.22*aperture*(multiply(a.db,b.a)-multiply(a.da,b.b));py=.22*aperture*(multiply(a.b,b.da)-multiply(a.a,b.db));
  }else{
-  petal=.018*(multiply(a.c,b.a)-6.0*multiply(a.b,b.b)+multiply(a.a,b.c));
-  px=.018*(multiply(a.dc,b.a)-6.0*multiply(a.db,b.b)+multiply(a.da,b.c));
-  py=.018*(multiply(a.c,b.da)-6.0*multiply(a.b,b.db)+multiply(a.a,b.dc));
+  petal=.018*aperture*aperture*(multiply(a.c,b.a)-6.0*multiply(a.b,b.b)+multiply(a.a,b.c));
+  px=.018*aperture*aperture*(multiply(a.dc,b.a)-6.0*multiply(a.db,b.b)+multiply(a.da,b.c));
+  py=.018*aperture*aperture*(multiply(a.c,b.da)-6.0*multiply(a.b,b.db)+multiply(a.a,b.dc));
  }
  float coreWeight=.06+.12*(1.0-uWave),petalWeight=.6+uWave;
  Field f;f.value=coreWeight*core+petalWeight*petal;f.x=coreWeight*cx+petalWeight*px;f.y=coreWeight*cy+petalWeight*py;return f;
@@ -75,13 +79,21 @@ vec3 ellipticField(vec2 z,vec2 dx,vec2 dy,vec4 divisor){
  float visibility=1.0-smoothstep(.18,.60,max(length(dx),length(dy)));
  field*=visibility;field.x+=constant;return field;
 }
+// Degree-one integer chart changes preserve every lattice period. These are
+// display pullbacks; the Fourier/complex field is evaluated in its own chart.
+vec2 latticeChart(vec2 z){
+ if(uWinding==1)return vec2(z.x+z.y,z.y);
+ if(uWinding==2)return vec2(z.x,z.x+z.y);
+ if(uWinding==3)return vec2(z.x+z.y,z.x+2.0*z.y);
+ return z;
+}
 void main(){
  float v=vAngles.y,roots=uDensity<64.0?2.0:uDensity<112.0?4.0:6.0;
  vec2 chart=vec2(vAngles.x/TAU,(v-2.0*atan(sin(v)/(3.0+cos(v))))/TAU);
  // Each motion closes at 2pi. The elliptic procession also closes at pi,
  // leaving the zero/pole interchange exact at fixed points of the surface.
  chart.y+=uTime/(uKind==0?TAU:PI);
- vec2 z=chart*roots,dx=dFdx(z),dy=dFdy(z);float tone;
+ vec2 z=latticeChart(chart)*roots,dx=dFdx(z),dy=dFdy(z);float tone;
  if(uKind==0){
   Field f;
   if(uVariant==2){
@@ -91,9 +103,14 @@ void main(){
   float intensity=dot(f.value,f.value),level=log(1.0+.30*intensity);
   vec2 ix=2.0*vec2(dot(f.value,f.x),dot(f.value,f.y));
   vec2 gradient=.30/(1.0+.30*intensity)*vec2(dot(ix,dx),dot(ix,dy));
-  float body=torusEdgeCDF(level-.40,gradient);
-  float engraving=torusPeriodic(level*.95-.45,.032,gradient*.95)*torusEdgeCDF(level-.72,gradient);
-  tone=1.0-body*(1.0-.88*engraving);
+  float body=torusEdgeCDF(level-.40,gradient),frequency=.35+.20*uEngraving;
+  float width=uTreatment==1?.17:.032;
+  float engraving=torusPeriodic(level*frequency-.45,width,gradient*frequency)*torusEdgeCDF(level-.72,gradient);
+  if(uTreatment==2){
+   // Continuous log-intensity shading retains the same resolved level sets.
+   float pigment=.16+.84*(1.0-exp(-.70*level));
+   tone=1.0-body*pigment*(1.0-.78*engraving);
+  }else tone=1.0-body*(1.0-.88*engraving);
  }else{
   vec3 total=vec3(0);float weight=1.0,normalization=0.0;
   vec2 cover=uVariant==0?vec2(2,0):uVariant==1?vec2(1,1):vec2(2,1);
@@ -101,12 +118,16 @@ void main(){
    if(float(j)>=uLayers)break;
    vec3 local=ellipticField(z,dx,dy,uDivisors[j]);
    total+=weight*vec3(local.x,dot(local.yz,dx),dot(local.yz,dy));normalization+=weight;
-   z=multiply(cover,z);dx=multiply(cover,dx);dy=multiply(cover,dy);weight*=.5;
+   z=multiply(cover,z);dx=multiply(cover,dx);dy=multiply(cover,dy);weight/=uGenerationRatio;
   }
   total/=normalization;
-  float base=torusEdgeCDF(total.x,total.yz);
-  float engraving=torusPeriodic(4.0*total.x,.050,4.0*total.yz);
-  tone=mix(base,1.0-base,engraving);
+  float base=torusEdgeCDF(total.x,total.yz),frequency=1.0+uEngraving;
+  float engraving=torusPeriodic(frequency*total.x,uTreatment==1?.17:.050,frequency*total.yz);
+  if(uTreatment==2){
+   // This odd transfer, and the even contour mask, preserve H -> -H exactly.
+   float potential=.5+.48*total.x/sqrt(1.0+total.x*total.x);
+   tone=mix(potential,1.0-potential,.82*engraving);
+  }else tone=mix(base,1.0-base,engraving);
  }
  // A symmetric transfer preserves Elliptic Eyes' exact half-cycle complement.
  tone=.5+(tone-.5)*(.30+.68*uInk);fragColor=vec4(vec3(clamp(tone,0.0,1.0)),1);
@@ -117,7 +138,7 @@ void main(){
    if(kind!==0&&kind!==1)throw Error('Unknown revival study');
    if(programs.has(kind))return programs.get(kind);if(pending.has(kind))return pending.get(kind);
    const task=TorusPrograms.link(gl,vertexSource,TorusLight.fragment(TorusPrograms.specialize(fragmentSource,{uKind:kind}))).then(program=>{
-    const u={};for(const name of ['uViewProjection','uTime','uWave','uDensity','uLayers','uInk','uVariant','uEvolution[0]','uDiagonal[0]','uDivisors[0]'])u[name]=gl.getUniformLocation(program,name);
+    const u={};for(const name of ['uViewProjection','uTime','uWave','uDensity','uLayers','uInk','uAperture','uEngraving','uGenerationRatio','uVariant','uWinding','uTreatment','uEvolution[0]','uDiagonal[0]','uDivisors[0]'])u[name]=gl.getUniformLocation(program,name);
     const value={program,u};programs.set(kind,value);return value;
    }).finally(()=>pending.delete(kind));pending.set(kind,task);return task;
   }
@@ -125,13 +146,15 @@ void main(){
    const ready=programs.get(kind);if(!ready)throw Error('Prepare the revival study before drawing');const {program,u}=ready;
    gl.useProgram(program);TorusLight.bind(gl,program,options,time);gl.bindVertexArray(vao);
    gl.uniformMatrix4fv(u.uViewProjection,false,matrix);gl.uniform1f(u.uTime,time);gl.uniform1f(u.uWave,wave);gl.uniform1f(u.uDensity,density);gl.uniform1f(u.uLayers,options.layers);gl.uniform1f(u.uInk,options.ink);gl.uniform1i(u.uVariant,variant);
+   gl.uniform1i(u.uWinding,options.winding??0);gl.uniform1i(u.uTreatment,options.palette??0);gl.uniform1f(u.uEngraving,options.recursion??3);gl.uniform1f(u.uGenerationRatio,1+(options.spectral??1));
    if(kind===0){
-    const phase=time*(options.turns??1);
-    for(let n=0;n<=8;n++){const weight=Math.exp(-.13*n*n),angle=-n*n*phase;evolution[2*n]=weight*Math.cos(angle);evolution[2*n+1]=weight*Math.sin(angle);diagonal[2*n]=weight*Math.cos(2*angle);diagonal[2*n+1]=weight*Math.sin(2*angle);}
+    const phase=time*(options.turns??1),alpha=.07+.12*(options.balance??.5),aperture=alpha/.13,normalization=Math.sqrt(aperture);
+    gl.uniform1f(u.uAperture,aperture);
+    for(let n=0;n<=8;n++){const weight=normalization*Math.exp(-alpha*n*n),angle=-n*n*phase;evolution[2*n]=weight*Math.cos(angle);evolution[2*n+1]=weight*Math.sin(angle);diagonal[2*n]=weight*Math.cos(2*angle);diagonal[2*n+1]=weight*Math.sin(2*angle);}
     gl.uniform2fv(u['uEvolution[0]'],evolution);gl.uniform2fv(u['uDiagonal[0]'],diagonal);
    }else{
-    const rx=.23+.065*wave,ry=.12+.025*wave;
-    for(let j=0;j<3;j++){const phase=.5*(time+.25*j),c=Math.cos(phase),s=Math.sin(phase);divisors[4*j]=rx*c;divisors[4*j+1]=ry*s;divisors[4*j+2]=-rx*s;divisors[4*j+3]=ry*c;}
+    const rx=.26575+.14*(wave-.55),ry=.13375+.15*(wave-.55),inheritance=options.balance===undefined?.25:Math.PI*options.balance;
+    for(let j=0;j<3;j++){const phase=.5*(time+inheritance*j),c=Math.cos(phase),s=Math.sin(phase);divisors[4*j]=rx*c;divisors[4*j+1]=ry*s;divisors[4*j+2]=-rx*s;divisors[4*j+3]=ry*c;}
     gl.uniform4fv(u['uDivisors[0]'],divisors);
    }
    gl.drawElements(gl.TRIANGLES,typeof count==='function'?count():count,gl.UNSIGNED_INT,0);

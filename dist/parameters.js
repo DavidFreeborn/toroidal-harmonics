@@ -16,18 +16,36 @@ const TorusParameters=(()=>{
   return p;
  }
  function profile(id,v,s={}){
-  // Intrinsic mathematical evolution remains the default; the shared light
-  // choreography can be layered over it using the same controls as every study.
+  // These controls change the wave field, covering map or actual flip tiling.
+  // Light choreography remains independent of the mathematical construction.
   if(id>=145&&id<=148){
    const p={speed:range('Cycle speed',.2,2,.05),perspective:range('Perspective',55,105,1),ink:range('Dark–light contrast'),...lighting(s)};
    if(id<=146){
     p.density=stops('Root repeats',[40,88,136],['2','4','6']);
-    if(id===145){p.layers=stops('Fourier order',[4,6,8]);p.wave=range('Rosette lobes');p.turns=stops('Revivals per cycle',[1,2]);}
-    else{p.layers=layers('Covering generations',3);p.wave=range('Zero–pole orbit');}
+    p.winding=stops('Lattice chart',[0,1,2,3],['Aligned','Rising diagonal','Wrapped diagonal','Double winding']);
+    p.recursion=layers('Engraving density',5);
+    p.palette=stops('Contour treatment',[0,1,2],['Incised','Banded','Tonal']);
+    if(id===145){
+     p.layers=stops('Fourier order',[4,6,8]);p.wave=range('Petal prominence');p.turns=stops('Revivals per cycle',[1,2]);
+     p.balance=range('Aperture width');
+     p.wave.help='Aperture width sets the spectral spread; Fourier order sets its cutoff. Each revival reconstructs the rosettes.';
+    }else{
+     p.layers=layers('Covering generations',3);p.wave=range('Zero–pole orbit');
+     p.wave.help='Constructions choose the covering map. At one generation they coincide; further generations inherit different arrangements.';
+     if(s.layers>1){p.balance=range('Inheritance phase');p.spectral=stops('Generation weighting',[0,1,2],['Equal generations','Root emphasis','Strong root emphasis']);}
+    }
    }else if(id===147){
     p.density=stops('Mechanisms',[40,88,136],['17','23','29']);p.wave=range('Ribbon breadth');
     p.winding=stops('Helical pitch',[0,1,2,3],['1','2','3','5']);p.turns=stops('720° turns per cycle',[1,2,3]);
-   }else p.wave=range('Front breadth');
+   }else{
+    p.wave=range('Front breadth');p.wave.help='A travelling front rearranges three-tile patches. Inset contours follow the moving tile boundaries.';
+    p.density=stops('Pentagrid resolution',[40,88,136],['204 rhombi','492 rhombi','1,210 rhombi']);
+    p.layers=stops('Tile contours',[1,2,3],['Plain tiles','One inset','Two insets']);
+    if(s.layers>1)p.balance=range('Contour breadth');
+    p.winding=stops('Front direction',[0,1,2,3],['Meridional','Diagonal','Counterdiagonal','Long helical']);
+    p.turns=stops('Front repeats',[1,2,3]);
+    p.palette=stops('Tile tones',[0,1,2],['Shape families','Five directions','Reversed shapes']);
+   }
    return p;
   }
   const p={speed:range('Flow speed',.2,2,.05),perspective:range('Perspective',55,105,1),ink:range('Dark–light contrast'),...lighting(s),wave:range('Deformation'),density:range('Density',40,160,4)};

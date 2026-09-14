@@ -16,3 +16,6 @@ scripts/spinor-audit/variant*-phase*.png
 scripts/revivals-browser*/*-*-*.png
 scripts/revivals-design/
 scripts/publication-qa/
+scripts/revival-depth-audit/*.png
+scripts/revival-depth-audit/
+scripts/new-study-performance-*.json

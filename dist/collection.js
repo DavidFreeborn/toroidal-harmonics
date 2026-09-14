@@ -14,7 +14,7 @@ const TORUS_CATALOGUE = [
     [145,['Eightfold revival','Crossed rosettes','Diamond constellation'],'revival'],
     [146,['Nested eyelids','Turning inheritance','Fivefold descent'],'elliptic'],
     [147,['Twin belts','Crossed loom','Counterposed arches'],'spinor'],
-    [148,['Rising front','Countertides','Star relay'],'phason'],
+    [148,['Travelling front','Countertides','Star relay'],'phason'],
   ]},
   {name:'Living tessellations',studies:[
     [125, ["Staggered cells", "Inset cells", "Orbital cells"], "transformation"],

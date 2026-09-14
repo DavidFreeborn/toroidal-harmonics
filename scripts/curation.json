@@ -108,8 +108,8 @@
  {"id":14,"construction":"Sheared meridians","set":{"winding":1,"textureMode":3,"textureStrength":0.6,"textureScale":2,"density":136}},
  {"id":7,"construction":"Pearl constellation","set":{"winding":1,"layers":5,"textureMode":6,"textureStrength":0.42,"textureScale":5,"wave":1,"density":280}},
  {"id":11,"set":{"wave":0,"density":136}},
- {"id":145,"inherit":false,"set":{"speed":0.6,"density":88,"layers":6,"wave":0.65,"turns":1,"textureMode":0}},
- {"id":146,"inherit":false,"set":{"speed":0.6,"density":40,"layers":3,"wave":0.55,"textureMode":0}},
+ {"id":145,"inherit":false,"set":{"speed":1.5,"density":136,"layers":8,"variation":1,"wave":0.65,"turns":1,"balance":0.35,"winding":0,"recursion":3,"palette":1,"textureMode":3,"textureStrength":0.27,"textureScale":2}},
+ {"id":146,"inherit":false,"set":{"speed":1.5,"density":40,"layers":3,"variation":2,"wave":0.55,"balance":0.2,"spectral":0,"winding":0,"recursion":3,"palette":1,"textureMode":6,"textureStrength":0.27,"textureScale":2}},
  {"id":147,"hidden":true,"inherit":false,"set":{"speed":1,"density":88,"wave":0.65,"winding":1,"turns":1,"ink":0.95,"textureMode":0}},
- {"id":148,"inherit":false,"set":{"speed":0.6,"wave":0.35,"textureMode":0}}
+ {"id":148,"inherit":false,"set":{"speed":2,"density":88,"layers":2,"variation":1,"balance":0.35,"wave":0.35,"winding":1,"turns":1,"palette":0,"textureMode":4,"textureStrength":0.27,"textureScale":2}}
 ]

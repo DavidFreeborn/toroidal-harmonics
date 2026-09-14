@@ -152,6 +152,6 @@ const studies={
  145:['Rosettes disperse into fractional wave revivals, then reconstruct exactly.',['talbot','fourier'],['wavegrower']],
  146:['Theta-function zeros and poles exchange, reversing nested eyes and their surrounding light.',['theta','covering'],['alex','allyson']],
  147:['Turning cubes carry ribbons through a closed 720° belt-trick cycle.',['spinor','braid'],['bleuje']],
- 148:['An upward front flips rhomb neighbours; temporary polygonal tiles keep each transition filled.',['phason','penrose','approximant'],['allyson']]
+ 148:['Travelling fronts flip rhomb neighbours; inset contours follow the tiles through continuously filled transitions.',['phason','penrose','approximant'],['allyson']]
 };
 module.exports={topics,influences,studies};
