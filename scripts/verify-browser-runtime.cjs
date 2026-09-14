@@ -18,7 +18,7 @@ async function main(){
   for(const id of ids){
    await app.select(id);const count=await app.page.locator('#variation option').count();
    for(let variant=0;variant<count;variant++){
-    await app.input('variation',variant);await app.settle();
+    await app.input('variation',variant);await app.page.waitForFunction(()=>document.querySelector('#artwork').getAttribute('aria-busy')==='false');await app.settle();
     const error=await app.page.evaluate(()=>document.querySelector('canvas').getContext('webgl2').getError());assert.equal(error,0,'study '+id+' construction '+variant);report.constructions++;
    }
    report.defaults++;
@@ -33,7 +33,7 @@ async function main(){
      const bound=await app.page.locator('#'+key).getAttribute(key==='density'?end:'max');
      if(bound!==null)await app.input(key,bound);
     }
-    await app.settle();assert.equal(await app.page.evaluate(()=>document.querySelector('canvas').getContext('webgl2').getError()),0,'extreme study '+id+' variant '+variant+' '+end);report.extremes++;
+    await app.page.waitForFunction(()=>document.querySelector('#artwork').getAttribute('aria-busy')==='false');await app.settle();assert.equal(await app.page.evaluate(()=>document.querySelector('canvas').getContext('webgl2').getError()),0,'extreme study '+id+' variant '+variant+' '+end);report.extremes++;
    }
   }
   console.log('PASS',report.extremes,'reported/recursive construction extremes');

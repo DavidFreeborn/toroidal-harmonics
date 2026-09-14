@@ -67,7 +67,7 @@ async function check(fail=[]){
   for(const id of ['textureMode','textureStrength','textureScale'])assert(el('controls').contains(el(id)));
   const select=async id=>{choices.find(c=>c.querySelector('img').getAttribute('src').includes('/'+id+'.webp')).dispatchEvent(new window.Event('click'));await flush();};
   for(const study of [145,146,148]){
-   await select(study);assert(!el('textureMode-label').hidden);assert.equal(calls.at(-1).uniforms.uTextureMode,0);assert(el('textureStrength-label').hidden);assert(el('textureScale-label').hidden);
+   await select(study);assert(!el('textureMode-label').hidden);assert(calls.at(-1).uniforms.uTextureMode>0);assert(!el('textureStrength-label').hidden);assert(!el('textureScale-label').hidden);
    for(const mode of [1,2,3,4,5,6]){input('textureMode',mode);input('textureStrength',.73);input('textureScale',5);await flush();assert.equal(calls.at(-1).uniforms.uTextureMode,mode);assert.equal(calls.at(-1).uniforms.uTextureStrength,.73);assert.equal(calls.at(-1).uniforms.uTextureScale,5);assert(!el('textureStrength-label').hidden);assert(!el('textureScale-label').hidden);}
    input('textureStrength',0);await flush();assert(el('textureScale-label').hidden);input('textureMode',0);await flush();assert(el('textureStrength-label').hidden);
   }

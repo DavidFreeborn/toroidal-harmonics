@@ -10,7 +10,7 @@ async function main(){
    await app.select(id);await app.settle();
    assert.equal(await app.page.locator('#pause').getAttribute('aria-label'),'Play animation');
    assert.equal(await app.page.locator('#textureMode-label').getAttribute('hidden'),null);
-   for(const key of ['textureStrength','textureScale'])assert(await app.page.locator('#'+key+'-label').isHidden());
+   for(const key of ['textureStrength','textureScale'])assert.equal(await app.page.locator('#'+key+'-label').getAttribute('hidden'),null);
    await app.page.screenshot({path:path.join(out,'study-'+id+'.png')});
    const href=await app.page.locator('#readme-link').getAttribute('href');assert(href.endsWith('#study-'+id));
    report.studies.push({id,title:await app.page.locator('#study-title').textContent(),readme:href});

@@ -1,4 +1,4 @@
-/* Actual renderer draws on RGBA32F: default shading equals the unwrapped base
+/* Actual renderer draws on RGBA32F: light-off shading equals the unwrapped base
    shader, all six effects respond to strength/frequency, including archived147. */
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require('playwright');
@@ -29,7 +29,7 @@ async function main(){
     pairs.push({name,base,lit,kind,id});
    }
    const results=[];let frames=0,finiteValues=0;
-   function draw(r,p,variant,time,options){gl.bindFramebuffer(gl.FRAMEBUFFER,fb);gl.viewport(0,0,256,176);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);r.draw(matrix,time,options.wave,p.id===148?0:options.density,p.kind,variant,options);const pixels=new Float32Array(256*176*4);gl.readPixels(0,0,256,176,gl.RGBA,gl.FLOAT,pixels);const error=gl.getError();if(error)throw Error(`${p.name}: GL ${error}`);for(let i=0;i<pixels.length;i++){if(!Number.isFinite(pixels[i])||pixels[i]<-1e-6||pixels[i]>1.000001)throw Error(`${p.name}: invalid pixel ${pixels[i]}`);}finiteValues+=pixels.length;frames++;return pixels;}
+   function draw(r,p,variant,time,options){gl.bindFramebuffer(gl.FRAMEBUFFER,fb);gl.viewport(0,0,256,176);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);r.draw(matrix,time,options.wave,options.density,p.kind,variant,options);const pixels=new Float32Array(256*176*4);gl.readPixels(0,0,256,176,gl.RGBA,gl.FLOAT,pixels);const error=gl.getError();if(error)throw Error(`${p.name}: GL ${error}`);for(let i=0;i<pixels.length;i++){if(!Number.isFinite(pixels[i])||pixels[i]<-1e-6||pixels[i]>1.000001)throw Error(`${p.name}: invalid pixel ${pixels[i]}`);}finiteValues+=pixels.length;frames++;return pixels;}
    function difference(a,b){let sum=0,max=0;for(let i=0;i<a.length;i+=4){const d=Math.abs(a[i]-b[i]);sum+=d;max=Math.max(max,d);}return {mean:sum/(a.length/4),max};}
    for(const p of pairs)for(const variant of [0,1,2])for(const time of [0,.731,2.19]){
     const options={...TorusPresets.get(p.id),textureMode:0},base=draw(p.base,p,variant,time,options),off=draw(p.lit,p,variant,time,options);

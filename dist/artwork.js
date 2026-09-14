@@ -358,7 +358,7 @@ void main(){
   const embeddedScripts=new Map();
   function loadEmbeddedScript(name){
     if(!embeddedScripts.has(name))embeddedScripts.set(name,new Promise((resolve,reject)=>{
-      const script=document.createElement('script');script.src='./'+name+'.js?v=24';
+      const script=document.createElement('script');script.src='./'+name+'.js?v=25';
       script.onload=resolve;script.onerror=()=>reject(new Error('Could not load '+name));document.head.appendChild(script);
     }));
     return embeddedScripts.get(name);
@@ -612,7 +612,7 @@ void main(){
     gl.useProgram(program);gl.bindVertexArray(vao);TorusLight.bind(gl,program,state,state.time);
     const mode=studies[state.pattern][2];
     gl.uniform1f(uniforms.uTime,state.time);gl.uniform1f(uniforms.uInk,state.ink);gl.uniform1i(uniforms.uPalette,state.palette);
-    if(mode===148&&phason){gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);phason.draw(viewProjection,state.time,state.wave,0,0,state.variation,state);return;}
+    if(mode===148&&phason){gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);phason.draw(viewProjection,state.time,state.wave,state.density,0,state.variation,state);return;}
     if(mode===147&&spinor){gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.uniform1f(uniforms.uPattern,21);gl.drawElements(gl.TRIANGLES,surfaceCount,gl.UNSIGNED_INT,0);spinor.draw(viewProjection,state.time,state.wave,state.density,0,state.variation,state);return;}
     if((mode===145||mode===146)&&revivals){gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);revivals.draw(viewProjection,state.time,state.wave,state.density,mode-145,state.variation,state);return;}
     if(mode>=141&&quasicrystal){gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);quasicrystal.draw(viewProjection,state.time,state.wave,state.density,mode-131,state.variation,state);return;}
@@ -664,7 +664,7 @@ void main(){
     button.type='button';button.className='study-choice';
     if(!available(study[2])){button.disabled=true;button.title='Study unavailable on this device';button.setAttribute('aria-label',study[0]+': unavailable on this device');}
     button.setAttribute('aria-pressed',String(index===state.pattern));
-    button.innerHTML='<img src="./studies/'+study[2]+'.webp?v=21" alt="" loading="lazy"><span class="choice-label"><span class="choice-number">'+String(index+1).padStart(2,'0')+'</span>'+study[0]+'</span>';
+    button.innerHTML='<img src="./studies/'+study[2]+'.webp?v=25" alt="" loading="lazy"><span class="choice-label"><span class="choice-number">'+String(index+1).padStart(2,'0')+'</span>'+study[0]+'</span>';
     button.addEventListener('click',()=>{choose(index);closeCollection();collectionToggle.focus({preventScroll:true});});
     if(collectionEntries[index].group){const heading=document.createElement('h3');heading.className='study-group';heading.textContent=collectionEntries[index].group;grid.appendChild(heading);}
     grid.appendChild(button);return button;
@@ -717,13 +717,38 @@ void main(){
   for(const key of parameterKeys)document.getElementById(key).addEventListener('input',e=>{
     const spec=parameterProfile[key];if(!spec)return;
     const value=Number(e.target.value);
-    state[key]=spec.values&&e.target.tagName!=='SELECT'?spec.values[Math.max(0,Math.min(spec.values.length-1,Math.round(value)))]:value;
+    const next=spec.values&&e.target.tagName!=='SELECT'?spec.values[Math.max(0,Math.min(spec.values.length-1,Math.round(value)))]:value;
+    if(studies[state.pattern][2]===148&&key==='density'){editPhason({density:next});return;}
+    state[key]=next;
     syncParameters();if(['density','recursion','layers','winding','textureMode'].includes(key))resetBudget();requestDraw();
   });
   function setVariation(index){
-    const names=variationNames();state.variation=(index+names.length)%names.length;variation.selectedIndex=state.variation;syncParameters();resetBudget();requestDraw();wake();
+    const names=variationNames(),next=(index+names.length)%names.length;
+    if(studies[state.pattern][2]===148){editPhason({variation:next});return;}
+    state.variation=next;variation.selectedIndex=state.variation;syncParameters();resetBudget();requestDraw();wake();
   }
-  let selectionTicket=0,requestedPattern=0,plannedRandom=-1;
+  let selectionTicket=0,requestedPattern=0,plannedRandom=-1,selectionPending=false;
+  let geometryEditTicket=0,pendingPhason=null;
+  async function editPhason(patch){
+    if(selectionPending)return;
+    // Prepare a changed tiling offscreen before it reaches the visible frame.
+    // Only geometry is committed: sliders, pause and the live clock may change
+    // independently while the GPU finishes. A later edit/selection wins.
+    const ticket=++geometryEditTicket,selection=selectionTicket;
+    pendingPhason={...(pendingPhason||{}),...patch};
+    const geometry={...pendingPhason},candidate={...state,...geometry};
+    root.setAttribute('aria-busy','true');
+    try{await warmStudy(candidate);}
+    catch(e){
+      if(contextLost||ticket!==geometryEditTicket||selection!==selectionTicket)return;
+      console.warn('Tiling preparation could not finish; retaining the current tiling.',e);
+      pendingPhason=null;root.setAttribute('aria-busy','false');variation.selectedIndex=state.variation;syncParameters();return;
+    }
+    if(contextLost||ticket!==geometryEditTicket||selection!==selectionTicket)return;
+    Object.assign(state,geometry);pendingPhason=null;last=0;
+    root.setAttribute('aria-busy','false');variation.selectedIndex=state.variation;
+    syncParameters();resetBudget();quality.suspend();requestDraw();wake();
+  }
   const warmed=new Set(),warming=new Map();
   let preparing=0;
   function recipeKey(candidate){return [studies[candidate.pattern][2],candidate.variation,candidate.recursion,candidate.layers,candidate.density,candidate.winding,candidate.textureMode].join(':');}
@@ -742,7 +767,7 @@ void main(){
     else if(mode>=42&&mode<=45){renderer=cycles;kind=mode-42;}
     else if(mode>=27&&mode<=29){renderer=sculptures;kind=mode-27;}
     else if(mode>=21&&mode<=25){renderer=kinetic;kind=mode-21;}
-    renderer?.prepare?.(kind,candidate.variation,candidate,mode===148?0:candidate.density);
+    return renderer?.prepare?.(kind,candidate.variation,candidate,candidate.density);
   }
   async function warmStudy(candidate){
     const key=recipeKey(candidate);
@@ -753,7 +778,7 @@ void main(){
     const task=(async()=>{
       preparing++;
       try{
-        prepareGeometry(candidate);
+        await prepareGeometry(candidate);
         gl.useProgram(program);gl.bindVertexArray(vao);resize();
         await TorusPrograms.stage(gl,()=>render(candidate),canvas.width,canvas.height);
         warmed.add(key);if(warmed.size>192)warmed.delete(warmed.values().next().value);
@@ -789,6 +814,8 @@ void main(){
     button.addEventListener('focus',()=>prefetch(index,2));
   }
   async function choose(index,extra=false){
+    geometryEditTicket++;pendingPhason=null;
+    selectionPending=true;
     const ticket=++selectionTicket,direction=index<state.pattern?-1:1;
     let selected=(index+studies.length)%studies.length;requestedPattern=selected;
     root.setAttribute('aria-busy','true');
@@ -809,7 +836,7 @@ void main(){
     // Preparation never advances the incoming animation. Its first visible
     // step starts at presentation, independently of shader/asset latency.
     Object.assign(state,candidate,{time:startsCycle?0:state.time,paused:state.paused});last=0;
-    requestedPattern=selected;root.setAttribute('aria-busy','false');
+    requestedPattern=selected;selectionPending=false;root.setAttribute('aria-busy','false');
     choices.forEach((button,i)=>{button.disabled=!available(studies[i][2]);if(button.disabled)button.title='Study unavailable on this device';});
     studyTitle.textContent=studies[state.pattern][0];
     document.getElementById('readme-link').href='./readme.html#study-'+studies[state.pattern][2];

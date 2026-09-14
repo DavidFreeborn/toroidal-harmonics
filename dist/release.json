@@ -1,10 +1,10 @@
 {
-  "revision": 24,
+  "revision": 25,
   "files": [
     {
       "path": "artwork.js",
-      "bytes": 70871,
-      "sha256": "2516c387c38d52d1cf66bf0050b339a9856161055b747dd186322bfd8bb012f3"
+      "bytes": 72463,
+      "sha256": "9205a18f0355bb1fdea7b530a520996a393329e7d08545f22557ba4e6e207ee3"
     },
     {
       "path": "chiaroscuro.js",
@@ -13,8 +13,8 @@
     },
     {
       "path": "collection.js",
-      "bytes": 11963,
-      "sha256": "c1eae24bea37596925120b6fe5c7f650d5f35d1406bd4b51e5fb3d7f9546ac9b"
+      "bytes": 11967,
+      "sha256": "7fe276305eae25487d6089f1b780e62db4c28cfaae6d200aed2f0319df453e2c"
     },
     {
       "path": "cycles.js",
@@ -28,8 +28,8 @@
     },
     {
       "path": "embed.html",
-      "bytes": 8261,
-      "sha256": "d571f4fa71b77d49907ffad257448e26ddac8f1f2daca7bf9bf5bc9b32c0d8ef"
+      "bytes": 8260,
+      "sha256": "24d13043e23825ed4b674e2d20ab87f01f4b30d36b4766713dec913495d9fd1a"
     },
     {
       "path": "escher/130.png",
@@ -63,8 +63,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 9012,
-      "sha256": "9ed3336e30732e235c77581a143c3a6f98e98d07866f9a2ff4d1db68d3da6a81"
+      "bytes": 9011,
+      "sha256": "7731159cb839b0eb6b9b0f193c53ac591fc490082c575db09473874f9b75e88c"
     },
     {
       "path": "kinetic.js",
@@ -93,8 +93,8 @@
     },
     {
       "path": "parameters.js",
-      "bytes": 12066,
-      "sha256": "3a6bfc0ad1deb480d2efe98d3452d361d026eaa5f5e04108a90bdfa2729e1dea"
+      "bytes": 13426,
+      "sha256": "a1c393fd00f4a12a2d22086702aa7cfd370b9ebe24c319fbb96d8466927221ce"
     },
     {
       "path": "performance.js",
@@ -103,23 +103,23 @@
     },
     {
       "path": "phason.js",
-      "bytes": 12812,
-      "sha256": "53316c464b8f56d32665ba06311bc01fbfea56b152c861062d8aa4c675d7869f"
+      "bytes": 17188,
+      "sha256": "72254405731764bb5e710ad1ab77e77fe2015ad010d67d4e1672d6c3e2dd06a7"
     },
     {
       "path": "presets.js",
-      "bytes": 25232,
-      "sha256": "6bff67375cbb89cbd35f02b651204c01977f23bdb0b66f19d92f96519d0f41ed"
+      "bytes": 25233,
+      "sha256": "8a44955c7b12c890438f7703b3638dd5a92cf5ede1a839e69099b71f3713332b"
     },
     {
       "path": "preview-square.webp",
-      "bytes": 42208,
-      "sha256": "f747f59a61ac141aa1ea18e4133333b09f74f4c33c92a841c39517f0dfa59863"
+      "bytes": 31940,
+      "sha256": "acdd8b4871700f9d152d6559836797bd3bb0e9af591f92d893595a3bdbd9f444"
     },
     {
       "path": "preview.webp",
-      "bytes": 101406,
-      "sha256": "063cdfde6efb8557f84a39609745d23d07e0ace76c1fc52de4bebe28e649f4a0"
+      "bytes": 67540,
+      "sha256": "ad670d42861aa1d35bc90059697c5e2bee4f91c9e65298253c226014eca23c3f"
     },
     {
       "path": "programs.js",
@@ -143,8 +143,8 @@
     },
     {
       "path": "readme.html",
-      "bytes": 53326,
-      "sha256": "8dceb016f3ef1604b8c804efb4672518495b192729000062a01eb5a3478542e9"
+      "bytes": 53345,
+      "sha256": "8e2576d9a2d102489aebfe941da78be3d87d1ff2e48372ad8c7acc4b951ed351"
     },
     {
       "path": "readme.js",
@@ -153,8 +153,8 @@
     },
     {
       "path": "revivals.js",
-      "bytes": 7892,
-      "sha256": "0996e7d5ab8733d1ca62c9ccc3de4060d75d36cce9f4926c497647de0ca362bd"
+      "bytes": 9685,
+      "sha256": "9e33a843db05fa469a3f433166112b83ae0168a4f137b2bc68583daaf51ebdbb"
     },
     {
       "path": "sculptures.js",
@@ -163,8 +163,8 @@
     },
     {
       "path": "selection.js",
-      "bytes": 1476,
-      "sha256": "0f714f5b6dcfee29065509206f945aea3db38ede498e560115f2e9feabfeb1f5"
+      "bytes": 1752,
+      "sha256": "9d8af38b346d5db30b9fbab20c176cece0d650efd7081c0ec4270ad6e010cafe"
     },
     {
       "path": "spectrum.js",
@@ -428,13 +428,13 @@
     },
     {
       "path": "studies/145.webp",
-      "bytes": 8000,
-      "sha256": "c1bc34d75d6df9822c63a7b07e95c45fa4919fd9bf7760ed62fa1c30241b7996"
+      "bytes": 4880,
+      "sha256": "9d4bdf3319749133037bbddac5fdb61f9d88c2c7df457c9643498f08de6e63ff"
     },
     {
       "path": "studies/146.webp",
-      "bytes": 13794,
-      "sha256": "d618307e513a4da01eec4c086a78425d5e6d7c7fe3290613fdca3482e29d0b4b"
+      "bytes": 21250,
+      "sha256": "03e34ec6eab2abc9c2a892ab23fa9933fafeb0e772088a08a173c2be26fc76af"
     },
     {
       "path": "studies/147.webp",
@@ -443,8 +443,8 @@
     },
     {
       "path": "studies/148.webp",
-      "bytes": 7826,
-      "sha256": "2357f19e9d84a21caf00628e631e77c09fe330bbfdc19aef649ba1b733fe94a9"
+      "bytes": 19170,
+      "sha256": "4b63dabfe4036883e24ac51a02a886382e25b53388bfb83fcc1d731f69c17295"
     },
     {
       "path": "studies/15.webp",

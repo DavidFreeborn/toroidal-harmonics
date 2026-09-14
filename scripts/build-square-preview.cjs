@@ -3,7 +3,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const {open}=require('./browser-audit.cjs');
 async function main(){
- const app=await open(path.resolve('dist'),{background:false,viewport:{width:260,height:260},dpr:2});
+ const app=await open(path.resolve('dist'),{background:false,phase:.8,viewport:{width:260,height:260},dpr:2});
  try{
   await app.select(145);await app.page.addStyleTag({content:'#artwork > :not(#field){display:none!important}'});await app.settle();
   const png=await app.page.screenshot();

@@ -102,10 +102,10 @@ const TorusPresets=(()=>{
   "140":{"speed":2,"perspective":105,"ink":1,"wave":0.65,"density":136,"variation":1,"winding":2,"layers":4,"balance":0.5,"spectral":1,"palette":0,"turns":2,"recursion":3,"textureMode":5,"textureStrength":0.27,"textureScale":2,"inkCycle":0},
   "141":{"speed":2,"perspective":105,"ink":1,"wave":0.65,"density":136,"variation":1,"winding":1,"layers":4,"balance":0.5,"spectral":1,"palette":0,"turns":2,"recursion":3,"textureMode":5,"textureStrength":0.27,"textureScale":2,"inkCycle":0},
   "142":{"speed":2,"perspective":105,"ink":1,"wave":0.65,"density":136,"variation":1,"winding":2,"layers":4,"balance":0.5,"spectral":1,"palette":0,"turns":2,"recursion":3,"textureMode":5,"textureStrength":0.27,"textureScale":2,"inkCycle":0},
-  "145":{"speed":0.6,"perspective":105,"ink":1,"wave":0.65,"density":88,"variation":0,"winding":2,"layers":6,"balance":0.5,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":0,"textureStrength":0.65,"textureScale":2,"inkCycle":0},
-  "146":{"speed":0.6,"perspective":105,"ink":1,"wave":0.55,"density":40,"variation":0,"winding":2,"layers":3,"balance":0.5,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":0,"textureStrength":0.65,"textureScale":2,"inkCycle":0},
+  "145":{"speed":1.5,"perspective":105,"ink":1,"wave":0.65,"density":136,"variation":1,"winding":0,"layers":8,"balance":0.35,"spectral":1,"palette":1,"turns":1,"recursion":3,"textureMode":3,"textureStrength":0.27,"textureScale":2,"inkCycle":0},
+  "146":{"speed":1.5,"perspective":105,"ink":1,"wave":0.55,"density":40,"variation":2,"winding":0,"layers":3,"balance":0.2,"spectral":0,"palette":1,"turns":1,"recursion":3,"textureMode":6,"textureStrength":0.27,"textureScale":2,"inkCycle":0},
   "147":{"speed":1,"perspective":105,"ink":0.95,"wave":0.65,"density":88,"variation":0,"winding":1,"layers":3,"balance":0.5,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":0,"textureStrength":0.65,"textureScale":2,"inkCycle":0},
-  "148":{"speed":0.6,"perspective":105,"ink":1,"wave":0.35,"density":88,"variation":0,"winding":2,"layers":3,"balance":0.5,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":0,"textureStrength":0.65,"textureScale":2,"inkCycle":0}
+  "148":{"speed":2,"perspective":105,"ink":1,"wave":0.35,"density":88,"variation":1,"winding":1,"layers":2,"balance":0.35,"spectral":1,"palette":0,"turns":1,"recursion":3,"textureMode":4,"textureStrength":0.27,"textureScale":2,"inkCycle":0}
  };
  function get(id){return {...base,...settings[id]};}
  return {get,hidden};
