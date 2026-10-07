@@ -68,8 +68,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 70891,
-      "sha256": "168bd1e76bd5d0b6e61bb5c0c6c9399a774e22b512c2e7529376a18189f03325"
+      "bytes": 71730,
+      "sha256": "57286af3253641f33de8f93c039585190ce675a121496c7f5228f1bc3ab68d82"
     },
     {
       "path": "kinetic.js",
@@ -148,8 +148,8 @@
     },
     {
       "path": "readme.html",
-      "bytes": 114610,
-      "sha256": "d7fbd76345d4cbb682e3ede084efcab3950a575a014afa2550c41fd5faf83f24"
+      "bytes": 115449,
+      "sha256": "1dd5c854cf4b5c464584392fe4ab9e3b8c72ad7c6bcefff1c441e46653c6ac5d"
     },
     {
       "path": "readme.js",
