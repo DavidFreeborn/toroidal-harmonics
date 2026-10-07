@@ -1,5 +1,5 @@
 {
-  "revision": 25,
+  "revision": 26,
   "files": [
     {
       "path": "artwork.js",
@@ -22,14 +22,19 @@
       "sha256": "9d8c85738fe3f54598d975230e7c1da31a5e3b526ccd415b5840e497c1443e0f"
     },
     {
+      "path": "EB-GARAMOND-OFL.txt",
+      "bytes": 4491,
+      "sha256": "1a9c0a1be6d76607dffdc1c98d377a51e98663fa5c848f11691e187215319afd"
+    },
+    {
       "path": "eigenmodes.js",
       "bytes": 21589,
       "sha256": "26bffbd1cb29cf8395fcb0d3f96d55b40504287f2c94224d7d29fe61b90f8be6"
     },
     {
       "path": "embed.html",
-      "bytes": 8260,
-      "sha256": "24d13043e23825ed4b674e2d20ab87f01f4b30d36b4766713dec913495d9fd1a"
+      "bytes": 8263,
+      "sha256": "287d61e123552daad3a025140eea34586dc89763711d5c5097e8570b6c2c68ec"
     },
     {
       "path": "escher/130.png",
@@ -63,8 +68,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 9011,
-      "sha256": "7731159cb839b0eb6b9b0f193c53ac591fc490082c575db09473874f9b75e88c"
+      "bytes": 70891,
+      "sha256": "168bd1e76bd5d0b6e61bb5c0c6c9399a774e22b512c2e7529376a18189f03325"
     },
     {
       "path": "kinetic.js",
@@ -143,8 +148,8 @@
     },
     {
       "path": "readme.html",
-      "bytes": 53345,
-      "sha256": "8e2576d9a2d102489aebfe941da78be3d87d1ff2e48372ad8c7acc4b951ed351"
+      "bytes": 114610,
+      "sha256": "d7fbd76345d4cbb682e3ede084efcab3950a575a014afa2550c41fd5faf83f24"
     },
     {
       "path": "readme.js",

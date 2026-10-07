@@ -2,6 +2,8 @@
    canvas is presented; renderer families are loaded on demand in embed mode. */
 const fs=require('node:fs'),assert=require('node:assert/strict');
 let html=fs.readFileSync('dist/index.html','utf8');
+// The gallery preview is canvas-only; the standalone navigation is not part of it.
+html=html.replace(/<style id="tool-shell">[\s\S]*?<\/style>/,'').replace(/<nav class="tool-navigation"[\s\S]*?<\/nav>/,'').replace('class="tool-page"','');
 const core=new Set(['programs','lightfield','performance','eigenmodes','presets','collection','parameters','selection','artwork']);
 html=html.replace(/<script defer src="\.\/([a-z-]+)\.js\?v=\d+"><\/script>/g,(tag,name)=>core.has(name)?tag:'');
 html=html.replace('<title>Toroidal harmonics</title>','<title>Toroidal harmonics · Preview</title>');
