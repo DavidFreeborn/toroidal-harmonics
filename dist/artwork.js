@@ -8,6 +8,52 @@
   const error = document.getElementById('error');
   const gl = canvas.getContext('webgl2', {antialias:true, alpha:false, powerPreference:embedded?'default':'high-performance', preserveDrawingBuffer:false});
   if (!gl) {error.hidden=false;error.textContent='This artwork needs WebGL 2. Please open it in a browser with hardware acceleration enabled.';previewMessage('torus-preview-error');return;}
+  const topologyKinds={0:0,4:4,7:7,10:10,13:13,14:14,15:15,16:16,17:17,18:18,19:19,30:30,34:34,35:35,38:38,39:39,41:41,47:47,49:49,50:50,51:51,53:53};
+  const hasTopology=mode=>Object.prototype.hasOwnProperty.call(topologyKinds,mode);
+  const embeddedScripts=new Map();
+  function loadEmbeddedScript(name){
+    if(!embeddedScripts.has(name))embeddedScripts.set(name,new Promise((resolve,reject)=>{
+      const script=document.createElement('script');script.async=false;script.src='./'+name+'.js?v=25';
+      script.onload=resolve;script.onerror=()=>reject(new Error('Could not load '+name));document.head.appendChild(script);
+    }));
+    return embeddedScripts.get(name);
+  }
+  const rendererDependencies={topology:['spectrum'],metamorphosis:['spectrum'],quasicrystal:['quasicrystal-data'],phason:['quasicrystal-data'],tessellations:['tessellation-data']};
+  function loadEmbeddedRenderer(name){
+    return Promise.all([...(rendererDependencies[name]||[]),name].map(loadEmbeddedScript));
+  }
+  function rendererFor(mode){
+    if(mode===148)return 'phason';
+    if(mode===147)return 'spinor';
+    if(mode===145||mode===146)return 'revivals';
+    if(mode>=141)return 'quasicrystal';
+    if(mode>=125)return 'transformations';
+    if(mode>=121)return 'quasicrystal';
+    if(mode>=101)return 'tessellations';
+    if(mode>=95||mode>=71&&mode<=85)return 'metamorphosis';
+    if(mode>=92||mode>=68&&mode<=70)return 'quasicrystal';
+    if(mode>=86||mode>=62&&mode<=67)return 'mechanisms';
+    if(mode>=54)return 'chiaroscuro';
+    if(hasTopology(mode))return 'topology';
+    if(mode>=46)return 'visionary';
+    if(mode>=42)return 'cycles';
+    if(mode>=30)return 'symmetry';
+    if(mode>=27)return 'sculptures';
+    if(mode>=21&&mode<=25)return 'kinetic';
+    return null;
+  }
+  // Choose once, before compilation. The same catalogue and Random function
+  // preserve every study's probability and the previous-study exclusion.
+  const previewIds=embedded?TORUS_COLLECTION.flatMap(group=>group.studies.map(study=>study[0])):[];
+  let previewIndex=0;
+  if(embedded){
+    let previous=-1;try{const stored=sessionStorage.getItem('torus-preview-study');if(stored!==null)previous=previewIds.indexOf(Number(stored));}catch{}
+    previewIndex=TorusSelection.index(previous,previewIds.length,()=>true);
+    const renderer=rendererFor(previewIds[previewIndex]);
+    // Fetch dependencies and their renderer during base compilation. The
+    // normal initialize path still owns error handling and study failover.
+    if(renderer)loadEmbeddedRenderer(renderer).catch(()=>{});
+  }
   const vertexSource = `#version 300 es
   precision highp float;
   layout(location=0) in vec2 aUV;
@@ -326,11 +372,22 @@ void main(){
  fragColor=vec4(vec3(tone),1.0);
 }
 `;
-  let program;
-  try{program=await TorusPrograms.link(gl,vertexSource,TorusLight.fragment(fragmentSource));}
+  let program,basePattern;
+  const uniforms={};
+  async function prepareBase(mode){
+    // Embedded studies never change their identity during playback. A constant
+    // lets the driver remove unrelated branches, retaining all pixel filters,
+    // geometry and time/parameter uniforms. Full-window controls stay dynamic.
+    const pattern=embedded?(mode>=27||hasTopology(mode)?21:mode):null;
+    if(program&&pattern===basePattern)return;
+    const source=embedded?fragmentSource.replace('uniform float uPattern;',`const float uPattern=${pattern}.0;`):fragmentSource;
+    program=await TorusPrograms.link(gl,vertexSource,TorusLight.fragment(source));
+    basePattern=pattern;gl.useProgram(program);
+    for(const key of ['uViewProjection','uTime','uWave','uDensity','uPattern','uInk','uPalette','uCamera','uEigen','uMoore'])uniforms[key]=gl.getUniformLocation(program,key);
+    gl.uniform1i(uniforms.uEigen,0);gl.uniform1i(uniforms.uMoore,1);
+  }
+  try{await prepareBase(previewIds[previewIndex]);}
   catch(e){error.hidden=false;error.textContent='The artwork could not start on this device.';console.error(e);previewMessage('torus-preview-error');return;}
-  gl.useProgram(program);
-  const uniforms={};for(const key of ['uViewProjection','uTime','uWave','uDensity','uPattern','uInk','uPalette','uCamera','uEigen','uMoore'])uniforms[key]=gl.getUniformLocation(program,key);
   const eigenTexture=gl.createTexture();gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,eigenTexture);
   gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA32F,512,1,0,gl.RGBA,gl.FLOAT,new Float32Array(TORUS_EIGEN.samples));
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);
@@ -355,14 +412,6 @@ void main(){
   gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.clearColor(1,1,1,1);
   let kinetic=null,sculptures=null,symmetry=null,cycles=null,visionary=null,topology=null,chiaroscuro=null,mechanisms=null,quasicrystal=null,metamorphosis=null,tessellations=null,transformations=null,revivals=null,spinor=null,phason=null;
   const attempted=new Set(),initializing=new Map(),unavailableStudies=new Set();
-  const embeddedScripts=new Map();
-  function loadEmbeddedScript(name){
-    if(!embeddedScripts.has(name))embeddedScripts.set(name,new Promise((resolve,reject)=>{
-      const script=document.createElement('script');script.src='./'+name+'.js?v=25';
-      script.onload=resolve;script.onerror=()=>reject(new Error('Could not load '+name));document.head.appendChild(script);
-    }));
-    return embeddedScripts.get(name);
-  }
   function initialize(name){
     if(initializing.has(name))return initializing.get(name);
     if(attempted.has(name))return Promise.resolve();attempted.add(name);
@@ -370,8 +419,7 @@ void main(){
     const task=(async()=>{
       try{
         if(embedded){
-          const dependencies={topology:['spectrum'],metamorphosis:['spectrum'],quasicrystal:['quasicrystal-data'],phason:['quasicrystal-data'],tessellations:['tessellation-data']};
-          await Promise.all((dependencies[name]||[]).map(loadEmbeddedScript));await loadEmbeddedScript(name);
+          await loadEmbeddedRenderer(name);
         }
         if(name==='revivals')revivals=await TorusRevivals.create(gl,vao,()=>surfaceCount);
         if(name==='spinor')spinor=await TorusSpinor.create(gl);
@@ -416,8 +464,7 @@ void main(){
     if(mode>=27)return initialize('sculptures');
     if(mode>=21&&mode<=25)return initialize('kinetic');
   }
-  const topologyKinds={0:0,4:4,7:7,10:10,13:13,14:14,15:15,16:16,17:17,18:18,19:19,30:30,34:34,35:35,38:38,39:39,41:41,47:47,49:49,50:50,51:51,53:53};
-  const hasTopology=mode=>Object.prototype.hasOwnProperty.call(topologyKinds,mode);
+
   const ready=(name,value)=>!attempted.has(name)||initializing.has(name)||Boolean(value);
   const available=mode=>!unavailableStudies.has(mode)&&(mode===148?ready('phason',phason):mode===147?ready('spinor',spinor):mode===145||mode===146?ready('revivals',revivals):mode>=141?ready('quasicrystal',quasicrystal):mode>=125?ready('transformations',transformations):mode>=121?ready('quasicrystal',quasicrystal):mode>=101?ready('tessellations',tessellations):(mode>=95||mode>=71&&mode<=85)?ready('metamorphosis',metamorphosis):(mode>=92||mode>=68&&mode<=70)?ready('quasicrystal',quasicrystal):(mode>=86||mode>=62&&mode<=67)?ready('mechanisms',mechanisms):mode>=54?ready('chiaroscuro',chiaroscuro):hasTopology(mode)&&ready('topology',topology)?true:mode>=46?ready('visionary',visionary):mode>=42?ready('cycles',cycles):mode>=30?ready('symmetry',symmetry):mode>=27?ready('sculptures',sculptures):mode>=21&&mode<=25?ready('kinetic',kinetic):true);
   const studyArchive=[
@@ -496,7 +543,7 @@ void main(){
     ["Metamorphic tesserae", "A nodal field changes which neighbouring regions connect; its internal contours participate in the same transformation.", 73],
     ["Figure-ground braid", "Opposing families of broad ribbons share their geometry with the light field, reversing which family dominates each crossing.", 74],
     ["Toral substitution", "Successive applications of an integer torus automorphism produce nested square worlds with phase-linked tonal reversals.", 75],
-    ["Sierpiński counterpoint", "A ternary carpet moves through a smooth torus deformation; each genuine recursive scale carries a different phase of light.", 76],
+    ["SierpiÅ„ski counterpoint", "A ternary carpet moves through a smooth torus deformation; each genuine recursive scale carries a different phase of light.", 76],
     ["Dyadic loom", "Successive twofold torus coverings insert finer woven passages into the open spaces of the preceding scale.", 77],
     ["Recursive witness", "A hierarchy of torus coverings carries eyes within eyes. Their pupils, irises and lids follow coupled winding phases.", 78],
     ["Ophanim interferometer", "Sixfold eye wheels and the ribbons linking them share one phase, exchanging contrast as the wheels turn.", 79],
@@ -508,24 +555,24 @@ void main(){
     ["Truchet substitution", "Connected contour ribbons change their pairings while finer copies occupy the gaps left by each preceding scale.", 85],
 
     ['Menger tide','Recursive cubic voids turn through fixed white, graphite and grey faces. A travelling rotation reveals each scale of the sponge.',54],
-    ['Sierpiński lanterns','A tetrahedron divides into four copies at every level. Alternating facets form a recursive procession of light and shadow.',55],
+    ['SierpiÅ„ski lanterns','A tetrahedron divides into four copies at every level. Alternating facets form a recursive procession of light and shadow.',55],
     ['Recursive gimbals','Nested cubic frames counter-rotate at successive scales, passing through moments of alignment.',56],
     ['Helicoid folia','Layered helical leaves turn their pale fronts and dark reverses through a coordinated spiral.',57],
     ['Octahedral chrysalis','Triangular faces hinge open from nested octahedra, revealing alternating dark interiors and pale shells.',58],
-    ['Sierpiński shutters','A Sierpiński carpet is built by removing the central ninth at every level; its surviving panels hinge in delayed waves.',59],
+    ['SierpiÅ„ski shutters','A SierpiÅ„ski carpet is built by removing the central ninth at every level; its surviving panels hinge in delayed waves.',59],
     ['Villarceau ribbons','Pale and dark ribbons follow the two oblique circle families of the torus, counter-rotating through alternating crossings.',60],
     ['Cable of cables','Three cables each carry three smaller strands along closed torus windings. Fixed strand shades reveal the nested braiding.',61],
     ['Cathedral of infinity','A continuous hyperbolic eye lattice opens across the whole chamber, passing through nested pentagonal worlds.',52],
     ['Seraphic procession','Three-eyed guardians rise in staggered ranks as their shared crowns and facial contours breathe together.',46],
-    ["Indra’s mirrors",'Successive finite coverings of the torus carry eyes at nested scales, with contrasting irises and winding connections.',53],
+    ["Indraâ€™s mirrors",'Successive finite coverings of the torus carry eyes at nested scales, with contrasting irises and winding connections.',53],
     ['Infinite witness','A three-armed logarithmic spiral carries watching eyes through a repeating descent into smaller scales.',48],
     ['Ophanim','Six eye-bearing orbitals turn inside a twelvefold corona, with a counter-rotating eye at their centre.',50],
     ['Farey eyes','A hierarchy of tangent circles at rational positions carries eyes of successively smaller sizes around the chamber.',49],
     ['Neural cathedral','Bilateral ribs flow into their neighbours while nested eyes and branching antennae breathe in delayed phases.',51],
-    ['Poincaré eyes','Sevenfold eye rosettes repeat through a hyperbolic disk, gathering into finer structures toward its boundary.',47],
+    ['PoincarÃ© eyes','Sevenfold eye rosettes repeat through a hyperbolic disk, gathering into finer structures toward its boundary.',47],
     ['Folding procession','Panels rise, turn over, and settle into the next part of a travelling fold.',42],
     ['Concertina canon','Opposing pleated fans open and close in a single coordinated wave.',43],
-    ['Möbius procession','One-sided bands turn and tilt in alternating columns, revealing their half-twists.',44],
+    ['MÃ¶bius procession','One-sided bands turn and tilt in alternating columns, revealing their half-twists.',44],
     ['Octahedral relay','Eight-faced solids turn through their threefold symmetry, pausing briefly as neighbouring faces take their places.',45],
     ['Rotating squares','Opposite rotations open and close a lattice of square frames, with a travelling wave of alignment.',30],
     ['Cycloidal relay','Rows of wheels roll in opposite directions while their marked rims trace the cycle.',31],
@@ -533,7 +580,7 @@ void main(){
     ['Ribbon exchange','Paired ribbons exchange places in a continuous, alternating over-under rhythm.',33],
     ['Saddle metamorphosis','A repeating contour field passes through its saddle points, joining islands and separating them again.',34],
     ['Orbital quartet','Four linked circular orbits turn together while their markers counter-rotate.',35],
-    ['Möbius medallions','A moving focus transforms concentric circles into an off-centre pencil of circles.',36],
+    ['MÃ¶bius medallions','A moving focus transforms concentric circles into an off-centre pencil of circles.',36],
     ['Spiral gearing','Five logarithmic arms turn against their neighbours in a coordinated travelling wave.',37],
     ['Four-way exchange','Curves keep their four boundary connections while smoothly changing which directions join.',38],
     ['Squircle canon','Nested circular contours become squares, turn, and return in alternating phases.',39],
@@ -558,7 +605,7 @@ void main(){
     ['Petal tide','Nested rosettes open and turn in a travelling wave.',1],
     ['Folding fans','Rows of fine arches open and close in counterpoint.',2],
     ['Orbital canon','Paired beads circle tilting elliptical tracks.',3],
-    ['Guilloché','Interference contours form a continuously changing engraving.',4],
+    ['GuillochÃ©','Interference contours form a continuously changing engraving.',4],
     ['Comet field','Tapered strokes curl and stream around the chamber.',5],
     ['Pendulum weave','Hinged pairs swing in alternating, phase-delayed waves.',6],
     ['Pearl waves','Two coherent waves move and swell a field of beads.',7],
@@ -584,6 +631,7 @@ void main(){
   }
   const quality=TorusPerformance.governor(),gpuTimer=TorusPerformance.gpuTimer(gl);
   const renderQuality=document.getElementById('renderQuality');
+  if(embedded)renderQuality.value='native';
   const maxRaster=Math.min(gl.getParameter(gl.MAX_RENDERBUFFER_SIZE)||16384,gl.getParameter(gl.MAX_TEXTURE_SIZE)||16384);
   let width=0,height=0,ratio=0,lastPerspective=0,lastAspect=0,resizeNeeded=true;
   let frameRequest=0,last=0,visible=true,dirty=true,contextLost=false;
@@ -591,7 +639,7 @@ void main(){
     if(resizeNeeded){
       const rect=canvas.getBoundingClientRect(),dpr=devicePixelRatio||1;
       width=Math.max(1,rect.width);height=Math.max(1,rect.height);
-      ratio=renderQuality.value==='fine'?2*dpr:renderQuality.value==='native'?dpr:Math.max(1,Math.min(dpr,2)*quality.scale);
+      ratio=embedded?Math.max(2,dpr):renderQuality.value==='fine'?2*dpr:renderQuality.value==='native'?dpr:Math.max(1,Math.min(dpr,2)*quality.scale);
       ratio=Math.min(ratio,maxRaster/width,maxRaster/height);
       const w=Math.max(1,Math.round(width*ratio)),h=Math.max(1,Math.round(height*ratio));
       if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;gl.viewport(0,0,w,h);quality.suspend();gpuTimer.reset();}
@@ -710,7 +758,7 @@ void main(){
         input.min=spec.min;input.max=spec.max;input.step=spec.step;state[key]=Number((spec.min+Math.round((Math.max(spec.min,Math.min(spec.max,state[key]))-spec.min)/spec.step)*spec.step).toFixed(6));input.value=state[key];index=Math.round((state[key]-spec.min)/spec.step);
       }
       const output=document.getElementById(key+'-value');
-      const text=spec.labels?spec.labels[index]:key==='perspective'?state[key]+'°':key==='speed'?state[key].toFixed(2)+'×':spec.step<1?state[key].toFixed(2):String(state[key]);
+      const text=spec.labels?spec.labels[index]:key==='perspective'?state[key]+'Â°':key==='speed'?state[key].toFixed(2)+'Ã—':spec.step<1?state[key].toFixed(2):String(state[key]);
       if(output)output.value=text;input.setAttribute('aria-valuetext',text);
     }
   }
@@ -824,6 +872,7 @@ void main(){
       if(available(studies[selected][2]))break;
       selected=(selected+direction+studies.length)%studies.length;
     }while(true);
+    if(embedded){await prepareBase(studies[selected][2]);lastPerspective=0;}
     const candidate={...state,...(extra?TorusSelection.parameters(studies[selected][2],collectionEntries[selected].variants.length):TorusPresets.get(studies[selected][2])),pattern:selected};
     // A square aperture needs a broad view of the chamber. Keep the study's
     // geometry and motion intact; framing is independent of its construction.
@@ -913,13 +962,12 @@ void main(){
   const linkedIndex=linkedStudy?studies.findIndex(study=>study[2]===Number(linkedStudy[1])):-1;
   let initialIndex=linkedIndex>=0?linkedIndex:0;
   if(embedded){
-    let previous=-1;try{const stored=sessionStorage.getItem('torus-preview-study');if(stored!==null)previous=studies.findIndex(study=>study[2]===Number(stored));}catch{}
-    initialIndex=TorusSelection.index(previous,studies.length,i=>available(studies[i][2]));
+    initialIndex=previewIndex;
   }
   if(!await choose(initialIndex))return;
   if(embedded){
     try{sessionStorage.setItem('torus-preview-study',String(studies[state.pattern][2]));}catch{}
-    // A valid first frame is presented before the parent removes its poster.
+    // A valid first frame is presented before the parent reveals the canvas.
     previewReady=true;draw();dirty=false;
     previewMessage('torus-preview-ready',{id:studies[state.pattern][2],title:studies[state.pattern][0]});
   }

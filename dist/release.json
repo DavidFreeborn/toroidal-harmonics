@@ -1,10 +1,10 @@
 {
-  "revision": 26,
+  "revision": 27,
   "files": [
     {
       "path": "artwork.js",
-      "bytes": 72463,
-      "sha256": "9205a18f0355bb1fdea7b530a520996a393329e7d08545f22557ba4e6e207ee3"
+      "bytes": 74740,
+      "sha256": "4aa5668ca5461df1e620f1dc2d051e2ebe925e1e66a9487ddaf1d6a42c913825"
     },
     {
       "path": "chiaroscuro.js",
@@ -34,7 +34,7 @@
     {
       "path": "embed.html",
       "bytes": 8263,
-      "sha256": "287d61e123552daad3a025140eea34586dc89763711d5c5097e8570b6c2c68ec"
+      "sha256": "7a599c94ec726a371a56b24c22dc0f8dbe4596f6e85986d4bad728fbe285adee"
     },
     {
       "path": "escher/130.png",
@@ -69,7 +69,7 @@
     {
       "path": "index.html",
       "bytes": 71730,
-      "sha256": "57286af3253641f33de8f93c039585190ce675a121496c7f5228f1bc3ab68d82"
+      "sha256": "c44d9574fc710a7cbb37b074330133dd25a145a6240a8638be72c9e0dd6ecfc7"
     },
     {
       "path": "kinetic.js",
