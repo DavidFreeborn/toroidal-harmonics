@@ -543,7 +543,7 @@ void main(){
     ["Metamorphic tesserae", "A nodal field changes which neighbouring regions connect; its internal contours participate in the same transformation.", 73],
     ["Figure-ground braid", "Opposing families of broad ribbons share their geometry with the light field, reversing which family dominates each crossing.", 74],
     ["Toral substitution", "Successive applications of an integer torus automorphism produce nested square worlds with phase-linked tonal reversals.", 75],
-    ["SierpiÅ„ski counterpoint", "A ternary carpet moves through a smooth torus deformation; each genuine recursive scale carries a different phase of light.", 76],
+    ["Sierpiński counterpoint", "A ternary carpet moves through a smooth torus deformation; each genuine recursive scale carries a different phase of light.", 76],
     ["Dyadic loom", "Successive twofold torus coverings insert finer woven passages into the open spaces of the preceding scale.", 77],
     ["Recursive witness", "A hierarchy of torus coverings carries eyes within eyes. Their pupils, irises and lids follow coupled winding phases.", 78],
     ["Ophanim interferometer", "Sixfold eye wheels and the ribbons linking them share one phase, exchanging contrast as the wheels turn.", 79],
@@ -555,24 +555,24 @@ void main(){
     ["Truchet substitution", "Connected contour ribbons change their pairings while finer copies occupy the gaps left by each preceding scale.", 85],
 
     ['Menger tide','Recursive cubic voids turn through fixed white, graphite and grey faces. A travelling rotation reveals each scale of the sponge.',54],
-    ['SierpiÅ„ski lanterns','A tetrahedron divides into four copies at every level. Alternating facets form a recursive procession of light and shadow.',55],
+    ['Sierpiński lanterns','A tetrahedron divides into four copies at every level. Alternating facets form a recursive procession of light and shadow.',55],
     ['Recursive gimbals','Nested cubic frames counter-rotate at successive scales, passing through moments of alignment.',56],
     ['Helicoid folia','Layered helical leaves turn their pale fronts and dark reverses through a coordinated spiral.',57],
     ['Octahedral chrysalis','Triangular faces hinge open from nested octahedra, revealing alternating dark interiors and pale shells.',58],
-    ['SierpiÅ„ski shutters','A SierpiÅ„ski carpet is built by removing the central ninth at every level; its surviving panels hinge in delayed waves.',59],
+    ['Sierpiński shutters','A Sierpiński carpet is built by removing the central ninth at every level; its surviving panels hinge in delayed waves.',59],
     ['Villarceau ribbons','Pale and dark ribbons follow the two oblique circle families of the torus, counter-rotating through alternating crossings.',60],
     ['Cable of cables','Three cables each carry three smaller strands along closed torus windings. Fixed strand shades reveal the nested braiding.',61],
     ['Cathedral of infinity','A continuous hyperbolic eye lattice opens across the whole chamber, passing through nested pentagonal worlds.',52],
     ['Seraphic procession','Three-eyed guardians rise in staggered ranks as their shared crowns and facial contours breathe together.',46],
-    ["Indraâ€™s mirrors",'Successive finite coverings of the torus carry eyes at nested scales, with contrasting irises and winding connections.',53],
+    ["Indra’s mirrors",'Successive finite coverings of the torus carry eyes at nested scales, with contrasting irises and winding connections.',53],
     ['Infinite witness','A three-armed logarithmic spiral carries watching eyes through a repeating descent into smaller scales.',48],
     ['Ophanim','Six eye-bearing orbitals turn inside a twelvefold corona, with a counter-rotating eye at their centre.',50],
     ['Farey eyes','A hierarchy of tangent circles at rational positions carries eyes of successively smaller sizes around the chamber.',49],
     ['Neural cathedral','Bilateral ribs flow into their neighbours while nested eyes and branching antennae breathe in delayed phases.',51],
-    ['PoincarÃ© eyes','Sevenfold eye rosettes repeat through a hyperbolic disk, gathering into finer structures toward its boundary.',47],
+    ['Poincaré eyes','Sevenfold eye rosettes repeat through a hyperbolic disk, gathering into finer structures toward its boundary.',47],
     ['Folding procession','Panels rise, turn over, and settle into the next part of a travelling fold.',42],
     ['Concertina canon','Opposing pleated fans open and close in a single coordinated wave.',43],
-    ['MÃ¶bius procession','One-sided bands turn and tilt in alternating columns, revealing their half-twists.',44],
+    ['Möbius procession','One-sided bands turn and tilt in alternating columns, revealing their half-twists.',44],
     ['Octahedral relay','Eight-faced solids turn through their threefold symmetry, pausing briefly as neighbouring faces take their places.',45],
     ['Rotating squares','Opposite rotations open and close a lattice of square frames, with a travelling wave of alignment.',30],
     ['Cycloidal relay','Rows of wheels roll in opposite directions while their marked rims trace the cycle.',31],
@@ -580,7 +580,7 @@ void main(){
     ['Ribbon exchange','Paired ribbons exchange places in a continuous, alternating over-under rhythm.',33],
     ['Saddle metamorphosis','A repeating contour field passes through its saddle points, joining islands and separating them again.',34],
     ['Orbital quartet','Four linked circular orbits turn together while their markers counter-rotate.',35],
-    ['MÃ¶bius medallions','A moving focus transforms concentric circles into an off-centre pencil of circles.',36],
+    ['Möbius medallions','A moving focus transforms concentric circles into an off-centre pencil of circles.',36],
     ['Spiral gearing','Five logarithmic arms turn against their neighbours in a coordinated travelling wave.',37],
     ['Four-way exchange','Curves keep their four boundary connections while smoothly changing which directions join.',38],
     ['Squircle canon','Nested circular contours become squares, turn, and return in alternating phases.',39],
@@ -605,7 +605,7 @@ void main(){
     ['Petal tide','Nested rosettes open and turn in a travelling wave.',1],
     ['Folding fans','Rows of fine arches open and close in counterpoint.',2],
     ['Orbital canon','Paired beads circle tilting elliptical tracks.',3],
-    ['GuillochÃ©','Interference contours form a continuously changing engraving.',4],
+    ['Guilloché','Interference contours form a continuously changing engraving.',4],
     ['Comet field','Tapered strokes curl and stream around the chamber.',5],
     ['Pendulum weave','Hinged pairs swing in alternating, phase-delayed waves.',6],
     ['Pearl waves','Two coherent waves move and swell a field of beads.',7],
@@ -758,7 +758,7 @@ void main(){
         input.min=spec.min;input.max=spec.max;input.step=spec.step;state[key]=Number((spec.min+Math.round((Math.max(spec.min,Math.min(spec.max,state[key]))-spec.min)/spec.step)*spec.step).toFixed(6));input.value=state[key];index=Math.round((state[key]-spec.min)/spec.step);
       }
       const output=document.getElementById(key+'-value');
-      const text=spec.labels?spec.labels[index]:key==='perspective'?state[key]+'Â°':key==='speed'?state[key].toFixed(2)+'Ã—':spec.step<1?state[key].toFixed(2):String(state[key]);
+      const text=spec.labels?spec.labels[index]:key==='perspective'?state[key]+'°':key==='speed'?state[key].toFixed(2)+'×':spec.step<1?state[key].toFixed(2):String(state[key]);
       if(output)output.value=text;input.setAttribute('aria-valuetext',text);
     }
   }
