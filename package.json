@@ -10,7 +10,8 @@
     "test:browser": "node scripts/verify-browser-runtime.cjs && node scripts/verify-pixel-coverage.cjs && node scripts/verify-recursive-jacobian.cjs && node scripts/verify-new-study-lighting.cjs && node scripts/verify-phason-coverage.cjs && node scripts/verify-phason-insets.cjs",
     "test:specialization": "node scripts/verify-specialization.cjs",
     "audit:performance": "node scripts/browser-audit.cjs",
-    "audit:visual": "node scripts/compare-browser-quality.cjs"
+    "audit:visual": "node scripts/compare-browser-quality.cjs",
+    "test:preview": "node scripts/verify-preview-startup.cjs"
   },
   "devDependencies": {
     "linkedom": "0.18.13",
